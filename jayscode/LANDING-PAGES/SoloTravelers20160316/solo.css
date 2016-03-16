@@ -2,18 +2,22 @@
 		Jason's Custom Styles
 -------------------------------------*/
 .uniSectionSubheadTop {
-  text-align: center; }
+  text-align: center;
+  text-align: center;
+  margin: 50px 0;
+  padding-bottom: 25px; }
 
 .uniIntroContainer {
-  font-size: 18px; }
+  font-size: 18px;
+  line-height: 1.4em; }
   .uniIntroContainer p .drop-cap {
     float: left;
     color: #356b99;
     font-size: 55px;
-    line-height: 50px;
-    padding-top: 4px;
+    line-height: 47px;
+    padding-top: 3px;
     padding-right: 4px;
-    padding-left: 3px;
+    padding-left: 0px;
     font-family: civita-lightregular; }
 
 .uni-shade-image {
