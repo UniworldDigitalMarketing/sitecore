@@ -2,7 +2,10 @@
 		Jason's Custom Styles
 -------------------------------------*/
 .uniSectionSubheadTop {
-  text-align: center; }
+  text-align: center;
+  text-align: center;
+  margin: 50px 0;
+  padding-bottom: 25px; }
 
 .uniIntroContainer {
   font-size: 18px;
