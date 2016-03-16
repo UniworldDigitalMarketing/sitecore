@@ -1,0 +1,54 @@
+/*-------------------------------------
+		Jason's Custom Styles
+-------------------------------------*/
+.uniSectionSubheadTop {
+  text-align: center; }
+
+.uniIntroContainer {
+  font-size: 18px; }
+  .uniIntroContainer p .drop-cap {
+    float: left;
+    color: #356b99;
+    font-size: 55px;
+    line-height: 50px;
+    padding-top: 4px;
+    padding-right: 4px;
+    padding-left: 3px;
+    font-family: civita-lightregular; }
+
+.uni-shade-image {
+  position: relative;
+  margin-top: 5px; }
+
+.uni-shade-image-image {
+  border: solid 6px #EEE; }
+
+.uni-shade-image .img-shadow {
+  position: absolute;
+  -webkit-box-shadow: 4px 4px 6px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 4px 4px 6px 1px rgba(0, 0, 0, 0.3);
+  width: 50%;
+  height: 5px;
+  margin-right: 50px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  z-index: -1;
+  bottom: 7px; }
+
+.uni-shade-image .img-shadow-left {
+  -moz-transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  left: 15px; }
+
+.uni-shade-image .img-shadow-right {
+  -moz-transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  transform: rotate(5deg);
+  right: -30px; }
+
+/*# sourceMappingURL=solo.css.map */
