@@ -10,14 +10,15 @@ $bluefont: #356b99;
 
 .uniIntroContainer{
 	font-size: 18px;
+  line-height: 1.4em;
 	p .drop-cap {
 	    float: left;
 	    color: $bluefont;
 			font-size: 55px;
-			line-height: 50px;
-			padding-top: 4px;
+			line-height: 47px;
+			padding-top: 3px;
 			padding-right: 4px;
-	    padding-left: 3px;
+	    padding-left: 0px;
 	    font-family: civita-lightregular;
 	}
 }
