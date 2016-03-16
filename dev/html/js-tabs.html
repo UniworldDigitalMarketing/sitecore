@@ -1,0 +1,62 @@
+<link href="/Content/Landing-Pages/responsive-landing-page.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+
+/* ==========================================================================
+    Styles For SMALL DEVICES Viewports 600 Pixels Or Smaller
+========================================================================== */
+
+@media (max-width: 640px) and (min-width: 240px) {
+  
+@-moz-document url-prefix()  {
+    .row #Content div.ListTemplateFilterBar div#YearBar ul.filterTabMenu {
+      width: 210px !important;
+    }
+}
+
+  
+}
+</style>
+
+<!-- Tab Menu -->
+<div class="row centerContent extendOnSmall">
+	<div class="col-md-12 tabBarCol">
+		<!-- text-center in mobile -->
+		<div class="ListTemplateFilterBar">
+			<div id="YearBar">
+				<ul class="filterTabMenu nav-tabs" id="uniListTab">
+					<!--Europe-->
+					<li class="active">
+						<a style="cursor: pointer !important;" onclick="$(this).closest('ul').children().removeClass('active'); $(this).closest('li').addClass('active'); $('#Tab1-Content-Europe').show(); $('#Tab2-Content-India').hide(); $('#Tab3-Content-NewShip').hide(); $('#Tab4-Content-FamilyTravel').hide(); return false;" id="Tab1-Europe">
+							<span class="inner">Europe &amp; Russia</span>
+						</a>
+					</li>
+					<!--END Europe-->
+					<!--India-->
+					<li>
+						<a style="cursor: pointer !important;" onclick="$(this).closest('ul').children().removeClass('active'); $(this).closest('li').addClass('active'); $('#Tab1-Content-Europe').hide(); $('#Tab2-Content-India').show(); $('#Tab3-Content-NewShip').hide(); $('#Tab4-Content-FamilyTravel').hide(); return false;" id="Tab2-India">
+							<span class="inner">India</span>
+						</a>
+					</li>
+					<!--END India-->
+					<!--New Ship-->
+					<li>
+						<a style="cursor: pointer !important;" onclick="$(this).closest('ul').children().removeClass('active'); $(this).closest('li').addClass('active'); $('#Tab1-Content-Europe').hide(); $('#Tab2-Content-India').hide(); $('#Tab3-Content-NewShip').show(); $('#Tab4-Content-FamilyTravel').hide(); return false;" id="Tab3-NewShip">
+							<span class="inner">New Ship</span>
+						</a>
+					</li>
+					<!--END New Ship-->
+					<!--New Family Travel-->
+					<!--  <li>
+                        <a style="cursor: pointer !important;" onclick="$(this).closest('ul').children().removeClass('active'); $(this).closest('li').addClass('active'); $('#Tab1-Content-Europe').hide(); $('#Tab2-Content-India').hide(); $('#Tab3-Content-NewShip').hide(); $('#Tab4-Content-FamilyTravel').show(); return false;" id="Tab4-FamilyTravel">
+                            <span class="inner">The Collections</span>
+                        </a>
+                    </li>-->
+					<!--END New Family Travel-->
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Content Below Tabs -->
+
+

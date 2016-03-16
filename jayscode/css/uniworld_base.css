@@ -1,0 +1,105 @@
+/*---------------------------------------
+		UNIWORLD BASE STYLES
+---------------------------------------*/
+/*---------------------------------------------------------------
+Mixins	Mixins	Mixins	Mixins	Mixins	Mixins	Mixins	Mixins
+-----------------------------------------------------------------*/
+/*-----------------------------------------
+							Border Radius
+------------------------------------------*/
+.usage {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
+/*-----------------------------------------
+							Transitions
+------------------------------------------*/
+.usage {
+  color: gray;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease; }
+  .usage:hover {
+    color: black; }
+
+/*------------------------------------------------
+							Animations & Keyframes
+-------------------------------------------------*/
+@-webkit-keyframes slide-down {
+  0% {
+    opacity: 1; }
+  90% {
+    opacity: 0; } }
+@-moz-keyframes slide-down {
+  0% {
+    opacity: 1; }
+  90% {
+    opacity: 0; } }
+@-ms-keyframes slide-down {
+  0% {
+    opacity: 1; }
+  90% {
+    opacity: 0; } }
+@-o-keyframes slide-down {
+  0% {
+    opacity: 1; }
+  90% {
+    opacity: 0; } }
+@keyframes slide-down {
+  0% {
+    opacity: 1; }
+  90% {
+    opacity: 0; } }
+.usage {
+  width: 100px;
+  height: 100px;
+  background: black;
+  -webkit-animation: slide-down 5s 3;
+  -moz-animation: slide-down 5s 3;
+  -ms-animation: slide-down 5s 3;
+  -o-animation: slide-down 5s 3;
+  animation: slide-down 5s 3; }
+
+/*------------------------------------------------
+							Clearfix
+-------------------------------------------------*/
+.clearfix {
+  *zoom: 1; }
+  .clearfix:before, .clearfix:after {
+    content: " ";
+    display: table; }
+  .clearfix:after {
+    clear: both; }
+
+/*---------------------------------------------------------------------------------
+							hide elements while at the same time make them accessible
+----------------------------------------------------------------------------------*/
+.usage-visually-hidden {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute; }
+
+/* EXAMPLE
+<button class="mobile-navigation-trigger">
+  <b class="visually-hidden">Open the navigation</b>
+  <img src="img/mobile-navigation-icon.svg">
+</button>
+*/
+/*----------------------------------------
+				
+------------------------------------------*/
+a {
+  color: #356B99; }
+  a:focus, a:active, a:hover {
+    color: #00315B; }
+
+/*# sourceMappingURL=uniworld_base.css.map */

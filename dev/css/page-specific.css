@@ -1,0 +1,228 @@
+
+p.saveUpTo.AU
+{
+    margin-bottom: .145em;
+}
+.offerFrame h3.AU
+{
+    margin-bottom: .5em;
+}
+.leftOffer,
+.rightOffer
+{
+    float: left;
+
+    width: 42%;
+
+    text-align: center;
+}
+.intro
+{
+    font-size: 1.05em;
+    line-height: 1.6;
+}
+.uniFull .uniVertCenter p
+{
+    font-family: proxima-nova-alt;
+    font-size: 14px;
+
+    margin-bottom: 8px;
+}
+.title h1
+{
+    font-family: civita-lightregular;
+    font-size: 2.55em;
+}
+.title p
+{
+    font-size: 1.25em;
+}
+@media (min-width: 1200px)
+{
+    .pageWrap
+    {
+        font-size: 16px;
+    }
+    #uniCastlesAlongTheRhine-2016-R
+    {
+        background-image: url(~/media/72d7b3fa99574512bc2e73502134a9a6.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniGemsofNorthernItaly-2016-L
+    {
+        background-image: url(~/media/df163fb27d3a4fbd8b6713167e6c166a.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniBurgundyProvence-2016-R
+    {
+        background-image: url(~/media/0b1e3760c7f64a36ac39175f4741d57d.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniEuropeanJewels-2016-L
+    {
+        background-image: url(~/media/e68228a8f98b49cabcd9f24bf9795ba7.ashx);
+        background-repeat: no-repeat;
+    }
+    .title
+    {
+        background:    -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .6) 81%, rgba(0, 0, 0, .6) 100%);
+        /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(81%, rgba(0, 0, 0, .6)), color-stop(100%, rgba(0, 0, 0, .6)));
+        /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .6) 81%, rgba(0, 0, 0, .6) 100%);
+        /* Chrome10+,Safari5.1+ */
+        background:      -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .6) 81%, rgba(0, 0, 0, .6) 100%);
+        /* Opera 11.10+ */
+        background:     -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .6) 81%, rgba(0, 0, 0, .6) 100%);
+        /* IE10+ */
+        background:         linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .6) 81%, rgba(0, 0, 0, .6) 100%);
+        /* W3C */
+        text-shadow: 2px 2px 4px #000;
+        text-shadow: 2px 2px 4px #000;
+
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#99000000', GradientType=0);
+        /* IE6-9 */
+    }
+}
+@media (max-width: 1199px)
+{
+    .largeTabletHide
+    {
+        display: none;
+    }
+    .feat-itin .even article,
+    .feat-itin .odd article
+    {
+        padding: 10px;
+    }
+    .title
+    {
+        font-size: 12px;
+
+        background:    -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .6) 81%, rgba(0, 0, 0, .6) 100%);
+        /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(81%, rgba(0, 0, 0, .6)), color-stop(100%, rgba(0, 0, 0, .6)));
+        /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .6) 81%, rgba(0, 0, 0, .6) 100%);
+        /* Chrome10+,Safari5.1+ */
+        background:      -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .6) 81%, rgba(0, 0, 0, .6) 100%);
+        /* Opera 11.10+ */
+        background:     -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .6) 81%, rgba(0, 0, 0, .6) 100%);
+        /* IE10+ */
+        background:         linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .6) 81%, rgba(0, 0, 0, .6) 100%);
+        /* W3C */
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&amp;0+0,0.6+81 */
+        text-shadow: 2px 2px 4px #000;
+        text-shadow: 2px 2px 4px #000;
+
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#99000000', GradientType=0);
+        /* IE6-9 */
+    }
+}
+@media (max-width: 1101px)
+{
+    .title
+    {
+        font-size: 12px;
+
+        text-shadow: 2px 2px 4px #000;
+    }
+}
+@media (max-width: 990px)
+{
+    .col-md-6,
+    .col-md-4
+    {
+        padding-bottom: 10px;
+    }
+    .highlightsTextArea
+    {
+        padding: 29px 0 19px 0;
+    }
+}
+@media (max-width: 852px)
+{
+    .pageWrap
+    {
+        font-size: 14px;
+    }
+    .pageWrap .intro
+    {
+        padding: 0 5.5em 2.8em 5.5em;
+    }
+    .highlightsBackground
+    {
+        padding: 1.8em 2.4em;
+    }
+    .feat-itin .even article,
+    .feat-itin .odd article
+    {
+        padding: 10px;
+    }
+    .title
+    {
+        font-size: 12px;
+
+        text-shadow: 2px 2px 4px #000;
+    }
+}
+@media (max-width: 767px)
+{
+    .feat-itin .uni-module-header
+    {
+        display: none;
+    }
+    .feat-itin .even article,
+    .feat-itin .odd article
+    {
+        padding: 10px;
+    }
+    .title
+    {
+        font-size: 11px;
+
+        padding: 0 0 1.5% 0;
+    }
+    .col-two,
+    .col-three
+    {
+        display: block;
+
+        min-height: 10px;
+        padding-bottom: 10px;
+    }
+}
+@media (max-width: 640px)
+{
+    .title
+    {
+        font-size: 11px;
+
+        bottom: -43px;
+
+        color: #5a5a5a;
+        background: none;
+        text-shadow: none;
+    }
+    .videoHero
+    {
+        margin-bottom: 23px;
+    }
+}
+@media (max-width: 400px)
+{
+    .title
+    {
+        font-size: 11px;
+
+        bottom: -43px;
+
+        color: #5a5a5a;
+        background: none;
+        text-shadow: none;
+    }
+    .videoHero
+    {
+        margin-bottom: 23px;
+    }
+}

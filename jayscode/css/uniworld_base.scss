@@ -1,0 +1,148 @@
+/*---------------------------------------
+		UNIWORLD BASE STYLES
+---------------------------------------*/
+
+$linkcolor: #356B99;
+$linkhover: #00315B;
+
+/*---------------------------------------------------------------
+Mixins	Mixins	Mixins	Mixins	Mixins	Mixins	Mixins	Mixins
+-----------------------------------------------------------------*/
+
+/*-----------------------------------------
+							Border Radius
+------------------------------------------*/
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;}
+
+
+.usage { @include border-radius(10px); }
+
+
+/*-----------------------------------------
+							Transitions
+------------------------------------------*/
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+.usage {
+  color: gray;
+  @include transition(color .3s ease);
+  &:hover {
+    color: black;
+  }
+}
+
+
+/*------------------------------------------------
+							Animations & Keyframes
+-------------------------------------------------*/
+
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }  
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }  
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};      
+}
+
+
+@include keyframes(slide-down) {
+  0% { opacity: 1; }
+  90% { opacity: 0; }
+}
+
+.usage {
+  width: 100px;
+  height: 100px;
+  background: black;
+  @include animation('slide-down 5s 3');
+}
+
+
+/*------------------------------------------------
+							Clearfix
+-------------------------------------------------*/
+
+%clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.clearfix {
+  @extend %clearfix;
+}
+
+
+/*---------------------------------------------------------------------------------
+							hide elements while at the same time make them accessible
+----------------------------------------------------------------------------------*/
+
+%visuallyhidden {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
+.usage-visually-hidden {
+  @extend %visuallyhidden;
+}
+
+
+/* EXAMPLE
+<button class="mobile-navigation-trigger">
+  <b class="visually-hidden">Open the navigation</b>
+  <img src="img/mobile-navigation-icon.svg">
+</button>
+*/
+
+
+/*----------------------------------------
+				
+------------------------------------------*/
+
+a{
+	color: $linkcolor;
+		&:focus, &:active, &:hover{
+			color: $linkhover; 
+		} 
+}

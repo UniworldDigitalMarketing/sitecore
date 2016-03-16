@@ -1,0 +1,177 @@
+/*========================================================================
+!!!!!!!!!!!!!!!!!!!!!!OVERRIDES-OVERRIDES-OVERRIDES!!!!!!!!!!!!!!!!!!!!!!
+========================================================================*/
+.feat-itin
+{
+    border-top: 0;
+    border-bottom: 0;
+}
+.feat-itin .even img,
+.feat-itin .odd img
+{
+    position: static !important;
+    z-index: 0;
+
+    width: initial;
+}
+/*
+navigations changes
+=======================================================================*/
+/*better version of top margin*/
+.uni-header-global .yamm .container .dropdown-menu .column-right
+{
+    padding: 36px 20px 20px;
+}
+/*button adjustments*/
+.uniViewAllMenu
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/*column headings*/
+.dropdown-menu .column-right .row div h5
+{
+    font-weight: bold;
+
+    margin: 10px 0 5px 0;
+    padding-top: 10px;
+
+    border-top: 1px solid;
+}
+.dropdown-menu .column-right .row div h5:first-child
+{
+    margin-top: 0;
+    padding-top: 0;
+
+    border-top: 0;
+}
+/*anchor tag and descriptive text fix*/
+.uni-header-global .yamm .container .dropdown-menu .column-right a
+{
+    display: inline-block;
+
+    margin: 6px 0 0;
+}
+.uni-header-global .yamm .container .dropdown-menu .column-right a:first-child
+{
+    margin: 0;
+}
+.uni-header-global .yamm .container .dropdown-menu .column-right h6
+{
+    margin: 0;
+}
+/*
+fix for ship section
+========================================================================*/
+.uni-header-global .yamm .container ul.dropdown-menu li
+{
+    padding-top: 24px ;
+    padding-bottom: 0;
+}
+.uni-header-global .yamm .container ul.dropdown-menu li div.column li
+{
+    line-height: 1em !important;
+
+    margin-bottom: 10px;
+    padding-top: 0;
+}
+/*turn off display of inauguration and remodel in quick facts box*/
+.ships-overview .quick-facts dl dd:nth-last-of-type(2),
+.ships-overview .quick-facts dl dd:nth-last-of-type(1),
+.ships-overview .quick-facts dl dt:nth-last-of-type(2),
+.ships-overview .quick-facts dl dt:nth-last-of-type(1),
+.ships-overview .quick-facts dl hr:nth-last-of-type(1)
+{
+    display: none;
+}
+.ships-overview .deckplan-overview .container .deckplan-detail
+{
+    display: none;
+}
+/*
+footer overrides
+========================================================================*/
+.uni-footer-bottom img
+{
+    margin-left: 17px;
+}
+.uni-logoGarden img.betterBusiness
+{
+    width: 90px;
+    height: 39px;
+    margin-top: 13px;
+}
+.uni-logoGarden img
+{
+    width: auto;
+    height: 48px;
+}
+/*hide region selector*/
+.uni-footer-bottom .col-xs-6.text-left label, .uni-footer-bottom .uni-select.uni-select-xs select.chosen-select,
+.uni-footer-bottom .uni-select.uni-select-xs:after
+{
+    color: #00315b;
+    background-color: #00315b;
+}
+/*
+stackla code
+========================================================================*/
+.uniStacklaContainer
+{
+    position: relative;
+
+    overflow: hidden;
+
+    height: 0;
+    padding-top: 35px;
+    padding-bottom: 56.25%;
+}
+.uniStacklaContainer iframe
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
+/*
+ryan stuff
+========================================================================*/
+.UniColumnPipeNav
+{
+    border-left: 2px solid #eee;
+}
+.UniCustomPaddingNav
+{
+    padding-top: 20px;
+}
+.UniCustomColumnSep
+{
+    margin: 0 0 20px;
+    padding: 0 20px;
+
+    border-left: 5px solid #f0f1f3;
+}
+.UniCustomH4title
+{
+    font-family: 'civita-regular';
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+
+    color: #356b99;
+}
+.UniCustomtitle
+{
+    color: #356b99;
+}
+.cruise-teaser .teaser-right .rating .star-ratings .title
+{
+    font-family: 'civita-lightregular';
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+
+    color: #356b99;
+}

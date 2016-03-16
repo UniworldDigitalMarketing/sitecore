@@ -1,0 +1,29 @@
+<!--Stackla Social Wedget-->
+<script type='text/javascript'>
+(function(d, id) {
+	if (d.getElementById(id)) return;
+	var t = d.createElement('script');
+	t.type = 'text/javascript';
+	t.src = '//assetscdn.stackla.com/media/js/widget/fluid-embed.js';
+	t.id = id;
+	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(t);
+}(document, 'stacklafw-js'));
+</script>
+<script type='text/javascript'>
+function myFunction(id) {
+	StacklaFluidWidget.changeuniStacklaFilter(1448, id);
+}
+</script>
+<div id="uniuniStacklaFilterWrapper">
+	<!-- Your Navigation Bar & links. Add as many links as desired. Replace id's with your own uniStacklaFilter IDs. -->
+	<div class="uniStacklaFilter">
+		<input type="radio" onclick="myFunction(this.id)" id="9911" checked="checked" name="uniStacklaFilter">
+		<label for="9911" class="uniStacklabutton"> #ExploreUniworld </label>
+		<input type="radio" onclick="myFunction(this.id)" id="9919" name="uniStacklaFilter">
+		<label for="9919" class="uniStacklabutton"> Twitter </label>
+		<div class="clearfix"></div>
+	</div>
+	<!-- End Navigation Bar-->
+</div>
+<div class='stacklafw' data-id='1448' data-hash='538ccee3a1ee5' data-ct='' data-alias='uniworld.stackla.com' data-ttl="30">
+</div>

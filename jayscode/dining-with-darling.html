@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<head>
+<style>
+/*------------------------------------------------
+                   Jason's Styles
+-------------------------------------------------*/
+.my-section{
+  margin-bottom: 50px;
+}
+@media (max-width: 768px) {
+  .my-section{
+    margin-bottom: 25px;
+  }
+
+}
+
+/*-------------------------
+    HEADER
+--------------------------*/
+.container{
+  position: relative;
+}
+
+.hero img {
+    min-height: 0;
+}
+
+
+.uni-din-hero{
+  position: relative;
+}
+
+.uni-up-tagger{
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: -180px;
+  left: 50%;
+       -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+         -o-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  color: #FFF;
+  font-size: 1.5em;
+  max-width: 500px;
+}
+
+.uni-up-tagger span{
+    display: none;
+}
+
+.uni-module-header{
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: -275px;
+  left: 50%;
+       -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+         -o-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  color: #FFF;
+}
+
+.uni-module-title {
+    color: #FFF;
+}
+
+
+@media (max-width: 1200px) {
+
+.uni-module-header{
+  top: -200px;
+}
+
+.uni-module-title {
+  margin-top: 13px;
+}
+
+.uni-up-tagger{
+  font-size: 1.2em;
+  max-width: 400px;
+  top: -125px;
+}
+
+}
+
+@media (max-width: 768px) {
+
+.uni-module-header{
+  top: -80px;
+}
+
+.uni-module-title {
+  margin-top: 13px;
+}
+
+
+.uni-up-tagger{
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: auto;
+  left: 50%;
+       -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+         -o-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  color: #5A5A5A;
+  font-size: 1em;
+  max-width: 270px;
+  
+}
+
+.uni-up-tagger span{
+    width: 100%;
+    max-width: 20%;
+    height: 2px;
+    background: rgba(255,255,255, 0.8);
+    margin: 0 auto 10px auto;
+    display: block;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+       -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+         -o-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+
+}
+
+}
+
+/*-------------------------
+    INTRO SECTION
+--------------------------*/
+
+.uni-din-styles{
+  font-size: 1.5em;
+  margin-top: 30px;
+  line-height: 1.7em;
+}
+
+.uni-din-styles .line {
+    width: 20%;
+    height: 4px;
+    background: #00315B;
+    margin-top: 20px;
+}
+
+.uni-darling-intro{
+  margin-top: 0px;
+}
+
+.darling-img{
+  position: relative;
+  float: right;
+}
+
+.darling-img .img-shadow{
+  position: absolute;
+-webkit-box-shadow: 4px 4px 6px 1px rgba(0,0,0,0.3);
+        box-shadow: 4px 4px 6px 1px rgba(0,0,0,0.3);
+  width: 50%;
+  height: 5px;
+  margin-right: 50px;
+-webkit-border-radius: 50%;
+border-radius: 50%;
+  z-index: -1;
+  bottom: 7px;
+}
+
+.darling-img .img-shadow-left{
+     -moz-transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+       -o-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+  left: 15px;
+  }
+
+.darling-img .img-shadow-right{
+     -moz-transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+       -o-transform: rotate(5deg);
+      -ms-transform: rotate(5deg);
+          transform: rotate(5deg);
+  right: -30px;
+  }
+
+
+@media (max-width: 1200px) {
+  .uni-din-styles{
+    font-size: 1.15em;
+  } 
+
+}
+
+@media (max-width: 768px) {
+  .uni-din-styles{
+    font-size: 1em;
+    margin: 30px -15px 0 -15px;
+  }  
+  .uni-darling-intro{
+    margin-top: 5px;
+  }
+  .uni-din-styles .line {
+    display: none;
+  }
+  
+}
+
+
+/*-------------------------
+    VIDEO 
+--------------------------*/
+.uni-din-video{
+  margin-top: 30px;
+  position: relative;
+}
+
+.uw-play{
+  position: absolute;
+  top: 50%;
+    left: 50%;
+       -moz-transform: translateX(-50%)translateY(-50%)scale(.35);
+    -webkit-transform: translateX(-50%)translateY(-50%)scale(.35);
+         -o-transform: translateX(-50%)translateY(-50%)scale(.35);
+        -ms-transform: translateX(-50%)translateY(-50%)scale(.35);
+            transform: translateX(-50%)translateY(-50%)scale(.35);
+  -webkit-transition: all 250ms ease-in-out;
+     -moz-transition: all 250ms ease-in-out;
+      -ms-transition: all 250ms ease-in-out;
+       -o-transition: all 250ms ease-in-out;
+          transition: all 250ms ease-in-out;
+}
+.uni-din-video:hover .uw-play{
+       -moz-transform: translateX(-50%)translateY(-50%)scale(.38);
+    -webkit-transform: translateX(-50%)translateY(-50%)scale(.38);
+         -o-transform: translateX(-50%)translateY(-50%)scale(.38);
+        -ms-transform: translateX(-50%)translateY(-50%)scale(.38);
+            transform: translateX(-50%)translateY(-50%)scale(.38);
+}
+
+.uw-video-text{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: #FFF;
+  background: rgba(0,0,0,0.4);
+  background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.99) 99%, black 100%);
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.99) 99%, black 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
+  margin-bottom: 0;
+  font-size: 1.7em;
+  padding: 60px 30px 15px 30px;
+  left: 0;
+  right: 0;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.uw-video-text a{
+  color: #FFF;
+}
+
+@media (max-width: 1200px) {
+.uw-play{
+  left: 50%;
+       -moz-transform: translateX(-50%)translateY(-50%)scale(.25);
+    -webkit-transform: translateX(-50%)translateY(-50%)scale(.25);
+         -o-transform: translateX(-50%)translateY(-50%)scale(.25);
+        -ms-transform: translateX(-50%)translateY(-50%)scale(.25);
+            transform: translateX(-50%)translateY(-50%)scale(.25);
+}
+
+.uni-din-video:hover .uw-play{translateY(-50%)
+       -moz-transform: translateX(-50%)translateY(-50%)scale(.28);
+    -webkit-transform: translateX(-50%)translateY(-50%)scale(.28);
+         -o-transform: translateX(-50%)translateY(-50%)scale(.28);
+        -ms-transform: translateX(-50%)translateY(-50%)scale(.28);
+            transform: translateX(-50%)translateY(-50%)scale(.28);
+}
+
+.uw-video-text{
+  font-size: 1.3em;
+  padding: 0 60px;
+}
+
+}
+
+
+
+@media (max-width: 768px) {
+.uw-play{
+       -moz-transform: translateX(-50%)translateY(-50%)scale(.25);
+    -webkit-transform: translateX(-50%)translateY(-50%)scale(.25);
+         -o-transform: translateX(-50%)translateY(-50%)scale(.25);
+        -ms-transform: translateX(-50%)translateY(-50%)scale(.25);
+            transform: translateX(-50%)translateY(-50%)scale(.25);
+}
+.uni-din-video:hover .uw-play{
+       -moz-transform: translateX(-50%)translateY(-50%)scale(.28);
+    -webkit-transform: translateX(-50%)translateY(-50%)scale(.28);
+         -o-transform: translateX(-50%)translateY(-50%)scale(.28);
+        -ms-transform: translateX(-50%)translateY(-50%)scale(.28);
+            transform: translateX(-50%)translateY(-50%)scale(.28);
+} 
+
+.uw-video-text{
+  position: static;
+  color: #5A5A5A;
+  font-size: 1em;
+  padding: 0 15px;
+  background: rgba(0,0,0,0.0);
+  margin: 0 -15px;
+}
+
+.uw-video-text a{
+  color: #356B99;
+}
+
+.uw-video-text a:focus,.uw-video-text a:active,.uw-video-text a:hover{
+  color: #00315B
+}
+
+.uni-din-video{
+  margin: 30px -15px 0 -15px;
+}
+
+}
+
+/*-------------------------
+    CALLOUT 
+--------------------------*/
+
+.uni-callout{
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .uni-callout{
+  font-size: 1em;
+}
+}
+
+/*-------------------------
+    CONTEST RULES
+--------------------------*/
+
+section#prize-section {
+  max-width: 1140px;
+  margin: 20px auto;
+}
+
+
+
+.uni-prize-deets{
+  text-align: center;
+}
+
+.uni-prize-deets h3{
+  font-size: 2em;
+  font-weight: 600;
+  color: #356B99;
+}
+
+.uni-prize-deets h3 span {
+    font-size: .735em;
+    display: block;
+    line-height: 1.8em;
+    font-weight: 100;
+    color: #5a5a5a;
+}
+
+.uni-prize-deets ul{
+  font-size: 1.5em;
+  margin: 25px auto 15px auto;
+}
+
+.uni-prize-deets ul li{
+  padding-bottom: 15px
+}
+.uni-prize-deets ul li:nth-child(-n+2){
+  font-family: civita-lightregular, serif;
+}
+
+.uw-button-wrap{
+  margin-bottom: 50px;
+}
+
+input[type=radio] {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  display: none;
+}
+
+.uni-prize-wrap {
+  text-align: center;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.uni-prize-wrap label {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 0;
+  padding-top: 15px;
+  border-top: solid 1px rgba(0, 0, 0, 0.15);
+}
+
+.uni-prize-list li {
+  padding: 0;
+}
+
+.uni-prize-list li:last-child {
+  border-bottom: solid 1px rgba(0, 0, 0, 0.15);
+  padding-bottom: 5px;
+}
+
+.uni-prize-wrap label span {
+  -webkit-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
+}
+
+.uni-prize-wrap label span:first-child {
+  float: left;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.uni-prize-wrap label span:nth-child(2) {
+  width: 11px;
+  height: 3px;
+  background: #356B99;
+  right: 2px;
+  top: 22px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.uni-prize-wrap label span:last-child {
+  width: 3px;
+  height: 11px;
+  background: #356B99;
+  right: 6px;
+  top: 18px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.uni-prize-wrap label span:not(:first-child) {
+  position: absolute;
+}
+
+.uni-prizes {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 600ms ease-in;
+  transition: max-height 600ms ease-in;
+  text-align: center;
+  width: 100%;
+}
+
+.uni-prizes img {
+  margin: 0 auto;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.uni-prizes p {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  font-size: 16px;
+}
+
+input[type=radio]:checked ~ .uni-prizes {
+  max-height: 600px;
+}
+
+input[type=radio]:checked ~ .label {
+  border-top: none;
+}
+
+input[type=radio]:checked ~ label span {
+  color: #00315B;
+}
+
+input[type=radio]:checked ~ label span:last-child {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  height: 0;
+}
+
+input[type=radio]:checked ~ label span:nth-child(2) {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  height: 0;
+}
+
+.uw-contest-terms{
+  position: static;
+  text-align: center;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+
+
+  section#prize-section {
+    min-height: 450px;
+  }
+  .uni-prize-wrap label {
+    text-align: center;
+    width: 200px;
+  }
+
+  .uni-prizes {
+    position: absolute;
+    left: 50%;
+    max-width: 1080px;
+    margin-top: 125px;
+    -webkit-transition: max-height 0ms ease-in;
+    transition: max-height 0ms ease-in;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+
+  .uni-prizes .uw-prize-info {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    z-index: 12;
+    padding: 60px 15px 15px 15px;
+    background: rgba(0,0,0,0.4);
+    background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.99) 99%, black 100%);
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.99) 99%, black 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
+    color: #FFF;
+  }
+
+  .uni-prizes .uw-prize-info p {
+    font-size: 1.8em;
+  }
+
+  .uni-prize-wrap label span:last-child {
+    -webkit-transform: rotate(0deg) translateX(50%);
+            transform: rotate(0deg) translateX(50%);
+    right: 50%;
+  }
+
+  .uni-prize-wrap label span:first-child {
+    float: none;
+    position: absolute;
+    top: 120px;
+    right: 50%;
+    width: 100%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+    font-size: 22px;
+    font-weight: 100;
+    display: none;
+  }
+
+  .uni-prize-wrap label span:nth-child(2) {
+    display: none;
+  }
+
+  .uni-prize-wrap label span:nth-child(3) {
+    background: no-repeat center;
+    width: 120px;
+    height: 110px;
+    background-size: 100px;
+  }
+
+  .uni-prize-list li:last-child {
+    border-bottom: solid 1px transparent;
+  }
+
+  .uni-prize-wrap label {
+    border-top: solid 1px transparent;
+  }
+
+  .uni-prize-list li:nth-child(1) label span:nth-child(3) {
+    background-image: url(~/media/f673d281ccaf4c41a8e87f4eb17a5070.ashx);
+  }
+
+  .uni-prize-list li:nth-child(2) label span:nth-child(3) {
+    background-image: url(~/media/1146c29272d04ef8b8ec42f6a131c893.ashx);
+  }
+
+  .uni-prize-list li:nth-child(3) label span:nth-child(3) {
+    background-image: url(~/media/015b35a145cf4740a138e914c6ec51e9.ashx);
+  }
+
+  .uni-prize-list li:nth-child(1) input[type=radio]:checked ~ label span:nth-child(3) {
+    background-image: url(~/media/f83edde33b634f8cbb9a2edc826abb41.ashx);
+  }
+
+  .uni-prize-list li:nth-child(2) input[type=radio]:checked ~ label span:nth-child(3) {
+    background-image: url(~/media/59f6799b05e34b3796e30fce5a0e31a3.ashx);
+  }
+
+  .uni-prize-list li:nth-child(3) input[type=radio]:checked ~ label span:nth-child(3) {
+    background-image: url(~/media/2f2ac997675a47fb9a6222631e1f817d.ashx);
+  }
+
+  input[type=radio]:checked ~ label span:last-child {
+    -webkit-transform: rotate(0deg) translateX(50%);
+            transform: rotate(0deg) translateX(50%);
+    height: 110px;
+    width: 135px;
+    background-size: 100px;
+    -webkit-animation: badger ease-in-out 250ms;
+            animation: badger ease-in-out 250ms;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+
+  @-webkit-keyframes badger {
+    0% {
+      background-size: 100px;
+    }
+    80% {
+      background-size: 135px;
+    }
+    100% {
+      background-size: 120px;
+    }
+  }
+
+  @keyframes badger {
+    0% {
+      background-size: 100px;
+    }
+    80% {
+      background-size: 135px;
+    }
+    100% {
+      background-size: 120px;
+    }
+  }
+
+  .uw-contest-terms{
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  section#prize-section {
+    min-height: 625px;
+  }
+
+}
+@media (max-width: 1200px) {
+  .uni-prizes {
+    max-width: 660px;
+  }
+
+  ul.list-inline.uni-prize-list {
+    margin-left: -15px;
+  }
+  .uni-prize-deets{
+    padding-right: 45px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+.uni-prize-deets{
+  padding-right: 15px;
+}
+
+.uni-prize-deets h3{
+  font-size: 1.1em;
+}
+
+.uni-prize-deets h3 span {
+}
+
+.uni-prize-deets ul{
+  font-size: 1em;
+}
+
+  .uni-prizes {
+    max-width: 660px;
+    margin-left: 0px;
+  }
+  ul.list-inline.uni-prize-list {
+    margin-left: 0px;
+  }
+}
+
+</style>
+</head>
+<body>
+
+
+
+<!--!!!!!!INTRO SECTION!!!!!!!!!!!-->
+
+<h5 class="uni-up-tagger"><span class="hidden-md-up"></span>Cooking Channel’s travel-oriented culinary show
+NEW 6-part series airing now!
+</h5>
+<section class="my-section container-fluid">
+  <div class="row">
+    <div class="col-sm-12 uni-din-styles">
+      <div class="col-sm-4 col-xs-6 darling-img">
+        <img class="img-responsive uni-darling-intro" alt="" width="500" height="377" src="~/media/8649fb9ed6b1410580018a62d7cae159.ashx" />
+        <div class="img-shadow  img-shadow-left"></div>
+        <div class="img-shadow  img-shadow-right"></div>
+      </div>
+      <div class="col-sm-8">
+        <p>
+          Follow Chef Keith Darling on a delectable three-episode journey through Northern Italy onboard Uniworld’s <em>River Countess</em>. Each 30-minute episode showcases Italy’s acclaimed cuisine as Chef Darling goes behind-the-scenes for an in-depth look at wineries, food artisans, local farmers and fishermen, regional delicacies, and culinary traditions and techniques. Keep watching for three additional episodes highlighting California’s beautiful wine region, Napa Valley. 
+        </p>
+        <!--<div class="line"></span></div>-->
+      </div>
+    </div>
+  </div>
+
+  <!--!!!!!!VIDEO SECTION!!!!!!!!!!!-->
+  
+  <div class="row">
+    <div class="col-sm-12 uni-din-video">
+      <div class="col-md-12">
+        <a class="fancybox-mediahome" href="https://www.youtube.com/watch?v=ltmpFsB6vJw" rel="media-gallery">
+          <img alt="Dining With Darling Video" title="Dining With Darling Video" class="img-responsive" src="~/media/859b3858ede342d1a0b565b294695a8a.ashx"/>
+          <img class="uw-play" alt="" width="300" height="300" src="~/media/df1e06981bbe4bc9a7a17c3bf921a440.ashxw=300" />
+        </a>
+      </div>
+    </div>
+    <div class="col-sm-12  uni-din-callout">
+    <p class="uw-video-text">
+        Get a Taste of Dining with Darling</br>
+       <a class="fancybox-mediahome" href="https://www.youtube.com/watch?v=ltmpFsB6vJw" rel="media-gallery">VIEW THE TRAILER</a>
+          </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12  uni-callout">
+      <p>
+        <strong>Dining with Darling</strong> airs every Friday Feb. 26 to April 1, 2016 12.30 EST/9.30 PST </br>(Check local listings)
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!--!!!!!!PRIZE SECTION!!!!!!!!!!!-->
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 uni-prize-deets">
+        <h3>
+          Play our online Dining with Darling Trivia Contest
+          <span>after each show for a chance to win one of three tantalizing prizes!*</span>
+        </h3>
+        <ul>
+          <li>Love food and wine?</li>
+          <li>Passionate about European travel?</li>
+          <li>Celebrate the best of both worlds, courtesy of Uniworld.</li>
+        </ul>
+        <div class="uw-button-wrap">
+          <a class="btn btn-primary btn-small" type="button" target="new" href="https://www.facebook.com/uniworldrivercruises/app/393436617352698/?ref=page_internal">TEST YOUR KNOWLEDGE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <section id="prize-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 uni-prize-wrap">
+        <ul class="list-inline uni-prize-list">
+          <li>
+            <input type="radio" name="prizes" id="grand" checked="checked">
+            <label for="grand"><span>Grand Prize</span><span></span><span></span></label>
+            <div class="uni-prizes">
+              <img alt="Splendors of Italy" title="Splendors of Italy" class="img-responsive" src="~/media/5da9c45db3ed4ad3af76cdbee71f4631.ashx" />
+              <div class="uw-prize-info">
+                <p>
+                  15-day all-inclusive “Splendors of Italy” cruise/tour for two (Milan to Rome).
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <input type="radio" name="prizes" id="first">
+            <label for="first"><span>First Place Prize</span><span></span><span></span></label>
+            <div class="uni-prizes">
+              <img alt="Gems of Northern Italy" title="Gems of Northern Italy" class="img-responsive" src="~/media/82aa6b32ac9848b885398ea6eda3048f.ashx" />
+              <div class="uw-prize-info">
+                <p>
+                  10-day all-inclusive “Gems of Northern Italy” cruise/tour for two (Milan to Venice).
+                </p>
+                </div>
+                </div>
+          </li>
+          </li>
+          <li>
+            <input type="radio" name="prizes" id="second">
+            <label for="second"><span>Second Place Prize</span><span></span><span></span></label>
+            <div class="uni-prizes">
+              <img alt="Chef Keith Darling" title="Chef Keith Darling" class="img-responsive" src="~/media/ef9344da71614d4f8907e762d16c123b.ashx" />
+              <div class="uw-prize-info">
+                <p>
+                  An intimate four-course Flavors of Italy Dinner Party for eight, personally prepared at your home by Chef Keith Darling.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+        </div>
+    </div>
+              <a class="small uw-contest-terms" target="_new" href="https://woobox.com/offers/rules/rh2hrp">terms and conditions</a>
+</section>
+</body>

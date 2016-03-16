@@ -1,0 +1,9 @@
+{
+  "name": "uniworld-css",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cssnext": "^1.0.0",
+    "grunt-uncss": "^0.4.3"
+  }
+}

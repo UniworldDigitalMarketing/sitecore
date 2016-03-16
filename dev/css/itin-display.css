@@ -1,0 +1,141 @@
+/*content hide just for test page*/
+.even.uniFull
+{
+    display: block;
+}
+.odd.uniFull,
+.uniHalf
+{
+    display: none;
+}
+
+
+
+#uniCTADetails
+
+#uniCTALearn
+
+
+/*
+cruise and air
+========================================================================*/
+/*show*/
+.uniItinCruiseAirOffer,
+.uniItinCities,
+#uniCTALearn
+{
+    display: block;
+}
+#uniCTALearn {
+	display: inline-block;
+}
+/*hide*/
+.uniSpecialSavings,
+.uniItinSpare,
+.uniItinFamily,
+.uniItinFamilyOffer,
+.uniItinSpare,
+.uniItinBeauty,
+.uniItinSoloTravelerOffer,
+.uniItinYear,
+.uniItinSoloTravelerOffer,
+.uniItinExcursions,
+#uniCTADetails,
+.uniPifExtend
+{
+    display: none;
+}
+
+
+/*
+special savings and EBS
+========================================================================*/
+/*show*/
+.uniItinCities,
+.uniItinExcursions,
+.uniPifExtend
+{
+    display: block;
+}
+
+#uniCTALearn {
+	display: inline-block;
+}
+/*hide*/
+.uniSpecialSavings,
+.uniItinSpare,
+.uniItinFamily,
+.uniItinFamilyOffer,
+.uniItinCruiseAirOffer,
+.uniItinBeauty,
+.uniItinSoloTravelerOffer,
+.uniItinYear,
+.uniItinSoloTravelerOffer,
+#uniCTADetails
+{
+    display: none;
+}
+
+
+/*
+solo travelers
+========================================================================*/
+/*show*/
+.uniItinSoloTravelerOffer,
+.uniItinCities,
+.uniItinExcursions,
+.uniItinSoloTravelerOffer
+{
+    display: block;
+}
+#uniCTALearn {
+	display: inline-block;
+}
+/*hide*/
+.uniSpecialSavings,
+.uniItinSpare,
+.uniItinFamily,
+.uniItinFamilyOffer,
+.uniItinCruiseAirOffer,
+.uniItinBeauty,
+.uniItinYear,
+#uniCTADetails,
+.uniPifExtend
+{
+    display: none;
+}
+
+
+/*
+Travelzoo
+========================================================================*/
+/*show*/
+
+.uniItinCities,
+.uniItinExcursions
+{
+    display: block;
+}
+#uniCTALearn {
+	display: inline-block;
+}
+/*hide*/
+.uniItinSoloTravelerOffer,
+.uniSpecialSavings,
+.uniItinSpare,
+.uniItinFamily,
+.uniItinFamilyOffer,
+.uniItinCruiseAirOffer,
+.uniItinBeauty,
+.uniItinYear,
+.uniItinSoloTravelerOffer,
+#uniCTADetails
+{
+    display: none;
+}
+
+
+
+
+
+
