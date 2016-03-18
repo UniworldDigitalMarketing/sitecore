@@ -1,0 +1,338 @@
+//VARIABLES
+$bluefont: #356b99;
+$SerifFam: civita-lightregular;
+// mixins
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin transform($transforms) {
+    -moz-transform: $transforms;
+    -o-transform: $transforms;
+    -ms-transform: $transforms;
+    -webkit-transform: $transforms;
+    transform: $transforms;
+}
+
+@mixin transition($transitions) {
+    -webkit-transition: $transitions;
+    -moz-transition: $transitions;
+    -ms-transition: $transitions;
+    -o-transition: $transitions;
+    transition: $transitions;
+}
+
+
+/*INTRO SECTION*/
+
+.uniIntroContainer {
+    font-size: 18px;
+    line-height: 2em;
+    p {
+        padding-left: 15px;
+    }
+    p .drop-cap {
+        float: left;
+        color: $bluefont;
+        font-size: 75px;
+        line-height: 47px;
+        padding-top: 17px;
+        padding-right: 4px;
+        padding-left: 0px;
+        font-family: $SerifFam;
+    }
+}
+
+.uni-divider {
+    display: block;
+    height: 2px;
+    background: #dadbdd;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.uni-row {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    h2 {
+        font-family: $SerifFam;
+        color: $bluefont;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+}
+
+.uni-shade-image {
+    position: relative;
+    margin-top: 5px;
+    //float: right;
+    .uni-shade-image-image {
+        border: solid 6px #EEE;
+    }
+    .img-shadow {
+        position: absolute;
+        -webkit-box-shadow: 4px 4px 6px 1px rgba(0, 0, 0, 0.3);
+        box-shadow: 4px 4px 6px 1px rgba(0, 0, 0, 0.3);
+        width: 50%;
+        height: 5px;
+        margin-right: 50px;
+        @include border-radius(50%);
+        z-index: -1;
+        bottom: 7px;
+    }
+    .img-shadow-left {
+        @include transform (rotate(-5deg));
+        left: 15px;
+    }
+    .img-shadow-right {
+        @include transform (rotate(5deg));
+        right: -30px;
+    }
+}
+
+.uni-row .uni-blist {
+    &:first-child {
+        margin-left: 0px;
+    }
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+.uni-blist {
+    li {
+        list-style-type: none;
+        list-style-position: outside;
+        padding: 12px;
+        font-size: 1.15em;
+        margin: 25px 0;
+        @include border-radius(3px);
+        &:nth-child(odd) {
+            background-color: lighten($bluefont, 58%);
+        }
+        &:hover {}
+    }
+}
+
+
+/* TAB SECTION */
+
+.tab-body h2 img {
+    margin: 0 auto;
+}
+
+$background: #356B99;
+section#tab-section {
+    max-width: 1140px;
+    margin: 20px auto;
+    //height: 1100px;
+}
+
+input[type=radio] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    display: none;
+}
+
+.uni-tab-wrap {
+    text-align: center;
+}
+
+.uni-tab-wrap label {
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    padding-top: 15px;
+    border-top: solid 1px rgba(0, 0, 0, 0.5);
+}
+
+.uni-tab-list li {
+    padding: 0;
+}
+
+.uni-tab-list li:last-child {
+    //border-top: solid 1px rgba(0,0,0,0.0);
+    border-bottom: solid 1px rgba(0, 0, 0, 0.5);
+    padding-bottom: 5px;
+}
+
+.uni-tab-wrap label span {
+    transition: all 100ms ease-in;
+}
+
+.uni-tab-wrap label span:first-child {
+    float: left;
+}
+
+.uni-tab-wrap label span:nth-child(2) {
+    width: 11px;
+    height: 3px;
+    background: $background;
+    right: 2px;
+    top: 22px;
+    @include transform (rotate(0deg));
+}
+
+.uni-tab-wrap label span:last-child {
+    width: 3px;
+    height: 11px;
+    background: $background;
+    right: 6px;
+    top: 18px;
+    @include transform (rotate(0deg));
+}
+
+.uni-tab-wrap label span:not(:first-child) {
+    position: absolute;
+}
+
+.uni-tabs {
+    max-height: 0;
+    overflow: hidden;
+    @include transition (all 600ms ease-in);
+    text-align: center;
+    width: 100%;
+}
+
+.uni-tabs img {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.uni-tabs p {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    font-size: 16px;
+}
+
+input[type=radio]:checked ~ .uni-tabs {
+    max-height: 700px;
+}
+
+input[type=radio]:checked ~ .label {
+    border-top: none;
+}
+
+input[type=radio]:checked ~ label span {
+    color: #00315B;
+}
+
+input[type=radio]:checked ~ label span:last-child {
+    @include transform (rotate(90deg));
+    height: 0;
+}
+
+input[type=radio]:checked ~ label span:nth-child(2) {
+    @include transform (rotate(360deg));
+    height: 0;
+}
+
+
+/*---------------------------------
+        TAB OVERRIDES
+----------------------------------*/
+
+.tab-content:last-child {
+    margin-bottom: 75px;
+}
+
+.tab-body h2 img {
+    width: 100%;
+    max-width: 1140px;
+}
+
+.tab-content p {
+    max-width: 100%;
+    max-width: 1140px;
+    margin: 50px auto 30px;
+}
+
+.hallmark-desktop .tab-container ul {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .uni-row .uni-blist {
+        &:first-child {
+            margin-left: 15px;
+        }
+        &:last-child {
+            margin-right: 15px;
+        }
+    }
+}
+
+
+/*@media screen and (min-width: 700px) {
+    .uni-tab-wrap label {
+        text-align: center;
+        width: 250px;
+    }
+    .uni-tabs {
+        position: absolute;
+        left: 50%;
+        max-width: 1080px;
+        margin-top: 70px;
+        @include transition (all 0ms ease-in);
+        @include transform (translateX(-50%));
+        p {
+            max-width: 1140px;
+            text-align: left;
+        }
+    }
+    input[type=radio]:checked ~ .uni-tabs {
+        max-height: 1200px;
+    }
+    .uni-tabs .uw-tab-info {
+        bottom: 30px;
+        left: 0;
+        right: 0;
+        z-index: 12;
+        padding: 25px 15px 15px 15px;
+        color: #5a5a5a;
+    }
+    .uni-tabs .uw-tab-info p {
+        font-size: 1.5em;
+    }
+    input[type=radio]:checked ~ label span:last-child {
+        @include transform (rotate(0deg));
+        right: 5%;
+        top: 50px;
+        height: 3px;
+        width: 90%;
+    }
+    .uni-tab-wrap label span:last-child {
+        @include transform (rotate(0deg)translateX(50%));
+        right: 50%;
+        top: 50px;
+        width: 0%;
+        height: 3px;
+    }
+    .uni-tab-wrap label span:first-child {
+        float: none;
+        position: absolute;
+        right: 50%;
+        width: 100%;
+        @include transform (translateX(50%));
+        font-size: 22px;
+        font-weight: 100;
+    }
+    .uni-tab-wrap label span:nth-child(2) {
+        display: none;
+    }
+    .uni-tab-list li:last-child {
+        border-bottom: solid 1px rgba(0, 0, 0, 0.0);
+    }
+    .uni-tab-wrap label {
+        border-top: solid 1px rgba(0, 0, 0, 0.0);
+    }
+}
+*/
