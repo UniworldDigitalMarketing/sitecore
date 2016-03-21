@@ -1,0 +1,107 @@
+<style type="text/css">
+/*2017 pricing offer change*/
+
+
+
+/*fix for  parent container*/
+
+.col-lg-8.col-xs-12.text-left {
+	height: auto;
+	padding-left: 0 !important;
+}
+
+.col-lg-8.col-xs-12.text-left .text-left {
+	width: 100%;
+}
+
+.row.offerRow .col-sm-12.col-md-3 {
+	font-weight: normal;
+}
+
+
+/*end fix*/
+
+.offerAmount,
+.offerCatNames {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.offerAmount {
+	font-weight: bold;
+	/*color: green;*/
+}
+
+.offerCatNames {
+	/*color: red;*/
+}
+
+.offer-table {
+	/*outline: 1px solid red;*/
+	width: 100%;
+	line-height: 1;
+}
+
+.offer-headline {
+	background-color: rgb(0, 55, 103);
+	color: #FFF;
+	text-align: center;
+	/*margin-bottom: 10px;*/
+	padding: 10px 0;
+}
+
+.offerRow {
+	padding-bottom: 10px;
+}
+
+.offerCatRow {
+	background-color: rgb(237, 241, 244);
+	padding-top: 8px;
+	padding-bottom: 7px;
+}
+
+.offerCatRow .col-xs-6.col-sm-12.col-md-9.visible-md-block.visible-lg-block {
+	padding: 0;
+}
+
+.offerCatNoPad {
+	padding-left: 5px !important;
+	padding-right: 0 !important;
+}
+
+
+/*flex layout exparament*/
+
+.offerFlexRow {
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-content: space-around;
+	align-items: flex-start;
+	width: 100%;
+	/*outline: 1px solid orange;*/
+}
+
+.offerFlexContainer {
+	order: 0;
+	flex: 1 1 65px;
+	align-self: auto;
+	/*outline: 1px solid purple;*/
+}
+
+
+/*media query at 991px*/
+
+@media only screen and (max-width: 991px) {
+	.offerDescription {
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 770px) {
+	.offerFlexRow {
+		display: block;
+	}
+}
+</style>
