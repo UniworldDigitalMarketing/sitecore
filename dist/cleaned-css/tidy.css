@@ -6,227 +6,154 @@
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ================================================================================================================================================*/
 
-/*========================================================================
-!!!!!!!!!!!!!!!!!!!!!!!!!GENERAL-GENERAL-GENERAL!!!!!!!!!!!!!!!!!!!!!!!!!
-========================================================================*/
-
-/*
-centered columns styles
-========================================================================*/
-
-/*
-lists
-========================================================================*/
-
-/*
-subheads
-========================================================================*/
-
-/*use to seperate the intro content from itins*/
-
-/*for landing pages to seperate sections of content*/
-
-/*for center aligned subheads w/o rules*/
-
-/*
-tables
-========================================================================*/
-
-/*
-Psudotabs
-=========================================================================*/
-
-/*
-disclaimers
-========================================================================*/
 
 /*
 new video row format
 ========================================================================*/
 
+.uniVideoHero {
+  position: relative;
+}
+
+.uniVideoTitle h2 {
+  text-align: center;
+  font-family: civita-lightregular;
+  font-size: 2.65em;
+}
+
+.uniVideoTitle h2 {
+  font-size: 2.25em;
+  text-align: center;
+  font-family: civita-lightregular, serif;
+}
+
 /*
 video play button
 ========================================================================*/
 
-/*
-low visibility cta for itin rows
-========================================================================*/
-
-/*
-passenger quote style
-=======================================================================*/
-
-/*========================================================================
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!PAGE SPECIFIC!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-========================================================================*/
-
-/*========================================================================
-Landing Pages
-========================================================================*/
-
-/*
-landing page general styles
-=======================================================================*/
-
-/*
-two column content
-======================================================================*/
-
-/*shared itin styles*/
-
-/*
-landing page alternating itin row general styles
-======================================================================*/
-
-/*
-landing page half itin row general styles
-======================================================================*/
-
-/*
-tier 3 landing page content
-======================================================================*/
-
-/*uniTall general*/
-
-/*
-tab adjustments
-=========================================================================*/
-
-/*
-itin rows in tabs
-=========================================================================*/
-
-.tab-content li::after {
-  display: none;
+.VideoImage {
+  position: relative;
 }
 
-/*========================================================================
-Offer Tiles
-========================================================================*/
-
-/*
-content blocks
-======================================================================*/
-
-/*
-offer type styles
-============================================================================*/
-
-/*========================================================================
-Why Uniworld
-========================================================================*/
-
-/*
-About the Rivers
-========================================================================*/
-
-/*
-Hallmarks of Distinction tabs
-=========================================================================*/
-
-.uniHallmarkTab p {
-  text-align: left;
+.VideoImage .VideoPlay,
+.uniVideoHero .VideoPlay {
+  border: 3px solid #fff;
+  border-radius: 30px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
+  height: 50px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  z-index: 5;
+  pointer-events: none;
 }
 
-.uniHallmarkTab img {
-  margin: 20px 30px;
+.VideoImage .VideoPlay span,
+.uniVideoHero .VideoPlay span {
+  border-bottom: 12px solid transparent;
+  border-left: 20px solid #fff;
+  border-top: 12px solid transparent;
+  height: 0;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-38%, -50%);
+  width: 0;
+  pointer-events: none;
 }
 
-/*
-Family Friendly
-=========================================================================*/
 
-/*========================================================================
-    Stackla Social Wedget
-========================================================================*/
 
-/*common uniStacklabutton aspects*/
-
-/*uniStacklaFilter uniStacklabuttons type v1*/
-
-/*inactive state*/
-
-/*active state*/
-
-/*========================================================================
-    Travelzoo
- ========================================================================*/
-
-/*Travezoo form*/
-
-/*========================================================================
-    Career Section
- ========================================================================*/
-
-/*
- Apply Now block for subpages
- ========================================================================*/
-
-/*========================================================================
- Not Sure About - look at depricating
-========================================================================*/
-
-/*
-PROTYPE: first implimentation of flex for LP intro/offer
-========================================================================*/
-
-/*
-    jump button row
-    ========================================================================*/
-
-/*
-    button alignment
-    ========================================================================*/
-
-/*
-video row embed - depricated using new style
-========================================================================*/
-
-/*========================================================================
-!!!!!!!!!!!!!!!!!!!!!!!!!DESKTOP-DESKTOP-DESKTOP!!!!!!!!!!!!!!!!!!!!!!!!!
-========================================================================*/
-
-@media (min-width: 1200px) {
-  /*
-        2015 Landing Pages Itinerary Rows
-        =======================================================================*/
-
-  /*
-        2016 Itinerary Row images
-        ========================================================================*/
-
-  /*
-        landing page half itin row general styles
-        ======================================================================*/
-}
 
 /*========================================================================
 !!!!!!!!!!!!!!!!!!!!!RESPONSIVE-RESPONSIVE-RESPONSIVE!!!!!!!!!!!!!!!!!!!!!
 ========================================================================*/
 
+@media screen and (max-width: 1199px) {
+  .uniVideoTitle {
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .6) 81%, rgba(0, 0, 0, .6) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(81%, rgba(0, 0, 0, .6)), color-stop(100%, rgba(0, 0, 0, .6)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .6) 81%, rgba(0, 0, 0, .6) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .6) 81%, rgba(0, 0, 0, .6) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .6) 81%, rgba(0, 0, 0, .6) 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .6) 81%, rgba(0, 0, 0, .6) 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#99000000', GradientType=0);
+    /* IE6-9 */
+    padding: 0 3% 2% 3%;
+    text-shadow: 2px 2px 4px #000;
+    text-shadow: 2px 2px 4px #000;
+  }
+}
+
 @media (min-width: 1101px) {
   /*
         landing page half itin row general styles
         ======================================================================*/
+
+  .uniVideoTitle {
+    font-size: 12px;
+    text-shadow: 2px 2px 4px #000;
+  }
 }
 
 @media (max-width: 767px) {
   /*
         landing page half itin row general styles
         ======================================================================*/
+
+  .uniVideoTitle {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 641px) {
+  .uniVideoTitle {
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .6) 81%, rgba(0, 0, 0, .6) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(81%, rgba(0, 0, 0, .6)), color-stop(100%, rgba(0, 0, 0, .6)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .6) 81%, rgba(0, 0, 0, .6) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .6) 81%, rgba(0, 0, 0, .6) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .6) 81%, rgba(0, 0, 0, .6) 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .6) 81%, rgba(0, 0, 0, .6) 100%);
+    /* W3C */
+    bottom: 0;
+    color: #fff;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#99000000', GradientType=0);
+    /* IE6-9 */
+    left: 0;
+    padding: 0 3% 2% 3%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000;
+    text-shadow: 2px 2px 4px #000;
+  }
 }
 
 @media (max-width: 640px) {
   /*
         offer styles
         ==========================================================================*/
+
+  .uniVideoTitle {
+    font-size: 10px;
+    padding: 0 0 1.5% 0;
+  }
 }
 
-@media (max-width: 400px) {
-  /*
-        tier 3 landing page content
-        ======================================================================*/
-}
+
 
 /*================================================================================================================================================
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -236,8 +163,26 @@ video row embed - depricated using new style
 
 /*** uncss> filename: dev/css/page-specific.css ***/
 
-@media (max-width: 990px) {
-  .col-md-6 {
-    padding-bottom: 10px;
-  }
+.copyWrap.row {
+  margin-top: 25px;
+}
+
+.buttonRow {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.copyWrap p {
+  font-size: 16.50px;
+  line-height: 1.7;
+}
+
+.copyWrap.row .col-md-4 {
+  padding: 60px 0;
+}
+
+.uniVideoTitle h2 {
+  font-size: 3.25em;
+  text-align: center;
+  font-family: civita-lightregular, serif;
 }
