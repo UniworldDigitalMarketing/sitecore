@@ -1,0 +1,176 @@
+/*INTRO SECTION*/
+.uni-land-wrap {
+  margin-bottom: 50px; }
+
+.uni-shade-image {
+  position: relative;
+  margin-top: 5px; }
+  .uni-shade-image .uni-shade-image-image {
+    border: solid 6px #EEE; }
+  .uni-shade-image .img-shadow {
+    position: absolute;
+    -webkit-box-shadow: 4px 4px 6px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 4px 4px 6px 1px rgba(0, 0, 0, 0.3);
+    width: 50%;
+    height: 5px;
+    margin-right: 50px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    z-index: -1;
+    bottom: 7px; }
+  .uni-shade-image .img-shadow-left {
+    -moz-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    left: 15px; }
+  .uni-shade-image .img-shadow-right {
+    -moz-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+    right: -30px; }
+
+.intro {
+  font-size: inherit; }
+
+.uniIntroContainer {
+  font-size: 18px;
+  line-height: 2em; }
+  .uniIntroContainer p {
+    padding-left: 15px; }
+  .uniIntroContainer p .drop-cap {
+    float: left;
+    color: #144b7f;
+    font-size: 75px;
+    line-height: 47px;
+    padding-top: 17px;
+    padding-right: 4px;
+    padding-left: 0px;
+    font-family: civita-lightregular; }
+
+/*Offer SECTION*/
+.uni-offer-special-wrap {
+  border: 8px solid #EFEFEF;
+  outline: 2px solid #D4D4D4;
+  padding: 25px 0px 35px;
+  font-size: 16px;
+  text-align: center; }
+  .uni-offer-special-wrap .date {
+    font-size: 1.35em;
+    color: #5A8CB9;
+    font-weight: 600; }
+  .uni-offer-special-wrap .liner {
+    background: #dadbdd;
+    height: 2px; }
+  .uni-offer-special-wrap .vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none; }
+  .uni-offer-special-wrap h2 {
+    margin: 0 0 25px 0px;
+    font-size: 2em;
+    font-family: civita-lightregular;
+    color: #144b7f; }
+  .uni-offer-special-wrap .saver {
+    text-transform: uppercase;
+    font-size: 1.7em;
+    color: #144b7f;
+    line-height: 1em; }
+  .uni-offer-special-wrap .per {
+    text-transform: uppercase;
+    font-size: 1em;
+    line-height: 1em;
+    display: block;
+    color: #5A8CB9;
+    letter-spacing: .2em; }
+  .uni-offer-special-wrap .ors {
+    font-family: civita-lightregular;
+    font-size: 1.5em;
+    color: #5A8CB9;
+    padding: 0; }
+  .uni-offer-special-wrap .deets {
+    font-size: .6em;
+    line-height: 1.2em;
+    color: #777; }
+    .uni-offer-special-wrap .deets p {
+      margin: 0; }
+  .uni-offer-special-wrap .price-wrap {
+    position: relative;
+    font-size: 1.4em;
+    display: inline-block;
+    line-height: 1em; }
+    .uni-offer-special-wrap .price-wrap .from-to {
+      font-size: .5em;
+      color: #5A8CB9; }
+    .uni-offer-special-wrap .price-wrap .currency-amount {
+      color: #144b7f;
+      font-weight: 600; }
+      .uni-offer-special-wrap .price-wrap .currency-amount .currency {
+        position: relative;
+        text-transform: uppercase;
+        -moz-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        font-size: .5em;
+        font-weight: 400;
+        padding-right: 2px;
+        top: -.55em; }
+
+.flexer {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 450px;
+  margin: 0 auto; }
+  .flexer .div {
+    padding-left: 0;
+    padding-right: 0; }
+  .flexer .spreader {
+    padding: 0; }
+
+@media only screen and (max-width: 1200px) {
+  .uni-offer-special .uni-offer-special-wrap h2 {
+    font-size: 1.8em; } }
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+  .flexer .spreader {
+    width: 100%; }
+
+  .uni-offer-special-wrap .ors {
+    font-size: 1.5em;
+    margin: 15px 0 10px 0; } }
+@media only screen and (max-width: 992px) {
+  .uni-offer-special-wrap {
+    max-width: 500px;
+    margin: 0 auto;
+    float: none; }
+
+  .uniIntroContainer {
+    margin-bottom: 35px; } }
+@media only screen and (max-width: 460px) {
+  .flexer .spreader {
+    width: 100%; }
+
+  .uni-offer-special-wrap .ors {
+    font-size: 1.5em;
+    margin: 15px 0 10px 0; } }
+
+/*# sourceMappingURL=HolidayEBS.css.map */
