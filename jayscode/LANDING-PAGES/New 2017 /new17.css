@@ -1,0 +1,104 @@
+/*-------------------------------------
+  JASON"S CUSTOM STYLES
+------------------------------------*/
+
+.uni-whats-new {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-size: 16px;
+}
+
+.uni-whats-new h3 {
+  color: #4C698C;
+}
+
+.uni-whats-new .uni-whats-new-intro-a {
+  margin-bottom: 50px;
+}
+
+.uni-whats-new p {
+  font-size: 1.35em;
+}
+
+.uni-whats-new .perk-content-on.perk-content {
+  background: #B2BECD;
+  margin: 25px 0;
+}
+
+.uni-whats-new .perk-content-on.perk-content:hover {
+  background: #B2BECD;
+}
+
+.uni-whats-new .perk-content-on.perk-content h3 {
+  color: #FFF;
+  font-weight: 600;
+}
+
+.uni-whats-new .perk-content {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.uni-whats-new .perk-content small {
+  display: block;
+  text-align: right;
+  margin-top: 15px;
+}
+
+.uni-whats-new .perk-content p {
+  font-size: 1em;
+}
+
+.uni-whats-new .perk-content h3 {
+  margin: 25px 0;
+}
+
+.uni-whats-new .perk-content h4 {
+  color: #4C698C;
+  font-weight: 600;
+  font-family: civita-lightregular;
+  max-width: 300px;
+  margin: .5em auto;
+  line-height: 1.33;
+}
+
+.uni-whats-new .perk-content-hov:hover {
+  background: #f0f2f5;
+}
+
+figcaption {
+  font-size: .8em;
+  text-align: right;
+}
+
+.uni-whats-new h3 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+@media (min-width: 1200px) {
+  #uniRhine-Main-Discovery-Munich-2017-R {
+    background-image: url(~/media/0b995ca37c714087bd728d560de9b621.ashx);
+    background-repeat: no-repeat;
+  }
+  #uniParis_Impressions_of_the_Seine-L {
+    background-image: url(~/media/4ad6bb58636b4dd683664e8460d1db22.ashx);
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .uni-whats-new {
+    text-align: center;
+  }
+  .uni-whats-new h3 {
+    margin-top: 1em;
+  }
+}
+
+
+/*# sourceMappingURL=new17.css.map */
