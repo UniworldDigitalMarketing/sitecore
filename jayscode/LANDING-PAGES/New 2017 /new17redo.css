@@ -1,6 +1,12 @@
 /*------------------------------------------------
       Jason's Custom Styles
 ------------------------------------------------*/
+/*CSS RESET*/
+a {
+  outline: 0; }
+  a:hover, a:active, a:focus {
+    text-decoration: none; }
+
 .btn {
   border-radius: 0;
   font-weight: 600;
