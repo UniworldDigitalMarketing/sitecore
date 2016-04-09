@@ -11,11 +11,6 @@
 
 
 
-#uniCTADetails
-
-#uniCTALearn
-
-
 /*
 cruise and air
 ========================================================================*/
@@ -41,7 +36,8 @@ cruise and air
 .uniItinSoloTravelerOffer,
 .uniItinExcursions,
 #uniCTADetails,
-.uniPifExtend
+.uniPifExtend,
+#uniCampRAQ
 {
     display: none;
 }
@@ -71,7 +67,8 @@ special savings and EBS
 .uniItinSoloTravelerOffer,
 .uniItinYear,
 .uniItinSoloTravelerOffer,
-#uniCTADetails
+#uniCTADetails,
+#uniCampRAQ
 {
     display: none;
 }
@@ -100,7 +97,8 @@ solo travelers
 .uniItinBeauty,
 .uniItinYear,
 #uniCTADetails,
-.uniPifExtend
+.uniPifExtend,
+#uniCampRAQ
 {
     display: none;
 }
@@ -129,7 +127,8 @@ Travelzoo
 .uniItinBeauty,
 .uniItinYear,
 .uniItinSoloTravelerOffer,
-#uniCTADetails
+#uniCTADetails,
+#uniCampRAQ
 {
     display: none;
 }
