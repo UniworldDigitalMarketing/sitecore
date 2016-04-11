@@ -221,8 +221,7 @@ figcaption {
     letter-spacing: .01em; }
   .jj-call-out ul {
     list-style: disc;
-    font-size: 1em;
-    list-style-position: inside; }
+    font-size: 1em; }
     .jj-call-out ul li:first-child {
       list-style: none;
       font-weight: 600; }
@@ -290,10 +289,6 @@ figcaption {
 
   .jj-call-out ul {
     font-size: 1.2em; } }
-#uniDisclaimer {
-  font-size: 11px;
-  padding: 15px 0 100px 0; }
-
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
 /*--------END TABS--------------*/
