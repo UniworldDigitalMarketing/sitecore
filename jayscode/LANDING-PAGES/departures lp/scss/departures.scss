@@ -312,6 +312,7 @@ figcaption {
     ul {
         list-style: disc;
         font-size: 1em;
+        list-style-position: inside;
         li {
             &:first-child {
                 list-style: none;
@@ -393,6 +394,10 @@ figcaption {
     }
 }
 
+#uniDisclaimer {
+    font-size: 11px;
+    padding: 15px 0 100px 0;
+}
 
 /* Medium devices (desktops, 992px and up) */
 
