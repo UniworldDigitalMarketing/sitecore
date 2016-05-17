@@ -1,0 +1,435 @@
+$screen-lg-min: 1200px;
+$screen-md-min: 992px;
+$screen-sm-min: 768px;
+$tabBG: #c7d1d9;
+$activeTabBG: #89a5be;
+$tabLinkColor: #7b97b1;
+$activeTabLinkColor: #00315a;
+$headColor: #356b99;
+@mixin transform($transforms) {
+    -moz-transform: $transforms;
+    -o-transform: $transforms;
+    -ms-transform: $transforms;
+    -webkit-transform: $transforms;
+    transform: $transforms;
+}
+
+@mixin transition($transitions) {
+    -webkit-transition: $transitions;
+    -moz-transition: $transitions;
+    -ms-transition: $transitions;
+    -o-transition: $transitions;
+    transition: $transitions;
+}
+
+
+/*----------------------------
+    Jason's Custom Styles
+------------------------------*/
+
+a {
+    outline: 0;
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+section {
+    font-size: 14px;
+}
+
+
+/*--------TABS--------------*/
+
+.tab-content {
+    margin: inherit;
+    li {
+        font-size: .9em;
+        text-align: inherit;
+        padding: inherit;
+    }
+}
+
+
+/*TAB NAV*/
+
+.nav-tabs {
+    border: none;
+    text-align: center;
+    font-size: 0;
+    margin-top: 30px;
+    li {
+        float: none;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0;
+        padding: 5px;
+        margin: 1%;
+        width: 46%;
+        font-size: 12px;
+        border-radius: 3px;
+        &.active {
+            background: $tabBG;
+            a {
+                color: $activeTabLinkColor;
+            }
+        }
+        a {
+            color: $tabLinkColor;
+        }
+        &:hover {
+            background: lighten($tabBG, 15%);
+        }
+    }
+    li,
+    li.active,
+    li {
+        a,
+        a:focus {
+            border: none;
+            outline: 0;
+        }
+    }
+    a span {
+        display: block;
+        font-size: 1em;
+        font-weight: 600;
+    }
+    .svg-wrap {
+        display: none;
+    }
+    li.active .svg-wrap {
+        background: $activeTabBG;
+    }
+    svg {
+        width: 65px;
+        height: 65px;
+    }
+}
+
+.uni-tab-line-divider {
+    background: #c7d1d9;
+    height: 1px;
+    max-width: 420px;
+    margin: 30px auto 20px auto;
+}
+
+
+/*TAB PANELS*/
+
+figcaption {
+    margin: 15px 0;
+    small {
+        font-size: 100%;
+    }
+}
+
+.uni-tabs h2 {
+    color: #144b7f;
+    font-size: 1.3em;
+}
+
+.itin-head h2 {
+    text-align: center;
+    font-family: civita-lightregular;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 1.77em;
+    color: #144b7f;
+}
+
+.intro {
+    h3 {
+        font-size: 1.2em;
+        font-family: civita-lightregular;
+        color: #144b7f;
+    }
+}
+
+.uni-tabs h4 {
+    font-size: 1em;
+    margin: 15px 0;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.uni-tabs .uni-tab-headings {
+    margin-bottom: 50px;
+}
+
+.uni-tabs ul li {
+    margin: 15px 0;
+    font-size: 1em;
+}
+
+.tab-pane {
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 50px;
+    h2 {
+        color: $headColor;
+        font-size: 1.4em;
+    }
+    h4 {
+        font-weight: 100;
+    }
+    ul {
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        li {
+            margin: 15px 0;
+        }
+    }
+}
+
+.uni-tabs-videos figure .uw-vid-wrap {
+    position: relative;
+    .img {
+        position: relative;
+    }
+    .uw-play {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%)translateY(-50%)scale(0.26);
+        transition: all 200ms linear;
+    }
+    &:hover {
+        .uw-play {
+            transform: translateX(-50%)translateY(-50%)scale(0.28);
+        }
+    }
+}
+
+
+/*!
+// CSS only Responsive Tables
+// http://dbushell.com/2016/03/04/css-only-responsive-tables/
+// by David Bushell
+*/
+
+.rtable {
+    /*!
+  // IE needs inline-block to position scrolling shadows otherwise use:
+  // display: block;
+  // max-width: min-content;
+  */
+    display: inline-block;
+    vertical-align: top;
+    max-width: 100%;
+    overflow-x: auto;
+    // optional - looks better for small cell values
+    white-space: nowrap;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #5b5b5b;
+}
+
+.rtable,
+.rtable--flip tbody {
+    // optional - enable iOS momentum scrolling
+    -webkit-overflow-scrolling: touch;
+    // scrolling shadows
+    background: -webkit-radial-gradient(left ellipse, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 75%) 0 center, -webkit-radial-gradient(right ellipse, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 75%) 100% center;
+    background: radial-gradient(ellipse at left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 75%) 0 center, radial-gradient(ellipse at right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 75%) 100% center;
+    background-size: 10px 100%, 10px 100%;
+    background-attachment: scroll, scroll;
+    background-repeat: no-repeat;
+}
+
+// change these gradients from white to your background colour if it differs
+// gradient on the first cells to hide the left shadow
+.rtable th:first-child,
+.rtable td:first-child {
+    background-image: -webkit-linear-gradient(left, white 50%, rgba(255, 255, 255, 0) 100%);
+    background-image: linear-gradient(to right, white 50%, rgba(255, 255, 255, 0) 100%);
+    background-repeat: no-repeat;
+    background-size: 20px 100%;
+}
+
+// gradient on the last cells to hide the right shadow
+.rtable th:last-child,
+.rtable td:last-child {
+    background-image: -webkit-linear-gradient(right, white 50%, rgba(255, 255, 255, 0) 100%);
+    background-image: linear-gradient(to left, white 50%, rgba(255, 255, 255, 0) 100%);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: 20px 100%;
+}
+
+
+/*.rtable tr:nth-child(even){
+    background: lighten($tabBG, 15%);
+}
+*/
+
+.rtable tr td:nth-child(4) {
+    font-style: italic;
+}
+
+.rtable th {
+    font-size: .75em;
+    text-align: center;
+    padding: 6px 12px;
+    text-transform: uppercase;
+    vertical-align: bottom;
+    //background: #f2f0e6;
+    div {
+        width: 40px;
+        height: 1px;
+        background: rgba(50, 50, 50, 0.5);
+        margin: 5px auto 10px;
+    }
+}
+
+.rtable td {
+    font-size: .75em;
+    padding: 6px 12px;
+}
+
+.rtable th,
+.rtable td {
+    border: none;
+}
+
+
+/*-------CALL OUT----------*/
+
+.jj-call-out {
+    outline: solid 8px #ededed;
+    border: solid 1px darken(#ededed, 15%);
+    padding: 10px 20px 20px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    h2 {
+        color: $activeTabLinkColor;
+        font-size: 2em;
+        letter-spacing: .01em;
+    }
+    ul {
+        list-style: disc;
+        font-size: 1em;
+        list-style-position: inside;
+        li {
+            &:first-child {
+                list-style: none;
+                font-weight: 600;
+            }
+            &:last-child {
+                list-style: none;
+                font-style: italic;
+            }
+        }
+    }
+}
+
+
+/* Small devices (tablets, 768px and up) */
+
+@media (min-width: $screen-sm-min) {
+    .itin-head h2 {
+        font-size: 2.5em;
+    }
+    .nav-tabs {
+        margin-top: 0px;
+        .svg-wrap {
+            margin: 15px auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+            position: relative;
+            z-index: 6;
+            background: $tabBG;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            transition: background 250ms linear;
+            .tab-outline {
+                position: absolute;
+                width: 80px;
+                height: 80px;
+                transform: translate(-50%, -50%);
+                transition: all 250ms ease;
+                left: 50%;
+                top: 50%;
+                border: solid 4px $tabBG;
+                border-radius: 50%;
+                z-index: 12;
+            }
+        }
+        li {
+            display: inline-block;
+            width: 140px;
+            &.active {
+                background: none;
+                .tab-outline {
+                    width: 96px;
+                    height: 96px;
+                }
+            }
+            &:hover {
+                background: none;
+                .svg-wrap {
+                    background: $activeTabBG
+                }
+            }
+        }
+        a span {
+            font-size: 1.3em;
+        }
+    }
+    .jj-call-out {
+        h2 {}
+        ul {
+            font-size: 1.2em;
+            li {
+                &:first-child {}
+                &:last-child {}
+            }
+        }
+    }
+}
+
+#uniDisclaimer {
+    font-size: 11px;
+    padding: 15px 0 100px 0;
+}
+
+/* Medium devices (desktops, 992px and up) */
+
+@media (min-width: $screen-md-min) {}
+
+
+/* Large devices (large desktops, 1200px and up) */
+
+@media (min-width: $screen-lg-min) {}
+
+
+/*--------END TABS--------------*/
+
+.intro-section {
+    font-size: 14px;
+    font-family: proxima-nova;
+    .btn {
+        margin-top: 50px;
+    }
+    .booker {
+        color: #c7d1d9;
+        font-weight: 600;
+    }
+    .sailer {
+        font-style: italic;
+        color: #144b7f;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .intro-section {
+        font-size: 18px;
+    }
+}

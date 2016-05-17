@@ -2,102 +2,315 @@
   JASON"S CUSTOM STYLES
 ------------------------------------*/
 
+section.uni-whats-new {
+    font-family: proxima-nova;
+    padding: 20px;
+}
+
 .uni-whats-new {
-  margin-bottom: 50px;
-  margin-top: 50px;
-  font-size: 16px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    font-size: 16px;
+    text-align: center;
 }
 
-.uni-whats-new h3 {
-  color: #4C698C;
+.subhead {
+    color: #4C698C;
+    text-align: center;
 }
 
-.uni-whats-new .uni-whats-new-intro-a {
-  margin-bottom: 50px;
+.subhead.serif {
+    text-align: left;
+    font-family: civita-lightregular;
 }
+
+.new-ship {
+    background: #f0f2f5;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.uni-whats-new .uni-whats-new-intro-a {}
 
 .uni-whats-new p {
-  font-size: 1.35em;
+    font-size: 1em;
+    line-height: 1.8em;
+}
+
+.row-flex, .row-flex .perk-content {  
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex:1 1 auto;
+}
+
+.perk-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .uni-whats-new .perk-content-on.perk-content {
-  background: #B2BECD;
-  margin: 25px 0;
+    background: #B2BECD;
+    margin: 25px 0;
 }
 
 .uni-whats-new .perk-content-on.perk-content:hover {
-  background: #B2BECD;
+    background: #B2BECD;
 }
 
 .uni-whats-new .perk-content-on.perk-content h3 {
-  color: #FFF;
-  font-weight: 600;
+    color: #FFF;
+    font-weight: 600;
 }
 
 .uni-whats-new .perk-content {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
 }
 
 .uni-whats-new .perk-content small {
-  display: block;
-  text-align: right;
-  margin-top: 15px;
+    display: block;
+    text-align: right;
+    margin-top: 15px;
 }
 
 .uni-whats-new .perk-content p {
-  font-size: 1em;
+    font-size: 1em;
 }
 
 .uni-whats-new .perk-content h3 {
-  margin: 25px 0;
+    margin: 25px 0;
 }
 
 .uni-whats-new .perk-content h4 {
-  color: #4C698C;
-  font-weight: 600;
-  font-family: civita-lightregular;
-  max-width: 300px;
-  margin: .5em auto;
-  line-height: 1.33;
+    color: #4C698C;
+    font-weight: 600;
+    font-family: civita-lightregular;
+    margin: .5em auto;
+    line-height: 1.33;
 }
 
 .uni-whats-new .perk-content-hov:hover {
-  background: #f0f2f5;
+    background: #f0f2f5;
 }
 
-figcaption {
-  font-size: .8em;
-  text-align: right;
+.uni-whats-new figure img {
+    display: inline;
 }
 
 .uni-whats-new h3 {
-  margin-top: 0;
-  font-size: 1.5em;
+    margin-top: 0;
+    font-size: 1.5em;
 }
 
-@media (min-width: 1200px) {
-  #uniRhine-Main-Discovery-Munich-2017-R {
-    background-image: url(~/media/0b995ca37c714087bd728d560de9b621.ashx);
-    background-repeat: no-repeat;
-  }
-  #uniParis_Impressions_of_the_Seine-L {
-    background-image: url(~/media/4ad6bb58636b4dd683664e8460d1db22.ashx);
-    background-repeat: no-repeat;
-  }
+.rule {
+    display: block;
+    height: 1px;
+    background: #d8d8d8;
+    margin-bottom: 37px;
+}
+
+figure {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.figure-caption {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    color: #FFF;
+    font-size: .8em;
+}
+
+
+/*-------------OFFER------------------*/
+
+.offer-section {
+    margin-bottom: 70px;
+}
+
+.uniofferwrap {
+    text-align: center;
+    border: solid 2px #d6dadd;
+    outline: solid 2px #d6dadd;
+    outline-offset: 6px;
+    padding: 10px 0 15px 0;
+    font-size: 14px;
+    color: #567caa;
+    max-width: 700px;
+    margin: 0 auto;
+    float: none;
+}
+
+.uniofferwrap .offer-left {
+    margin-right: 1px;
+}
+
+.uniofferwrap .offer-right {
+    margin-left: 1px;
+}
+
+.uniofferwrap .date {
+    position: relative;
+    width: 40%;
+    margin: 10px 0;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: #dee5ee;
+    left: 50%;
+    top: 50%;
+    height: 1px;
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+.uniofferwrap .date div {
+    background: #FFF;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    padding: 0 15px;
+    z-index: 1;
+}
+
+.uniofferwrap h3 {
+    margin: 5px 0 15px 0;
+    color: #244c7e;
+    text-transform: uppercase;
+    font-size: 2.2em;
+    font-weight: 600;
+}
+
+.uniofferwrap .offersaver {
+    font-size: 2em;
+    color: #244c7e;
+    font-weight: 600;
+}
+
+.uniofferwrap .offersaver small {
+    color: #567caa;
+    font-weight: 100;
+}
+
+.uniofferwrap .ammount {
+    font-size: 2.4em;
+    font-weight: 600;
+}
+
+.uniofferwrap .ammount small {
+    font-size: .5em;
+}
+
+.uniofferwrap .ammount .currency {
+    font-size: .5em;
+    margin-right: 2px;
+    position: relative;
+    top: -.5em;
+}
+
+.uniofferwrapinner {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    padding: 5px 0;
+}
+
+.uniofferwrapinner .uniofferrow {
+    display: block;
+}
+
+.uniofferwrapinner .uniofferor {
+    width: 2px;
+    left: 1px;
+    position: relative;
+    background: #dadada;
+}
+
+.uniofferwrapinner .uniofferor .or-bridge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2.2em;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: civita-lightregular;
+    background: #FFF;
+    font-weight: 600;
+    color: #567caa;
+    padding: 3px;
 }
 
 @media only screen and (max-width: 768px) {
-  .uni-whats-new {
-    text-align: center;
-  }
-  .uni-whats-new h3 {
-    margin-top: 1em;
-  }
+    small {
+        display: block;
+    }
+    .uniofferwrap {
+        font-size: 13px;
+    }
+}
+
+
+/*-----------END OFFER------------*/
+
+@media (min-width: 1200px) {
+    #uniRhine-Main-Discovery-Munich-2017-R {
+        background-image: url(~/media/0b995ca37c714087bd728d560de9b621.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniParis_Impressions_of_the_Seine-L {
+        background-image: url(~/media/4ad6bb58636b4dd683664e8460d1db22.ashx);
+        background-repeat: no-repeat;
+    }
+    .uni-whats-new p {
+        font-size: 1.35em;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .uni-whats-new figure img {
+        display: inline;
+    }
+    .uni-whats-new figcaption {
+        font-size: .8em;
+        text-align: right;
+    }
+    .uni-whats-new {
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .uni-whats-new h3 {
+        margin-top: 1em;
+    }
 }
 
 

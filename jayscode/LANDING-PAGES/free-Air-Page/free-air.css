@@ -1,0 +1,195 @@
+/*-------UTILITY---------*/
+.spacer {
+  display: block;
+  height: 50px; }
+
+.img-responsive.flex-fixer {
+  width: 100%; }
+
+/*-------FLEX---------*/
+.row-flex,
+.row-flex .perk-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto; }
+  @media only screen and (max-width: 991px) {
+    .row-flex,
+    .row-flex .perk-content {
+      display: block; } }
+
+.perk-content {
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  text-align: center; }
+
+.offer-section {
+  margin-bottom: 70px; }
+
+.uniofferwrap {
+  text-align: center;
+  border: solid 2px #d6dadd;
+  outline: solid 2px #d6dadd;
+  outline-offset: -8px;
+  padding: 22px 0 18px 0;
+  font-size: 14px;
+  color: #567caa;
+  max-width: 700px;
+  margin: 0 auto; }
+  .uniofferwrap .learner {
+    font-size: .95em; }
+
+.uniofferwrap .offer-left {
+  margin-right: 1px;
+  max-width: 50%; }
+
+.uniofferwrap .offer-right {
+  margin-left: 1px;
+  max-width: 50%; }
+
+.uniofferwrap .date {
+  position: relative;
+  width: 40%;
+  margin: 10px 0;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-bottom: dotted 1px #dee5ee;
+  left: 50%;
+  top: 0;
+  height: 1px;
+  font-size: 1.6em;
+  font-weight: 600; }
+
+.uniofferwrap .date div {
+  background: #FFF;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 0;
+  padding: 0 15px;
+  z-index: 1; }
+
+.uniofferwrap h3 {
+  margin: 5px 0 15px 0;
+  color: #244c7e;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  font-weight: 600; }
+
+.uniofferwrap .offersaver {
+  font-size: 1.7em;
+  color: #244c7e;
+  line-height: 1em;
+  font-weight: 600; }
+
+.uniofferwrap .offersaver small {
+  color: #567caa;
+  font-weight: 100; }
+
+.uniofferwrap .ammount {
+  font-size: 1.4em;
+  font-weight: 600; }
+
+.uniofferwrap .per {
+  font-size: 1.3em; }
+
+.uniofferwrap .ammount small {
+  font-size: .5em; }
+
+.uniofferwrap .ammount .currency {
+  font-size: .5em;
+  margin-right: 2px;
+  position: relative;
+  top: -.5em; }
+
+.uniofferwrapinner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 0; }
+
+.uniofferwrapinner .uniofferrow {
+  display: block; }
+
+@media only screen and (max-width: 1200px) {
+  .uniofferwrapinner .uniofferrow small {
+    display: block; } }
+@media only screen and (max-width: 991px) {
+  .uniofferwrapinner .uniofferrow small {
+    display: inline-block; } }
+@media only screen and (max-width: 480px) {
+  .uniofferwrapinner .uniofferrow small {
+    display: block; } }
+
+.uniofferwrapinner .uniofferor {
+  width: 2px;
+  left: 1px;
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+  position: relative;
+  background: #dadada; }
+
+.uniofferwrapinner .uniofferor .or-bridge {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2.2em;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: civita-lightregular;
+  background: #FFF;
+  font-weight: 600;
+  color: #567caa;
+  padding: 3px; }
+
+@media only screen and (max-width: 768px) {
+  .uniofferwrap {
+    font-size: 13px; } }
+/*-----INTRO SECTION -----*/
+.intro-copy p {
+  font-size: 1.2em;
+  line-height: 1.8em;
+  text-align: left; }
+  @media only screen and (max-width: 991px) {
+    .intro-copy p {
+      margin-bottom: 1em; } }
+.intro-copy .drop-cap {
+  float: left;
+  color: #000;
+  font-size: 3em;
+  line-height: 1em;
+  padding-top: 10px;
+  padding-right: 11px;
+  padding-left: 0px;
+  font-family: civita-lightregular; }
+.intro-copy h3 {
+  margin-top: 0;
+  margin-bottom: 20px; }
+  @media only screen and (max-width: 1200px) {
+    .intro-copy h3 {
+      font-size: 1.5em; } }
+
+/*# sourceMappingURL=to.css.map */

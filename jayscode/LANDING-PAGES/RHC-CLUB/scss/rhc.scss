@@ -1,0 +1,211 @@
+$bluefont: #356b99;
+$altcall: #002353;
+$lightbluefont: #4C698C;
+$lighterbluefont: #B2BECD;
+$Serif: civita-lightregular;
+$Sans: proxima-nova;
+@mixin bp-large {
+    @media only screen and (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin bp-medium {
+    @media only screen and (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin bp-small {
+    @media only screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin bp-smaller {
+    @media only screen and (max-width: 480px) {
+        @content;
+    }
+}
+
+
+/*-----------------------------------------
+
+-------------Jason's Styles-----------------
+
+----------------------------------------*/
+
+.serif {
+    font-family: $Serif;
+}
+
+.uniofferwrap .upp {
+    text-transform: uppercase;
+    &.ammount {
+        font-size: 1.5em;
+    }
+}
+
+.alt-hero{
+    margin-bottom: 50px !important;
+}
+
+.unidisclaimer {
+    font-size: 11px;
+    padding: 15px 15px 100px 15px;
+}
+
+.offer-section {
+    margin-bottom: 70px;
+}
+
+.flex-offers {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    @include bp-large {
+        flex-wrap: wrap;
+        .uniofferwrap {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+}
+
+.uniofferwrap {
+    text-align: center;
+    border: solid 2px #d6dadd;
+    outline: solid 2px #d6dadd;
+    outline-offset: -8px;
+    padding: 8px 0 10px 0;
+    font-size: 14px;
+    color: #567caa;
+    margin: 5px 15px 10px 15px;
+    max-width: 50%;
+    .learner {
+        font-size: .95em;
+    }
+}
+
+.uniofferwrap .offer-left {
+    margin-right: 1px;
+    max-width: 50%;
+}
+
+.uniofferwrap .offer-right {
+    margin-left: 1px;
+    max-width: 50%;
+}
+
+.uniofferwrap .date {
+    position: relative;
+    width: 40%;
+    margin: 10px 0;
+    transform: translateX(-50%);
+    background: #dee5ee;
+    left: 50%;
+    top: 0;
+    height: 1px;
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+.uniofferwrap .date div {
+    background: #FFF;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 0;
+    padding: 0 15px;
+    z-index: 1;
+}
+
+.uniofferwrap h3 {
+    margin: 5px 0 15px 0;
+    color: #FFF;
+    padding: 5px 0 3px 0;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 100;
+    background: #8FA3C0;
+}
+
+.uniofferwrap .offersaver {
+    font-size: 1.7em;
+    color: #244c7e;
+    font-weight: 600;
+}
+
+.uniofferwrap .offersaver small {
+    color: #567caa;
+    font-weight: 100;
+}
+
+.uniofferwrap .ammount {
+    font-size: 2em;
+    font-weight: 100;
+}
+
+.uniofferwrap .per {
+    font-size: 1.3em;
+}
+
+.uniofferwrap .ammount small {
+    font-size: .5em;
+}
+
+.uniofferwrap .currency {
+    font-size: .5em;
+    margin-right: 2px;
+    position: relative;
+    top: -.5em;
+}
+
+.uniofferwrapinner {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 5px 0;
+}
+
+.uniofferwrapinner .uniofferrow {
+    display: block;
+}
+
+.uniofferwrapinner .uniofferrow small {
+    @include bp-large {
+        display: inline-block;
+    }
+    @include bp-medium {
+        display: inline-block;
+    }
+    @include bp-smaller {
+        display: block;
+    }
+}
+
+.uniofferwrapinner .uniofferor {
+    width: 2px;
+    left: 1px;
+    position: relative;
+    background: #dadada;
+}
+
+.uniofferwrapinner .uniofferor .or-bridge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2.2em;
+    transform: translate(-50%, -50%);
+    font-family: $Serif;
+    background: #FFF;
+    font-weight: 600;
+    color: #567caa;
+    padding: 3px;
+}
+
+@media only screen and (max-width: 768px) {
+    .uniofferwrap {
+        font-size: 13px;
+    }
+}

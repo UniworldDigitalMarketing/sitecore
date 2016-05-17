@@ -1,0 +1,355 @@
+/*------------------------------------------------
+      Jason's Custom Styles
+------------------------------------------------*/
+/*CSS RESET*/
+.btn {
+  border-radius: 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .05em; }
+  @media only screen and (max-width: 768px) {
+    .btn {
+      display: block;
+      margin: 15px 0; } }
+
+.buttonContainer a {
+  margin-bottom: 5px;
+  width: auto;
+  min-width: 200px; }
+
+.subhead {
+  font-family: proxima-nova;
+  text-transform: uppercase;
+  color: #356b99; }
+  .subhead.subhead-section-title {
+    margin-bottom: 50px; }
+
+.spacer {
+  height: 75px; }
+
+.outline-image {
+  outline: solid 5px #d6dadd;
+  outline-offset: 3px; }
+
+.uni-whats-new {
+  margin-bottom: 50px;
+  margin-top: 30px;
+  font-size: 18px;
+  text-align: left; }
+  @media only screen and (max-width: 768px) {
+    .uni-whats-new {
+      font-size: 16px; } }
+  .uni-whats-new h3 {
+    font-size: 1.2em;
+    color: #356b99;
+    font-weight: 600;
+    text-transform: uppercase; }
+
+.img-responsive.flex-fixer {
+  width: 100%; }
+
+.intro-copy p {
+  font-size: 1.2em;
+  line-height: 1.8em;
+  text-align: left; }
+  @media only screen and (max-width: 991px) {
+    .intro-copy p {
+      margin-bottom: 1em; } }
+.intro-copy .drop-cap {
+  float: left;
+  color: #000;
+  font-size: 3em;
+  line-height: 1em;
+  padding-top: 10px;
+  padding-right: 11px;
+  padding-left: 0px;
+  font-family: civita-lightregular; }
+.intro-copy h3 {
+  margin-top: 0;
+  margin-bottom: 20px; }
+  @media only screen and (max-width: 1200px) {
+    .intro-copy h3 {
+      font-size: 1em; } }
+
+.uni-land-wrap {
+  font-size: 18px; }
+  .uni-land-wrap h3 {
+    font-size: 1.6em;
+    letter-spacing: 0.01em; }
+    @media only screen and (max-width: 1200px) {
+      .uni-land-wrap h3 {
+        font-size: 1.6em; } }
+  .uni-land-wrap h4 {
+    font-size: 1.2em; }
+    @media only screen and (max-width: 1200px) {
+      .uni-land-wrap h4 {
+        font-size: 1em; } }
+  .uni-land-wrap p {
+    font-size: 1.1em;
+    padding: 0 30px; }
+    @media only screen and (max-width: 1200px) {
+      .uni-land-wrap p {
+        font-size: .9em; } }
+    @media only screen and (max-width: 768px) {
+      .uni-land-wrap p {
+        padding: 0 0px; } }
+
+.uniCopyContainer {
+  line-height: 2em;
+  text-align: center;
+  font-family: proxima-nova; }
+
+.highlight {
+  color: #4C698C;
+  font-weight: 600; }
+
+.row-flex,
+.row-flex .perk-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto; }
+  @media only screen and (max-width: 991px) {
+    .row-flex,
+    .row-flex .perk-content {
+      display: block; } }
+
+.perk-content {
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+              -ms-grid-row-align: center;
+          align-items: center;
+  position: relative;
+  text-align: center; }
+  .perk-content .intro-image {
+    max-width: 400px;
+    position: relative;
+    left: -4.5%; }
+    @media only screen and (max-width: 1200px) {
+      .perk-content .intro-image {
+        max-width: 100%;
+        position: static;
+        left: 0%; } }
+  .perk-content.perk-left {
+    margin-right: -30px; }
+    @media only screen and (max-width: 991px) {
+      .perk-content.perk-left {
+        margin-right: 0; } }
+  .perk-content.perk-right {
+    margin-left: -30px; }
+    @media only screen and (max-width: 991px) {
+      .perk-content.perk-right {
+        margin-left: 0; } }
+  .perk-content h4 {
+    color: #356b99; }
+  .perk-content .new-ship {
+    position: relative; }
+    .perk-content .new-ship .captionator {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      color: #eee;
+      padding: 3px 5px;
+      font-size: .7em;
+      background: rgba(0, 0, 0, 0.2);
+      text-align: right;
+      border-radius: 3px 0 0 0; }
+  .perk-content .learner {
+    display: block;
+    margin-top: 15px;
+    font-size: .8em; }
+    .perk-content .learner.biggerlearn {
+      font-size: .88em; }
+    .perk-content .learner a {
+      text-decoration: none;
+      position: relative;
+      text-transform: uppercase;
+      color: #002353; }
+      .perk-content .learner a i {
+        font-size: .85em;
+        right: -15px;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+        -webkit-transition: all 200ms ease;
+        transition: all 200ms ease; }
+      .perk-content .learner a:hover i {
+        right: -20px; }
+
+.vertcent {
+  padding: 0 15px; }
+
+.position-image {
+  position: relative;
+  left: 75px; }
+  @media only screen and (max-width: 1200px) {
+    .position-image {
+      position: static; } }
+
+.position-text {
+  position: absolute;
+  left: -25px;
+  background: #fefefe;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 5px; }
+  @media only screen and (max-width: 1200px) {
+    .position-text {
+      position: static;
+      -webkit-transform: translateY(0%);
+          -ms-transform: translateY(0%);
+              transform: translateY(0%); } }
+
+/*-------------OFFER------------------*/
+.offer-section {
+  margin-bottom: 70px; }
+
+.uniofferwrap {
+  text-align: center;
+  border: solid 2px #d6dadd;
+  outline: solid 2px #d6dadd;
+  outline-offset: -8px;
+  padding: 22px 0 10px 0;
+  font-size: 14px;
+  color: #567caa;
+  max-width: 700px;
+  margin: 0 auto; }
+  .uniofferwrap .learner {
+    font-size: .95em; }
+
+.uniofferwrap .offer-left {
+  margin-right: 1px;
+  max-width: 50%; }
+
+.uniofferwrap .offer-right {
+  margin-left: 1px;
+  max-width: 50%; }
+
+.uniofferwrap .date {
+  position: relative;
+  width: 40%;
+  margin: 10px 0;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #dee5ee;
+  left: 50%;
+  top: 0;
+  height: 1px;
+  font-size: 1.6em;
+  font-weight: 600; }
+
+.uniofferwrap .date div {
+  background: #FFF;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 0;
+  padding: 0 15px;
+  z-index: 1; }
+
+.uniofferwrap h3 {
+  margin: 5px 0 15px 0;
+  color: #244c7e;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  font-weight: 600; }
+
+.uniofferwrap .offersaver {
+  font-size: 1.7em;
+  color: #244c7e;
+  font-weight: 600; }
+
+.uniofferwrap .offersaver small {
+  color: #567caa;
+  font-weight: 100; }
+
+.uniofferwrap .ammount {
+  font-size: 2em;
+  font-weight: 600; }
+
+.uniofferwrap .per {
+  font-size: 1.3em; }
+
+.uniofferwrap .ammount small {
+  font-size: .5em; }
+
+.uniofferwrap .ammount .currency {
+  font-size: .5em;
+  margin-right: 2px;
+  position: relative;
+  top: -.5em; }
+
+.uniofferwrapinner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding: 5px 0; }
+
+.uniofferwrapinner .uniofferrow {
+  display: block; }
+
+@media only screen and (max-width: 1200px) {
+  .uniofferwrapinner .uniofferrow small {
+    display: block; } }
+@media only screen and (max-width: 991px) {
+  .uniofferwrapinner .uniofferrow small {
+    display: inline-block; } }
+@media only screen and (max-width: 480px) {
+  .uniofferwrapinner .uniofferrow small {
+    display: block; } }
+
+.uniofferwrapinner .uniofferor {
+  width: 2px;
+  left: 1px;
+  position: relative;
+  background: #dadada; }
+
+.uniofferwrapinner .uniofferor .or-bridge {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2.2em;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: civita-lightregular;
+  background: #FFF;
+  font-weight: 600;
+  color: #567caa;
+  padding: 3px; }
+
+@media only screen and (max-width: 768px) {
+  .uniofferwrap {
+    font-size: 13px; } }
+/*-----------END OFFER------------*/
+@media only screen and (max-width: 991px) {
+  .hide-med-dwn {
+    display: none !important; } }
+@media only screen and (min-width: 992px) {
+  .hide-med-up {
+    display: none !important; } }
+
+/*# sourceMappingURL=new17redo.css.map */
