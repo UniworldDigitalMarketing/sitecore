@@ -50,7 +50,20 @@
 
 .itinImageWrap {
   border: 5px solid #e2e5e8;
-  padding: 3px; }
+  padding: 3px;
+  position: relative; }
+  .itinImageWrap .uni-new {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    padding: 3px 8px;
+    background: #356b99;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 1em;
+    line-height: 1.5em; }
+    .itinImageWrap .uni-new span {
+      font-weight: 600; }
 
 .shipName {
   color: #356b99; }
