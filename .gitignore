@@ -10,3 +10,5 @@ ehthumbs.db
 Thumbs.db
 config.codekit
 .sass-cache
+
+.DS_Store
