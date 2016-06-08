@@ -1,0 +1,1827 @@
+/*================================================================================================================================================
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!SITE-WIDE STYLES-SITE-WIDE STYLES-SITE-WIDE STYLES!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+================================================================================================================================================*/
+
+
+/*========================================================================
+!!!!!!!!!!!!!!!!!!!!!!!!!GENERAL-GENERAL-GENERAL!!!!!!!!!!!!!!!!!!!!!!!!!
+========================================================================*/
+
+
+/*
+centered columns styles
+========================================================================*/
+
+.row-centered {
+    text-align: center;
+}
+
+.col-centered {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    /* inline-block space fix */
+    margin-right: -4px;
+    /* reset the text-align */
+    /*text-align: left;*/
+    vertical-align: top;
+}
+
+
+/*
+lists
+========================================================================*/
+
+.uniUnorderedList li {
+    margin-bottom: 5px;
+    margin-left: 18px;
+    list-style: disc;
+    list-style-position: outside;
+    text-align: left;
+}
+
+
+/*
+subheads
+========================================================================*/
+
+
+/*use to seperate the intro content from itins*/
+
+.uniSectionSubheadTop {
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #dadbdd;
+}
+
+.uniSectionSubheadTop h4 {
+    margin: 0;
+}
+
+
+/*for landing pages to seperate sections of content*/
+
+.uniSectionSubhead {
+    margin-top: -5px;
+    padding-top: 20px;
+    border-top: 2px solid #dadbdd;
+}
+
+.uniSectionSubhead h2 {
+    margin: 0;
+}
+
+
+/*for center aligned subheads w/o rules*/
+
+.uniCenteredSubhead {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/*
+tables
+========================================================================*/
+
+.uniTableHead {
+    border-bottom: 1px solid black;
+    background-color: #eee;
+}
+
+
+/*
+Psudotabs
+=========================================================================*/
+
+.uniPsudoTabs {
+    margin-top: 25px;
+}
+
+
+/*
+disclaimers
+========================================================================*/
+
+#uniDisclaimer {
+    font-size: 11px;
+    padding: 15px 0;
+}
+
+.uniDisclaimerLeftCA {
+    width: calc(100% - 81px);
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.uniDisclaimerRightCA {
+    width: 81px;
+    float: left;
+}
+
+
+/*
+video play button
+========================================================================*/
+
+.VideoImage .VideoPlay {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #fff;
+    top: 50%;
+    right: 50%;
+    margin: -28px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
+    z-index: 5;
+    pointer-events: none;
+}
+
+
+/*
+low visibility cta for itin rows
+========================================================================*/
+
+.btn-low-priority:hover {
+    color: #FFF;
+    background-color: #144B7F;
+}
+
+.btn-low-priority {
+    color: #144B7F;
+    background-color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+
+/*========================================================================
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!PAGE SPECIFIC!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+========================================================================*/
+
+
+/*========================================================================
+Landing Pages
+========================================================================*/
+
+
+/*
+landing page general styles
+=======================================================================*/
+
+.container.fiftyfifty .btn,
+.container.itineraries .btn {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+
+/*
+two column content
+======================================================================*/
+
+
+/*.container.seventythirty .col-sm-11:first-of-type,
+.container.seventythirty .col-sm-10:first-of-type,
+.container.seventythirty .col-sm-9:first-of-type,
+.container.seventythirty .col-sm-8:first-of-type,
+.container.seventythirty .col-sm-7:first-of-type,
+.container.seventythirty .col-sm-6:first-of-type,
+.container.seventythirty .col-sm-5:first-of-type,
+.container.seventythirty .col-sm-4:first-of-type,
+.container.seventythirty .col-sm-3:first-of-type,
+.container.seventythirty .col-sm-2:first-of-type,
+.container.seventythirty .col-sm-1:first-of-type,
+.container.seventythirty .col-sm-11 .container.itineraries:first-of-type,
+.container.seventythirty .col-sm-10 .container.itineraries:first-of-type,
+.container.seventythirty .col-sm-9 .container.itineraries:first-of-type,
+.container.seventythirty .col-sm-8 .container.itineraries:first-of-type,
+.container.seventythirty .col-sm-7 .container.itineraries:first-of-type,
+.container.seventythirty .col-sm-6 .container.itineraries:first-of-type,
+.container.seventythirty .col-sm-5 .container.itineraries:first-of-type,
+.container.seventythirty .col-sm-4 .container.itineraries:first-of-type,
+.container.seventythirty .col-sm-3 .container.itineraries:first-of-type,
+.container.seventythirty .col-sm-2 .container.itineraries:first-of-type,
+.container.seventythirty .col-sm-1 .container.itineraries:first-of-type {
+    padding-left: 0;
+}
+
+.container.seventythirty .col-sm-11:last-of-type,
+.container.seventythirty .col-sm-10:last-of-type,
+.container.seventythirty .col-sm-9:last-of-type,
+.container.seventythirty .col-sm-8:last-of-type,
+.container.seventythirty .col-sm-7:last-of-type,
+.container.seventythirty .col-sm-6:last-of-type,
+.container.seventythirty .col-sm-5:last-of-type,
+.container.seventythirty .col-sm-4:last-of-type,
+.container.seventythirty .col-sm-3:last-of-type,
+.container.seventythirty .col-sm-2:last-of-type,
+.container.seventythirty .col-sm-1:last-of-type,
+.container.seventythirty .col-sm-11 .container.itineraries:last-of-type,
+.container.seventythirty .col-sm-10 .container.itineraries:last-of-type,
+.container.seventythirty .col-sm-9 .container.itineraries:last-of-type,
+.container.seventythirty .col-sm-8 .container.itineraries:last-of-type,
+.container.seventythirty .col-sm-7 .container.itineraries:last-of-type,
+.container.seventythirty .col-sm-6 .container.itineraries:last-of-type,
+.container.seventythirty .col-sm-5 .container.itineraries:last-of-type,
+.container.seventythirty .col-sm-4 .container.itineraries:last-of-type,
+.container.seventythirty .col-sm-3 .container.itineraries:last-of-type,
+.container.seventythirty .col-sm-2 .container.itineraries:last-of-type,
+.container.seventythirty .col-sm-1 .container.itineraries:last-of-type {
+    padding-right: 0;
+}
+*/
+
+
+/*shared itin styles*/
+
+.flexWrap,
+.even article,
+.odd article,
+.uniAboutRivers .uniImgContainer,
+.uniAboutRivers article,
+.uniVideoRow article {
+    display: table;
+}
+
+.uniVertCenter {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.uniTall h2,
+.feat-itin .uniFull h2,
+.feat-itin .uniHalf h2,
+.uniTier3LPContent h3 {
+    font-size: 2em;
+    font-family: civita-lightregular;
+}
+
+.uniTall h3,
+.feat-itin .uniFull h3,
+.feat-itin .uniHalf h3 {
+    font-size: 1.25em;
+    text-transform: uppercase;
+}
+
+.uniTall h2,
+.feat-itin .uniFull h2,
+.feat-itin .uniHalf h2,
+.uniTall h3,
+.feat-itin .uniFull h3,
+.feat-itin .uniHalf h3 {
+    margin: 0 0 5px 0;
+}
+
+.uniHalf .uniVertCenter p:first-of-type,
+.uniFull .uniVertCenter p:first-of-type,
+.uniTall .uniVertCenter p:first-of-type {
+    font-size: 1em;
+    margin-top: .65em;
+    margin-bottom: .65em;
+}
+
+.uniTall p,
+.feat-itin .uniFull p,
+.feat-itin .uniHalf p {
+    font-size: 1em;
+    margin-bottom: .5em;
+}
+
+.uniTall p strong,
+.feat-itin .uniFull p strong,
+.feat-itin .uniHalf p strong {
+    text-transform: uppercase;
+}
+
+.uniImgContainer {
+    padding: 0;
+}
+
+
+/*
+landing page alternating itin row general styles
+======================================================================*/
+
+.even {
+    background-position: top left;
+}
+
+.feat-itin .even article {
+    float: right !important;
+}
+
+.odd {
+    background-position: top right;
+}
+
+.feat-itin .odd article {
+    float: left !important;
+}
+
+.feat-itin .odd,
+.feat-itin .even {
+    margin-bottom: 5px;
+}
+
+
+/*
+landing page half itin row general styles
+======================================================================*/
+
+.col-sm-6 .container.itineraries {
+    padding: 0;
+}
+
+.container.fiftyfifty div.col-sm-6:first-of-type {
+    padding-left: 0;
+}
+
+.container.fiftyfifty div.col-sm-6:last-of-type {
+    padding-right: 0;
+}
+
+.uniHalf {
+    min-height: 321px;
+    padding-bottom: 30px;
+}
+
+.uniHalf article {
+    padding-top: 10px;
+}
+
+
+/*
+tier 3 landing page content
+======================================================================*/
+
+.uniTier3LPContent {
+    min-height: 400px;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.uniTier3LPContent .btn {
+    font-size: 12px;
+    padding: 7px 25px;
+}
+
+.uniTier3LPContent h2 {
+    font-size: 21px;
+}
+
+
+/*uniTall general*/
+
+.uniTall.row {
+    height: auto;
+    margin-bottom: 35px !important;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.itinImageWrap {
+    padding: 3px;
+    border: 5px solid #e2e5e8;
+}
+
+.shipName {
+    color: #356b99;
+}
+
+.uniTall .buttonContainer {
+    margin-top: 10px;
+}
+
+
+/*
+tab adjustments
+=========================================================================*/
+
+.tab-faqs .nav-tabs {
+    /*margin-top: 34px;*/
+}
+
+
+/*
+itin rows in tabs
+=========================================================================*/
+
+.tab-faqs .tabpanel-tabs {
+    width: 100%;
+}
+
+.tab-content article p {
+    font-size: 14px;
+    max-width: 1500px;
+    margin: initial;
+    margin-bottom: 10px;
+    text-align: initial;
+}
+
+.tab-content article h2 {
+    margin: initial;
+    text-align: initial;
+}
+
+.tab-content article h3 {
+    font-size: 17px;
+    margin: initial;
+    text-align: initial;
+}
+
+.tab-content .even article {
+    float: right;
+}
+
+.tab-content article li {
+    font-size: 14px;
+    position: initial;
+    margin: initial;
+    margin: 0 0 5px 15px !important;
+    padding: 0;
+    text-align: initial;
+}
+
+.tab-content li::after {
+    display: none;
+}
+
+.tab-content p.uniCaption {
+    font-size: 13px;
+    text-align: left;
+}
+
+
+/*========================================================================
+Offer Tiles
+========================================================================*/
+
+
+/*
+content blocks
+======================================================================*/
+
+.uniOfferFrame {
+    margin-top: 10px;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, .25);
+}
+
+.uniOfferFrameInner {
+    padding: 31px 25px;
+    text-align: center;
+    border: solid 3px #fff;
+    background-color: #fff;
+    box-shadow: inset 0 0 32px rgba(131, 136, 145, .45);
+}
+
+.offerLeft,
+.offerRight,
+.offerMid,
+.offerYearTitle,
+.offerYearHead,
+.offerTitle,
+.offerLink,
+.offerYearTitle hr {
+    display: inline-block;
+    text-align: center;
+}
+
+.offerLeft,
+.offerRight {
+    max-width: 220px;
+}
+
+.offerLeft,
+.offerRight,
+.offerMid {
+    vertical-align: middle;
+}
+
+.offerMid {
+    font-family: civita-mediumregular, serif;
+    font-size: 2em;
+    margin-right: 18px;
+    margin-left: 13px;
+    color: #5A8CB9;
+}
+
+.offerRightSingle {
+    /*width: 356px;*/
+    margin: auto;
+}
+
+.offerRow {
+    text-align: center;
+}
+
+.offerFrame {
+    display: inline-block;
+    padding: 2.15em 3.50em;
+    text-align: center;
+    color: #144b7f;
+    border: 2px solid #d4d4d4;
+    background-color: #fff;
+    -webkit-box-shadow: inset 0 0 8px #efefef;
+    -moz-box-shadow: inset 0 0 8px #efefef;
+    box-shadow: inset 0 0 0 8px #efefef;
+}
+
+.offerRow .offerFrame {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.floatOffer {
+    width: 100%;
+    max-width: 690px;
+    margin: auto;
+}
+
+.rightOfferSingle {
+    /*width: 356px;*/
+    margin: auto;
+}
+
+
+/*
+offer type styles
+============================================================================*/
+
+.offerFrame {
+    line-height: 1;
+}
+
+.offerYearHead {
+    font-size: 1.6em;
+    font-weight: bold;
+    position: relative;
+    letter-spacing: .105em;
+    color: #5A8CB9;
+}
+
+.offerYearTitle hr {
+    width: calc(50% - 36px);
+    margin: 8px 0;
+    height: 1px;
+    background-color: #dadbdd;
+}
+
+.offerTitle {
+    font-family: civita-lightregular;
+    font-size: 2em !important;
+    font-weight: bold;
+    margin-top: .07em;
+    margin-bottom: .5em;
+    letter-spacing: .047em;
+    text-transform: capitalize;
+}
+
+.offerNoAmount {
+    font-size: 1.6em !important;
+    font-weight: normal !important;
+    line-height: 1;
+}
+
+.offerLink {
+    margin-top: 15px;
+}
+
+.priceAmount {
+    font-size: 2.15em;
+    font-weight: bold;
+    margin-bottom: .045em;
+    color: #30699a;
+}
+
+.offerPriceTo {
+    font-size: .65em;
+}
+
+.saveUpTo {
+    font-size: 1.56em;
+    margin-bottom: .045em;
+}
+
+.offerCurrencySymbol {
+    font-size: .5em;
+    display: inline-block;
+    padding-top: .17em;
+    vertical-align: top;
+}
+
+.offerDisclaimer {
+    font-size: 12px;
+    line-height: 1.125em;
+    max-width: 175px;
+    margin: auto;
+}
+
+
+/*
+PROTYPE: first implimentation of flex for LP intro/offer
+========================================================================*/
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.flexIntro {
+    order: 0;
+    flex: 1 0 60%;
+    align-self: auto;
+}
+
+.flexOfferWide {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+.flexOfferNarrow {
+    order: 1;
+    flex: 0 1 370px;
+    align-self: auto;
+    margin-left: 30px;
+}
+
+
+/*========================================================================
+Why Uniworld
+========================================================================*/
+
+
+/*
+About the Rivers
+========================================================================*/
+
+.uniAboutRivers {
+    position: relative;
+}
+
+.feat-itin .uniAboutRivers .uniImgContainer {
+    padding: 0;
+}
+
+.feat-itin .uniAboutRivers li {
+    float: left;
+}
+
+.feat-itin .uniAboutRivers a {
+    max-width: 257px;
+    margin-right: 20px;
+}
+
+.uniAboutRivers {
+    min-height: 250px;
+    margin: 0 0 10px 0;
+}
+
+
+/*
+Hallmarks of Distinction tabs
+=========================================================================*/
+
+.uniHallmarkTab p {
+    text-align: left;
+}
+
+.uniHallmarkTab img {
+    margin: 20px 30px;
+}
+
+
+/*
+Family Friendly
+=========================================================================*/
+
+.uniKidsMenu {
+    padding: 25px 56px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+p.uniKidsMenuSection {
+    font-family: proxima-nova-bold, sans-serif;
+    font-size: 18px;
+    margin-top: 26px;
+    text-transform: uppercase;
+}
+
+.uniKidsMenuDisclaimer {
+    font-size: 10px;
+}
+
+.uniFamilyOffer {
+    margin: 20px 0 0 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: #eff1f4;
+}
+
+
+/*========================================================================
+    Stackla Social Wedget
+========================================================================*/
+
+.uniStacklaRow {
+    width: 100%;
+    padding: 40px 0;
+    background-color: #c7d1d9;
+}
+
+#uniuniStacklaFilterWrapper {
+    width: 287px;
+    margin: 0 auto 20px auto;
+}
+
+
+/*common uniStacklabutton aspects*/
+
+.uniStacklabutton {
+    font-family: sans-serif;
+    font-size: 13px;
+    display: block;
+    float: left;
+    width: auto !important;
+    margin: 0 10px 0 0;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 3px;
+}
+
+
+/*uniStacklaFilter uniStacklabuttons type v1*/
+
+.uniStacklaFilter input {
+    position: absolute;
+    display: none;
+}
+
+.uniStacklaFilter label {
+    cursor: pointer;
+}
+
+
+/*inactive state*/
+
+.uniStacklaFilter input[type=radio] + label {
+    background-color: white;
+}
+
+
+/*active state*/
+
+.uniStacklaFilter input[type=radio]:checked + label {
+    color: white;
+    background-color: #849eb6;
+}
+
+
+/*========================================================================
+    Travelzoo
+ ========================================================================*/
+
+
+/*Travezoo form*/
+
+.travelzooRowHeader {
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 35px;
+}
+
+.travelzooRow {
+    margin-bottom: 5px;
+}
+
+.travelzooRow div:nth-child(2) {
+    text-decoration: line-through;
+    color: red;
+}
+
+.travelzooOffer hr {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border: 0;
+    border-top: 1px solid #d8d8d8;
+}
+
+
+/*========================================================================
+ Not Sure About - look at depricating
+========================================================================*/
+
+
+/*
+    jump button row
+    ========================================================================*/
+
+.uniJumpButtonRow {
+    padding: 15px 0;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.uniJumpButtonRow .uniButtonWrap {
+    width: 200px;
+    margin: auto;
+}
+
+
+/*
+    button alignment
+    ========================================================================*/
+
+.uniMenuLinks ul {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 40px;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+/*
+video row embed - depricated using new style
+========================================================================*/
+
+div.uniVideoContainer {
+    display: block;
+    width: 420px;
+    padding: 0;
+}
+
+.embed-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    /* padding-top: 30px; */
+    height: 0 !important;
+    height: auto;
+    padding-bottom: 66.0%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 420px;
+    height: 315px;
+}
+
+.uniVideoRow {
+    padding: 20px 40px;
+}
+
+.uniVideoRow article {
+    float: right;
+    min-height: 277px;
+}
+
+.feat-itin .uniVideoRow .uniVideoContainer {
+    float: left;
+}
+
+.feat-itin .uniVideoRow .uniTextContainer {
+    float: right;
+}
+
+
+/*========================================================================
+!!!!!!!!!!!!!!!!!!!!!!!!!DESKTOP-DESKTOP-DESKTOP!!!!!!!!!!!!!!!!!!!!!!!!!
+========================================================================*/
+
+@media (min-width: 1200px) {
+    /*
+        2015 Landing Pages Itinerary Rows
+        =======================================================================*/
+    #uniBordeauxVineyardsChateaux-2015-L {
+        background-image: url(~/media/91a7110364a44a1f83c9e662cb36c7e1.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniBordeauxVineyardsChateaux-2015-R {
+        background-image: url(~/media/157370ee9ef440248a1424b4ce20832d.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniBurgundyProvence-2015-L {
+        background-image: url(~/media/f60400b4b1fd4093a4b1834cd82c842e.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniBurgundyProvence-2015-R {
+        background-image: url(~/media/c2b68b69a1754436bd7d28c8d6e4acc1.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniCastlesAlongRhine-2015-L {
+        background-image: url(~/media/40f1dedeefaf44bbbb0edb39603489a7.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniCastlesAlongRhine-2015-R {
+        background-image: url(~/media/6b8a938fa7cc497981ada3c2275753f4.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniClassicChristmasMarkets-2015-L {
+        background-image: url(~/media/ba8c7427aa574fed85f4c95f20478445.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniClassicChristmasMarkets-2015-R {
+        background-image: url(~/media/6d1d90261c214250a4c43912f3078329.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniDanubeDiscoveryPrague-2015-L {
+        background-image: url(~/media/f634d6a4fb784d21b9880d011ad59075.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniDanubeDiscoveryPrague-2015-R {
+        background-image: url(~/media/0bb675c8417f41b69ce4e93319073cd0.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniDanubeHolidayMarkets-2015-L {
+        background-image: url(~/media/77dc07fd8ca14b238afc2d3f5138a31d.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniDanubeHolidayMarkets-2015-R {
+        background-image: url(~/media/881e35afa4284015866fca66a313915e.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniDelightfulDanubePrague-2015-L {
+        background-image: url(~/media/5036867cc1a447a2b204e6738a2c642c.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniDelightfulDanubePrague-2015-R {
+        background-image: url(~/media/d9d7739b64fd47c7a6be151e4b626caa.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniEasternEuropeExplorer-2015-L {
+        background-image: url(~/media/244601be19ee416399e1bf0136c5ad50.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniEasternEuropeExplorer-2015-R {
+        background-image: url(~/media/dc80da21e97e4dfe9d5de2e034918575.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniEnchantingChristmasNewYearsCruise-2015-L {
+        background-image: url(~/media/d305a96c854d4efbb89f9ea30226ec16.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniEnchantingChristmasNewYearsCruise-2015-R {
+        background-image: url(~/media/956822a0eed34fb3b88d0d2dfa7f621a.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniEnchantingDanube-2015-L {
+        background-image: url(~/media/6d763c7c56dc4e29aee3b88b9d12ef4c.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniEnchantingDanube-2015-R {
+        background-image: url(~/media/028f331180754d1a80a421f4f0f9bdfa.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniEuropeanHolidayMarkets-2015-L {
+        background-image: url(~/media/f10b41b3132746208a9f91de35576877.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniEuropeanHolidayMarkets-2015-R {
+        background-image: url(~/media/892e35f160dd4117b990b1a50c850723.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniEuropeanJewels-2015-L {
+        background-image: url(~/media/53e0704d2bf44247aa2cd5683ad55b92.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniEuropeanJewels-2015-R {
+        background-image: url(~/media/35080d7a28ce4eef86ff382230c22587.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniEuropeanSerenade-2015-L {
+        background-image: url(~/media/f185c497f0134eaab6d18a90a3670193.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniEuropeanSerenade-2015-R {
+        background-image: url(~/media/67153376a68a4e599bbdcfe2e0331abd.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniGrandEuropeanRiverVoyage-2015-L {
+        background-image: url(~/media/a386fe4085e246b088a5087cd89c67b6.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniGrandEuropeanRiverVoyage-2015-R {
+        background-image: url(~/media/fdf704578d5b4ada989f609b84db2059.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniGrandChristmasNewYearsCruise-2015-L {
+        background-image: url(~/media/db5dc95bf79c4c29b7fb1dbb50a413ab.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniGrandChristmasNewYearsCruise-2015-R {
+        background-image: url(~/media/854d95a1388f4b0882dc885e56b01585.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniGrandEuropeanDiscovery-2015-L {
+        background-image: url(~/media/3628384b6b6f4273b6ac101c27432f59.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniGrandEuropeanDiscovery-2015-R {
+        background-image: url(~/media/07faf708fd054419b21ec98d1cc19aae.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniGrandEuropeanExplorer-2015-L {
+        background-image: url(~/media/3afe6161f97e42c996c63c4a985b3e50.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniGrandEuropeanExplorer-2015-R {
+        background-image: url(~/media/2c89b947c232452d8ce41c5092c08928.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniGrandFrance-2015-L {
+        background-image: url(~/media/e1fd24380cbe4bf9bc7a130939b73872.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniGrandFrance-2015-R {
+        background-image: url(~/media/a8a9c8b00c854a77b306047842b008a5.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniHollandBelgiumTulipTime-2015-L {
+        background-image: url(~/media/4b8e9379c7444ea0ba08733d31927774.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniHollandBelgiumTulipTime-2015-R {
+        background-image: url(~/media/3a01494ab4254b2f8d8c9c817401a6bf.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniImperialWaterwaysRussia-2015-L {
+        background-image: url(~/media/5f61bc36fe1a4da5bed3bb71b6661c58.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniImperialWaterwaysRussia-2015-R {
+        background-image: url(~/media/8c556941e0cf496f9356489ca4767f9c.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniImperialCapitalsEurope-2015-L {
+        background-image: url(~/media/a60f0a62c9d842ee8539213913e93b08.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniImperialCapitalsEurope-2015-R {
+        background-image: url(~/media/aa2c36edb0a04c5a9d8333e4da126649.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniJewelsSpainPortugalDouroValley-2015-L {
+        background-image: url(~/media/89ef23c6aff14adc9173fd83338ad1e6.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniJewelsSpainPortugalDouroValley-2015-R {
+        background-image: url(~/media/613e7dc0785f46ce8ec782d56e078e49.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniLegendaryRhineMoselle-2015-L {
+        background-image: url(~/media/44917b91c7204897a7fb02a577b9a519.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniLegendaryRhineMoselle-2015-R {
+        background-image: url(~/media/e928a7a369ec4529a48b7d04a87962e0.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniParisNormandy-2015-L {
+        background-image: url(~/media/67e2d5da49c84ca192341d11646790af.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniParisNormandy-2015-R {
+        background-image: url(~/media/505fd50972234e4eb721c042ab6dbbb8.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniParisianHoliday-2015-L {
+        background-image: url(~/media/8e6f7f4e0f1b4b8db38e750c047f0d7f.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniParisianHoliday-2015-R {
+        background-image: url(~/media/396413ca9b7644ceba5ede470f188f8c.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniAPortraitMajesticFrance-2015-L {
+        background-image: url(~/media/637823cddf804faf9d0317b742150e97.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniAPortraitMajesticFrance-2015-R {
+        background-image: url(~/media/f74e04d11a56470c9e82313dd6d82cdd.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniPortugalSpainDouroRiverValley-2015-L {
+        background-image: url(~/media/ba06fb442b174c5497728076d0b44a59.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniPortugalSpainDouroRiverValley-2015-R {
+        background-image: url(~/media/e00c6cb0d5054e4a95566e74694c96f7.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniRhineDiscoveryPrague-2015-L {
+        background-image: url(~/media/054fcbac176740b49a714e64ef3831c7.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniRhineDiscoveryPrague-2015-R {
+        background-image: url(~/media/b9601b0a8af447b8a38f38d8784b41be.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniRhineHolidayMarkets-2015-L {
+        background-image: url(~/media/5c814c6636a7434fa345fcca9f23d990.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniRhineHolidayMarkets-2015-R {
+        background-image: url(~/media/5e9ac0606d964295afcdcbae31e1fbef.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniSplendorsEgyptNile-2015-L {
+        background-image: url(~/media/f3c3ec2eb91e48d4aab4bf5995db9792.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniSplendorsEgyptNile-2015-R {
+        background-image: url(~/media/bc3273534d8749f0ae0341466637fd2c.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniSplendorsNorthernItalyVeniceFlorenceRome-2015-L {
+        background-image: url(~/media/887ffd94c4ad41858042ebac82fd0fa0.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniSplendorsNorthernItalyVeniceFlorenceRome-2015-R {
+        background-image: url(~/media/42b8068e7caa42f493aa0bff942f23c4.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniTulipsWindmills-2015-L {
+        background-image: url(~/media/fc437584a35c42848d520d636f165830.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniTulipsWindmills-2015-R {
+        background-image: url(~/media/ce15a825d98f48809711656b568388d7.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniUltimateFrance-2015-L {
+        background-image: url(~/media/182963a836e641aca49acfd545980e71.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniUltimateFrance-2015-R {
+        background-image: url(~/media/c433bfeaf25847b198b7a86b87c10f25.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniVeniceGemsNorthernItaly-2015-L {
+        background-image: url(~/media/7cb6b12f4a5e4ce2851dcdebb1de8827.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniVeniceGemsNorthernItaly-2015-R {
+        background-image: url(~/media/0cdb1ecdb11e4d14af0bfd01b6918695.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniIndiasGoldenTriangleSacredGanges-2015-L {
+        background-image: url(~/media/92b7164aa2024c82bd8e63aa831aeed9.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniIndiasGoldenTriangleSacredGanges-2015-R {
+        background-image: url(~/media/fb220f56fecc4061813de7d80c39698d.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniHighlightsChinaYangtze-2015-L {
+        background-image: url(~/media/0aa70a48ebec45d2948b4dd420849798.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniHighlightsChinaYangtze-2015-R {
+        background-image: url(~/media/9210293c31394e6fb172c10433511a2d.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniTreasuresChinaYangtze-2015-L {
+        background-image: url(~/media/b69baf7fe0fc4a019dfff78c52f56925.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniTreasuresChinaYangtze-2015-R {
+        background-image: url(~/media/3dbab45a7e5c4ec8b05600f3140c6ce4.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniChinaTibetYangtze-2015-L {
+        background-image: url(~/media/c2d30876a0d649fa886e238ee2cff8ca.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniChinaTibetYangtze-2015-R {
+        background-image: url(~/media/2177656601524ed0bc06046806d90f5a.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniGrandChinaYangtze-2015-L {
+        background-image: url(~/media/91e2f56e167e42039ef8bc1e0a57088d.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniGrandChinaYangtze-2015-R {
+        background-image: url(~/media/ef1252dd15694163be49a3c9ac90f664.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniTimelessWondersVietnamCambodiaMekong-2015-L {
+        background-image: url(~/media/c2487c2bb1de4c9ca6f23c12472fb9cb.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniTimelessWondersVietnamCambodiaMekong-2015-R {
+        background-image: url(~/media/d7c0a95a88ff4df992a775cc7ac0e807.ashx);
+        background-repeat: no-repeat;
+    }
+    /*
+        2016 Itinerary Row images
+        ========================================================================*/
+    #uniAPortraitofMajesticFrance-2016-L {
+        background-image: url(~/media/f6bcb69dac50407ab6bc97dbbcc9bf04.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniAPortraitofMajesticFrance-2016-R {
+        background-image: url(~/media/0650430128ad416bbec8d43e4738dbef.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniBordeauxVineyardsChateaux-2016-L {
+        background-image: url(~/media/dcc771ccae2b4189aaf225f17449685b.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniBordeauxVineyardsChateaux-2016-R {
+        background-image: url(~/media/f4cc97117da94058a655c9b930a72683.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniBurgundyProvence-2016-L {
+        background-image: url(~/media/26fdc81d66a248c9a9dbcf2a854b5c2c.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniBurgundyProvence-2016-R {
+        background-image: url(~/media/17e3742ce09b4c6fa91deb419ece7f22.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniDanubeDiscoveryPrague-2016-L {
+        background-image: url(~/media/acab032fae2e4b558fca245d3c73b72b.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniDanubeDiscoveryPrague-2016-R {
+        background-image: url(~/media/e35f435c80884d8ea44c8d9f10ba7a4b.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniDelightfulDanubePrague-2016-L {
+        background-image: url(~/media/16725dfccfca4a6098ab0373ac3b852b.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniDelightfulDanubePrague-2016-R {
+        background-image: url(~/media/356a37c49e3d4e0db67ab88e20b95c9b.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniEnchantingDanube-2016-L {
+        background-image: url(~/media/7ed770e35ef6422f8b1c43b8d2ea5bb5.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniEnchantingDanube-2016-R {
+        background-image: url(~/media/ffc31cfe32074bef955c5235a62942c4.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniEuropeanJewels-2016-L {
+        background-image: url(~/media/c44804c900f044d3b2d75c5d6ab4064d.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniEuropeanJewels-2016-R {
+        background-image: url(~/media/69bb3620f9924c3e93607b0654e19dbb.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniGrandEuropeanDiscovery-2016-L {
+        background-image: url(~/media/4625cb1bfbeb4cbab57137ce72eed9cd.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniGrandEuropeanDiscovery-2016-R {
+        background-image: url(~/media/02ae8fe3582247669fd3d011d15e18fc.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniGrandFrance-2016-L {
+        background-image: url(~/media/9ee394a0500e4d0aa3190920e274759c.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniGrandFrance-2016-R {
+        background-image: url(~/media/8032e400e76b452ba284500f114487f0.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniHighlightsofEasternEuropeIstanbul-2016-L {
+        background-image: url(~/media/7442b7b069d9443ba0d7c48a0b03478b.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniHighlightsofEasternEuropeIstanbul-2016-R {
+        background-image: url(~/media/82eb1412fea246ff947bb3fa72ff42ba.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniHollandBelgiumatTulipTime-2016-L {
+        background-image: url(~/media/9419931187534b3692ac12d2b73c961c.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniHollandBelgiumatTulipTime-2016-R {
+        background-image: url(~/media/7c361b04bbeb4a6ba32c06d3601a7817.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniJewelsofSpainPortugaltheDouroRiver-2016-L {
+        background-image: url(~/media/f8f9898158b04e5596f8a07fb474b2ca.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniJewelsofSpainPortugaltheDouroRiver-2016-R {
+        background-image: url(~/media/135678573e7344c693606b18688d0933.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniLegendaryRhineMoselle-2016-L {
+        background-image: url(~/media/29062b82e1a443ba9aa5fdfd2c36afd5.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniLegendaryRhineMoselle-2016-R {
+        background-image: url(~/media/66493d38589640bfabd0aa6e2037008c.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniParisNormandy-2016-L {
+        background-image: url(~/media/f8c03fc3530b426f899c67efffe603b2.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniParisNormandy-2016-R {
+        background-image: url(~/media/b4d78d7a64214e599de1549c4dc7d3be.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniPortraitsofEasternEurope-2016-L {
+        background-image: url(~/media/5c89f9da00bb4b548718f3d14721c973.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniPortraitsofEasternEurope-2016-R {
+        background-image: url(~/media/4e60d8ea005f482b8dcac97ae0bd9551.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniPortugalSpainTheDouroRiverValley-2016-L {
+        background-image: url(~/media/524e4ba9043c453e9f00015ae2990dcd.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniPortugalSpainTheDouroRiverValley-2016-R {
+        background-image: url(~/media/981e3f7830df424ba20bdba1757d2ce6.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniRhineDiscoveryPrague-2016-L {
+        background-image: url(~/media/43fe5c2619764b19894bc81195d74390.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniRhineDiscoveryPrague-2016-R {
+        background-image: url(~/media/befb500818694db5bce11bdbb55c547b.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniSplendorsofItaly-2016-L {
+        background-image: url(~/media/abfcd282ff1f440a8d24bb2b8bafd0da.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniSplendorsofItaly-2016-R {
+        background-image: url(~/media/8cfe28d5c9354d76a4400ceb95a24018.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniTulipsWindmills-2016-L {
+        background-image: url(~/media/4be9fc2e8e83422aaabc339ad29e3c22.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniTulipsWindmills-2016-R {
+        background-image: url(~/media/6cda48fc5b2141218e142656b0208dd4.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniUltimateEuropeanJourney-2016-L {
+        background-image: url(~/media/f321eb6a314447d9adbc5b2c7d1a1c56.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniUltimateEuropeanJourney-2016-R {
+        background-image: url(~/media/cb379d0d47c84d4abbf9fe5cddae99ab.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniGemsofNorthernItaly-2016-L {
+        background-image: url(~/media/6a8814aebe3945e6b0224955195da622.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniGemsofNorthernItaly-2016-R {
+        background-image: url(~/media/0c7488a00b4341838b0b3abbb1efa031.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniChinaTibetTheYangtze-2016-L {
+        background-image: url(~/media/66013ee2cc154315b6ff2563e7ce39ab.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniChinaTibetTheYangtze-2016-R {
+        background-image: url(~/media/90762f6533024b098ff4ed1f35b9f492.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniGrandChinatheYangtze-2016-L {
+        background-image: url(~/media/826976fc48f846ea84864a1d778c9362.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniGrandChinatheYangtze-2016-R {
+        background-image: url(~/media/354943d52eaa4d129708deed112670db.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniHighlightsofChinatheYangtze-2016-L {
+        background-image: url(~/media/8d115a8093264d90bfafa3d5cb84ff25.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniHighlightsofChinatheYangtze-2016-R {
+        background-image: url(~/media/af0f658b85f442ca8214347bdb88acd3.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniTreasuresOfChinaAndTheYangtze-2016-L {
+        background-image: url(~/media/348ea3820d3a4620be4b0f634542003d.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniTreasuresOfChinaAndTheYangtze-2016-R {
+        background-image: url(~/media/5feb1aca1b534624a40620f68f9c2f5b.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniTimelessWondersofVietnamCambodiatheMekong-2016-L {
+        background-image: url(~/media/0a8a689dcd0a41b296d489ed3aa36743.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniTimelessWondersofVietnamCambodiatheMekong-2016-R {
+        background-image: url(~/media/760322fd883f4ac8a6aea973339b9e7c.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniImperialWaterwaysofRussia-2016-L {
+        background-image: url(~/media/0c984b1701014afc87176a9cfcacccab.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniImperialWaterwaysofRussia-2016-R {
+        background-image: url(~/media/43ac407de16c44ff954d3dfcf3d22d6e.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniIndiasGoldenTriangleSacredGanges-2016-L {
+        background-image: url(~/media/4721022a4cfe4e7ab04d6fa8e40baf55.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniIndiasGoldenTriangleSacredGanges-2016-R {
+        background-image: url(~/media/e2493286f26544e4b62a25ec2e714c51.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniSplendorsofEgyptTheNile-2016-L {
+        background-image: url(~/media/f33ccae5a67c4f64abc5f3bee99e015e.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniSplendorsofEgyptTheNile-2016-R {
+        background-image: url(~/media/2530e4065d0d4527b26110c6fb27ad83.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniCastlesAlongTheRhine-2016-L {
+        background-image: url(~/media/5c86a36df3f64b269d8a6c2a4f4bdf05.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniCastlesAlongTheRhine-2016-R {
+        background-image: url(~/media/99953175739845f48bc4987405992e2d.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniClassicChristmasMarkets-2016-L {
+        background-image: url(~/media/a0bfe4a55ba442f8acc5d0af15e4188d.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniClassicChristmasMarkets-2016-R {
+        background-image: url(~/media/9b3aa97e30ac49f9a66b7df592392afa.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniDanubeHolidayMarkets-2016-L {
+        background-image: url(~/media/574576010d924b199c5d282870286ee8.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniDanubeHolidayMarkets-2016-R {
+        background-image: url(~/media/a22721cae3274405be74387221d6e5bf.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniEnchantingChristmasNewYearsCruise-2016-L {
+        background-image: url(~/media/33456e64194845ab93345a5dfd0e26b4.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniEnchantingChristmasNewYearsCruise-2016-R {
+        background-image: url(~/media/43738160c0ff4ba09154c284e6b97d44.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniEuropeanHolidayMarkets-2016-L {
+        background-image: url(~/media/f1bf311f589d4778baa0023365e38dfd.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniEuropeanHolidayMarkets-2016-R {
+        background-image: url(~/media/c42855c311194675bcc1808b2cac5888.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniGrandChristmasNewYearsCruise-2016-L {
+        background-image: url(~/media/3c895243156d415e868f7d2d327e027e.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniGrandChristmasNewYearsCruise-2016-R {
+        background-image: url(~/media/baaf50ab91a34d49ac868bacf7d33fec.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniParisianHoliday-2016-L {
+        background-image: url(~/media/3a5b9ff23b6849829fadd176bc4a42ce.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniParisianHoliday-2016-R {
+        background-image: url(~/media/bee9d46413724f7da729279f0be16423.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniRhineHolidayMarkets-2016-L {
+        background-image: url(~/media/a844197a4d914938bf3122910ca3cc5b.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniRhineHolidayMarkets-2016-R {
+        background-image: url(~/media/4382da2d7b09407495bb6ffb5dc12aa9.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniUltimateFrance-2016-L {
+        background-image: url(~/media/ae8f3f35751f4891b5641f17032a36ab.ashx);
+        background-repeat: no-repeat;
+    }
+    #uniUltimateFrance-2016-R {
+        background-image: url(~/media/5a5833d2d32b407788c24d3e5a3f212b.ashx);
+        background-repeat: no-repeat;
+    }
+    .uniFull {
+        height: 341px;
+    }
+    /*
+        landing page half itin row general styles
+        ======================================================================*/
+    .uniHalf {
+        min-height: 601px;
+    }
+}
+
+
+/*========================================================================
+!!!!!!!!!!!!!!!!!!!!!RESPONSIVE-RESPONSIVE-RESPONSIVE!!!!!!!!!!!!!!!!!!!!!
+========================================================================*/
+
+@media screen and (min-width: 1200px) {
+    .uniTall.uniButtonFloat .buttonContainer {
+        position: absolute;
+        width: 187px;
+        top: 0;
+        right: 0;
+        margin-top: 0;
+        z-index: 5;
+    }
+    .buttonContainer a {
+        margin-bottom: 5px;
+        width: 186px;
+    }
+    .uniTall.uniButtonFloat h2,
+    .uniTall.uniButtonFloat h3,
+    .uniTall.uniButtonFloat p:first-of-type,
+    .uniTall.uniButtonFloat p.uniItinCities {
+        width: calc(100% - 187px);
+    }
+    .uniTall article {
+        padding: 0 0 0 15px;
+    }
+    .feat-itin .odd article,
+    .feat-itin .even article,
+    .tabpanel-tabs .even article,
+    .tabpanel-tabs .odd article {
+        height: 341px;
+        padding: 10px 40px;
+    }
+    .uniTall,
+    .uniFull,
+    .uniHalf {
+        font-size: 14px;
+    }
+    .uniTier3LPContent {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .feat-itin .odd article,
+    .feat-itin .even article,
+    .uniHalf article,
+    .tabpanel-tabs .even article,
+    .tabpanel-tabs .odd article {
+        padding: 10px 0;
+    }
+    .uniTall article {
+        padding: 10px 15px;
+    }
+    .uniTall,
+    .uniFull,
+    .uniHalf {
+        font-size: 13px;
+    }
+    .uniTier3LPContent {
+        font-size: 12.5px;
+    }
+}
+
+@media (min-width: 1101px) {
+    /*
+        landing page half itin row general styles
+        ======================================================================*/
+    .uniHalf {
+        min-height: 610px;
+    }
+    .feat-itin .even img {
+        position: initial;
+    }
+}
+
+@media screen and (min-width: 992px) {}
+
+@media screen and (max-width: 991px) {
+    .itinImageWrap {
+        margin-bottom: 10px;
+    }
+    .buttonContainer {
+        text-align: center;
+    }
+    .feat-itin .uniTall article {
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 852px) {
+    .feat-itin .even img,
+    .feat-itin .odd img {
+        position: initial;
+    }
+}
+
+@media (min-width: 768px) {
+    .offerRow .offerFrame.offerOneThird {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    /*
+        landing page half itin row general styles
+        ======================================================================*/
+    .container.fiftyfifty div.col-sm-6:first-of-type,
+    .container.fiftyfifty div.col-sm-6:last-of-type {
+        padding: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .offerFrame {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .offerMid {
+        margin-right: 18px;
+        margin-left: 13px;
+    }
+}
+
+@media (max-width: 640px) {
+    /*
+        offer styles
+        ==========================================================================*/
+    .offerFrame {
+        font-size: 13px;
+        width: 100%;
+    }
+    .offer {
+        padding: 25px;
+    }
+    .leftOffer {
+        float: none;
+        width: 100%;
+    }
+    .offerMid {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .rightOffer {
+        float: none;
+        width: 100%;
+    }
+    div#Content div.listTemplateContainer .listItemPanel .offer h3 {
+        margin-top: 0 !important;
+    }
+}
+
+@media (max-width: 665px) and (min-width: 639px) {
+    .offerFrame {
+        font-size: 12.5px;
+    }
+}
+
+@media (max-width: 533px) {}
+
+@media (max-width: 400px) {
+    /*
+        tier 3 landing page content
+        ======================================================================*/
+    .uniTier3LPContent {
+        width: 100% !important;
+    }
+}
+
+
+/*================================================================================================================================================
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!END SITE-WIDE STYLES-END SITE-WIDE STYLES-END SITE-WIDE STYLES!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+================================================================================================================================================*/
+
+.intro {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/*
+special savings and EBS
+========================================================================*/
+
+
+/*show*/
+
+.uniItinCities,
+.uniItinExcursions,
+.uniPifExtend {
+    display: block;
+}
+
+#uniCTALearn {
+    display: inline-block;
+}
+
+
+/*hide*/
+
+.uniSpecialSavings,
+.uniItinSpare,
+.uniItinFamily,
+.uniItinFamilyOffer,
+.uniItinCruiseAirOffer,
+.uniItinBeauty,
+.uniItinSoloTravelerOffer,
+.uniItinYear,
+.uniItinSoloTravelerOffer,
+#uniCTADetails,
+#uniCampRAQ {
+    display: none;
+}
+
+
+/*-----------------------------
+        Jason's Overrides
+-------------------------------*/
+
+.offerRow .offerFrame {
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
+.offerMid {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .offerMid {
+        display: inline-block;
+    }
+}
+
+.intro {
+    font-size: 20px;
+    padding: 0 15px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .intro {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .intro {
+        font-size: 16px;
+    }
+}
+
+.offerYearHead {
+    padding-bottom: 10px;
+}
+
+.container.seventythirty {
+    margin-bottom: 75px;
+}
+
+.offerCurrencySymbol {
+    display: inline;
+}
