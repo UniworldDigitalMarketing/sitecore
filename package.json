@@ -2,8 +2,11 @@
   "name": "uniworld-css",
   "version": "0.1.0",
   "devDependencies": {
-    "grunt": "^0.4.5",
+    "autoprefixer": "^6.3.6",
+    "cssnano": "^3.7.1",
+    "grunt": "^1.0.1",
     "grunt-cssnext": "^1.0.0",
+    "grunt-postcss": "^0.8.0",
     "grunt-uncss": "^0.4.3"
   }
 }

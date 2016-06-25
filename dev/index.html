@@ -1,2430 +1,338 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no">
-	<link rel="shortcut icon" href="/favicon.ico">
-	<title>All-Inclusive Luxury | Uniworld&#174; River Cruises | Official Site </title>
-	<meta name="keywords" content="Home" />
-	<meta name="description" content="Luxury River Cruises voted Best Overall River Cruise Line. The World’s Only All-Inclusive Boutique River Cruise Experience in Europe, Russia, Egypt, India, China, Vietnam, and Cambodia." />
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-	<link href="https://www.uniworld.com/assets/css/main.css" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-	<script src="https://use.typekit.net/nky4zvk.js"></script>
-	<script>
-	try {
-		Typekit.load();
-	} catch (e) {}
-	</script>
-	<style type="text/css">
-.day .day-description-text p,
-	.day .day-description-title p {
-		text-align: left;
-		margin: 20px 0;
-	}
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="css/site-base.css">
+   <link rel="stylesheet" href="css/page-specific.css">
 
-	.day .day-description-title p:first-of-type {
-		color: #356b99;
-		font-size: 16px;
-		letter-spacing: .05em;
-	}
-
-	.day .day-description-title p:last-of-type {
-		color: #5d81a2;
-		font-family: civita-regular, serif;
-		margin-top: 10px;
-	}
-
-	.day .day-description-title p span {
-		/*color: #5b5b5b;*/
-		display: inline;
-		font-family: civita-regular, serif;
-	}
-
-	.day .day-description-text p.day-note {
-		font-size: 14px;
-	}
-	/*2017 pricing offer change*/
-	/*fix for  parent container*/
-
-	.col-lg-8.col-xs-12.text-left {
-		height: auto;
-		padding-left: 0 !important;
-	}
-
-	.col-lg-8.col-xs-12.text-left .text-left {
-		width: 100%;
-	}
-
-	.row.offerRow .col-sm-12.col-md-3 {
-		font-weight: normal;
-	}
-	/*end fix*/
-
-	.offerAmount,
-	.offerCatNames {
-		text-align: center;
-		text-transform: uppercase;
-	}
-
-	.offerAmount {
-		font-weight: bold;
-		/*color: green;*/
-	}
-
-	.offerCatNames {
-		/*color: red;*/
-	}
-
-	.offer-table {
-		/*outline: 1px solid red;*/
-		width: 100%;
-		line-height: 1;
-	}
-
-	.offer-headline {
-		background-color: rgb(0, 55, 103);
-		color: #FFF;
-		text-align: center;
-		/*margin-bottom: 10px;*/
-		padding: 10px 0;
-	}
-
-	.offerRow {
-		padding-bottom: 10px;
-	}
-
-	.offerCatRow {
-		background-color: rgb(237, 241, 244);
-		padding-top: 8px;
-		padding-bottom: 7px;
-	}
-
-	.offerCatRow .col-xs-6.col-sm-12.col-md-9.visible-md-block.visible-lg-block {
-		padding: 0;
-	}
-
-	.offerCatNoPad {
-		padding-left: 5px !important;
-		padding-right: 0 !important;
-	}
-	/*flex layout exparament*/
-
-	.offerFlexRow {
-		display: -webkit-inline-box;
-		display: -webkit-inline-flex;
-		display: -ms-inline-flexbox;
-		display: inline-flex;
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		-webkit-flex-direction: row;
-		-ms-flex-direction: row;
-		flex-direction: row;
-		-webkit-flex-wrap: nowrap;
-		-ms-flex-wrap: nowrap;
-		flex-wrap: nowrap;
-		-webkit-box-pack: justify;
-		-webkit-justify-content: space-between;
-		-ms-flex-pack: justify;
-		justify-content: space-between;
-		-webkit-align-content: space-around;
-		-ms-flex-line-pack: distribute;
-		align-content: space-around;
-		-webkit-box-align: start;
-		-webkit-align-items: flex-start;
-		-ms-flex-align: start;
-		align-items: flex-start;
-		width: 100%;
-		/*outline: 1px solid orange;*/
-	}
-
-	.offerFlexContainer {
-		-webkit-box-ordinal-group: 1;
-		-webkit-order: 0;
-		-ms-flex-order: 0;
-		order: 0;
-		-webkit-box-flex: 1;
-		-webkit-flex: 1 1 65px;
-		-ms-flex: 1 1 65px;
-		flex: 1 1 65px;
-		-webkit-align-self: auto;
-		-ms-flex-item-align: auto;
-		align-self: auto;
-		/*outline: 1px solid purple;*/
-	}
-	/*media query at 991px*/
-
-	@media only screen and (max-width: 991px) {
-		.offerDescription {
-			text-align: center;
-		}
-	}
-
-	@media only screen and (max-width: 770px) {
-		.offerFlexRow {
-			display: block;
-		}
-	}
-	/*----------------------------------------
-            Button Overrides
------------------------------------------*/
-
-	.uni-btn-primary {
-		color: #ffffff;
-		background-color: #337ab7;
-		border-color: #2e6da4;
-	}
-
-	.uni-btn-primary:hover,
-	.uni-btn-primary:focus,
-	.uni-btn-primary.focus,
-	.uni-btn-primary:active {
-		color: #ffffff;
-		background-color: #286090;
-		border-color: #204d74;
-	}
-}
-.uni-footer-global .uni-btn-primary:hover,
-.uni-footer-global .uni-btn-primary:focus {
-	color: #ffffff!important;
-}
-.uni-btn-primary:hover,
-.uni-btn-primary:focus,
-.uni-btn-primary.focus,
-.uni-btn-primary:active {
-	color: #ffffff!important;
-}
-
-/*brussels announcement*/
-.annoucementBrussels {
-	padding: 10px 0;
-	font-size: 16px;
-	text-align: center;
-	margin: 0 !important;
-}
-.annoucmentFancy {
-	font-family: civita-lightregular, serif;
-	font-size: 20px;
-	color: #2c5f8c;
-	display: inline-block;
-	padding-right: 15px;
-	font-style: italic;
-}
-.annoucementBrussels img {
-	width: 50px;
-	height: 50px;
-}
-	</style>
 </head>
-
 <body>
-	<!-- Google Tag Manager -->
-	<noscript>
-		<iframe src="//www.googletagmanager.com/ns.html?id=GTM-N96RFR" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-	</noscript>
-	<script>
-	(function(w, d, s, l, i) {
-		w[l] = w[l] || [];
-		w[l].push({
-			'gtm.start': new Date().getTime(),
-			event: 'gtm.js'
-		});
-		var f = d.getElementsByTagName(s)[0],
-			j = d.createElement(s),
-			dl = l != 'dataLayer' ? '&l=' + l : '';
-		j.async = true;
-		j.src =
-			'//www.googletagmanager.com/gtm.js?id=' + i + dl;
-		f.parentNode.insertBefore(j, f);
-	})(window, document, 'script', 'dataLayer', 'GTM-N96RFR');
-	</script>
-	<!-- End Google Tag Manager -->
-	<header class="uni-header-global">
-		<!-- this is still a work in progress -->
-		<nav class="navbar navbar-default" role="navigation">
-			<div class="container">
-				<div class="row hidden-xs utility">
-					<div class="col-sm-5 col-lg-5">
-						<div class="left-nav utility-position">
-							<div class="header-contact">
-								<span>CONTACT US: <strong>1-800-257-2407</strong></span> OR YOUR TRAVEL AGENT
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-2 col-lg-2 text-center hidden-xs">
-						&nbsp;
-					</div>
-					<div class="col-sm-5 col-lg-5">
-						<div class="right-nav utility-position">
-							<a href="/brochure" DisableSecurity="True" DisableLinkDescription="True" DisableWebEdit="True">Brochure</a><a href="/modals/newsletter-signup" DisableSecurity="True" DisableLinkDescription="True" DisableWebEdit="True" class="fancybox fancybox.iframe">Newsletter</a><a href="/agency/quick-links" DisableSecurity="True" DisableLinkDescription="True" DisableWebEdit="True">Agent Login</a>
-							<div class="btn-group" data-toggle="buttons" id="uni-textSize">
-								<label class="btn btn-primary">
-									<input autcomplete="off" name="uni-textSize" type="radio" value="base" />
-									<span>A</span>
-								</label>
-								<label class="btn btn-primary">
-									<input autcomplete="off" name="uni-textSize" type="radio" value="big" />
-									<big>A</big>
-								</label>
-								<label class="btn btn-primary">
-									<input autcomplete="off" name="uni-textSize" type="radio" value="biggest" />
-									<big>
-										<big>A</big>
-									</big>
-								</label>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- .row -->
-				<div class="row visible-xs">
-					<div class="col-xs-6 text-left xs-logo">
-						<a class="logo" href="/">
-							<img src="/Assets/img/corp-logos/uni-logo.png" />
-						</a>
-					</div>
-					<!-- .col -->
-					<div class="col-xs-6 text-right xs-icons">
-						<div class="mobile-button">
-							<button class="navbar-toggle collapsed" data-target="#header-global-collapse" data-toggle="collapse" type="button"></button>
-						</div>
-						<div class="mobile-icons">
-							<a href="tel:1-800-257-2407"><i class="icon-phone"></i></a>
-							<a href="#" onclick="$('#mobilesearch').show(); $('#nav-searchbar-mobile').focus();">
-								<i class="icon-search opensearch"></i>
-							</a>
-							<i class="icon-menu"></i>
-						</div>
-					</div>
-					<div id="mobilesearch" class="mobilesearch xs-icons">
-						<form action="/api/sitecore/SiteSearch/RedirectToSearchPage" method="post">
-							<div class="inlinesetable">
-								<div class="inlinesearcdbox">
-									<input type="text" id="nav-searchbar-mobile" name="searchTerm">
-								</div>
-								<div class="inlinesearcdbox">
-									<a href="/api/sitecore/SiteSearch/RedirectToSearchPage?searchTerm=replace" id="headerSearchButtonMobile"><i class="icon-search"></i></a>
-								</div>
-								<div class="inlinesearcdbox">
-									<a href="#" onclick="$('#mobilesearch').hide();">
-										<i class="icon-cancel closesearch"></i>
-									</a>
-								</div>
-							</div>
-						</form>
-					</div>
-					<!-- .col -->
-				</div>
-			</div>
-		</nav>
-		<nav class="navbar navbar-inverse yamm" role="navigation">
-			<div class="container">
-				<div class="center-container row hidden-xs">
-					<a class="logo" href="/">
-						<img src="/Assets/img/corp-logos/uni.png" />
-					</a>
-				</div>
-				<div class="collapse navbar-collapse" id="header-global-collapse">
-					<ul class="nav navbar-nav">
-						<li class="dropdown">
-							<a class="dropdown-toggle primary" href="/" data-toggle='dropdown'>
-                                    Cruises
-                                    <i class="fa fa-angle-down"></i>
-                                </a>
-							<div class="dropdown-menu">
-								<div class="column-left">
-									<div>
-										<ul>
-											<li>
-												<div class="list-heading">Destinations</div>
-											</li>
-											<li class="active">
-												<a href="/river-cruise/europe" data-content=menurightcontent_0_0_0>Europe</a>
-											</li>
-											<li>
-												<a href="/river-cruise/asia" data-content=menurightcontent_0_0_1>China</a>
-											</li>
-											<li>
-												<a href="/river-cruise/asia/mekong/timeless-wonders-of-vietnam-cambodia-and-the-mekong/2016-ho-chi-minh-city-to-hanoi" data-content=menurightcontent_0_0_2>Vietnam &amp; Cambodia</a>
-											</li>
-											<li>
-												<a href="/river-cruise/russia" data-content=menurightcontent_0_0_3>Russia</a>
-											</li>
-											<li>
-												<a href="/river-cruise/egypt" data-content=menurightcontent_0_0_4>Egypt</a>
-											</li>
-											<li>
-												<a href="/river-cruise/india" data-content=menurightcontent_0_0_5>India</a>
-											</li>
-											<li>
-												<a href="/themed-cruises/family-friendly-cruises" data-content=menurightcontent_0_0_6>Family Cruises</a>
-											</li>
-											<li>
-												<a href="/river-cruise/europe" data-content=menurightcontent_0_0_7>Holiday Season Cruises</a>
-											</li>
-											<li>
-												<a href="/themed-cruises/uniworlds-themed-cruises" data-content=menurightcontent_0_0_8>Themed Cruises</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="column-right hidden-xs">
-									<div class="active" id="menurightcontent_0_0_0">
-										<div class="row">
-											<div class="col-md-4">
-												<h5>THE RHINE, MOSELLE, MAIN & DANUBE RIVERS</h5>
-												<a href="/river-cruise/europe/rhine/tulips-and-windmills/2017-amsterdam-to-antwerp">Tulips & Windmills</a>
-												<h6>Amsterdam to Antwerp</h6>
-												<a href="/river-cruise/europe/rhine/holland-and-belgium-at-tulip-time/2017-brussels-to-amsterdam">Holland & Belgium at Tulip Time</a>
-												<h6> Brussels to Amsterdam</h6>
-												<a href="/river-cruise/europe/rhine/castles-along-the-rhine/2016-basel-to-amsterdam">Castles along the Rhine</a>
-												<h6>Basel to Amsterdam</h6>
-												<a href="/river-cruise/europe/rhine/rhine-main-discovery-and-munich/2017-munich-to-cologne">Rhine-Main Discovery (New in 2017)</a>
-												<h6>Munich to Cologne</h6>
-												<a href="/river-cruise/europe/rhine/rhine-discovery-and-prague/2016-prague-to-basel">Rhine Discovery & Prague</a>
-												<h6>Prague to Basel</h6>
-												<a href="/river-cruise/europe/rhine/legendary-rhine-and-moselle/2016-amsterdam-to-basel">Legendary Rhine & Moselle</a>
-												<h6>Amsterdam to Basel</h6>
-												<a href="/river-cruise/europe/danube/enchanting-danube/2016-budapest-to-passau">Enchanting Danube</a>
-												<h6>Budapest to Passau</h6>
-												<a href="/river-cruise/europe/danube/danube-discovery-prague/2016-vienna-to-prague">Danube Discovery & Prague</a>
-												<h6>Vienna to Prague</h6>
-												<a href="/river-cruise/europe/danube/delightful-danube-and-prague/2016-budapest-to-passau">Delightful Danube & Prague</a>
-												<h6>Budapest to Prague</h6>
-											</div>
-											<div class="col-md-4">
-												<a href="/river-cruise/europe/danube/highlights-of-eastern-europe-istanbul/2016-budapest-to-istanbul">Highlights of Eastern Europe & Istanbul (New in 2016)</a>
-												<h6>Budapest to Istanbul</h6>
-												<a href="/river-cruise/europe/rhine/grand-european-discovery/2016-basel-to-vienna">Grand European Discovery</a>
-												<h6>Basel to Vienna</h6>
-												<a href="/river-cruise/europe/danube/portraits-of-eastern-europe/2016-prague-to-istanbul">Portraits of Eastern Europe</a>
-												<h6>Prague to Istanbul</h6>
-												<a href="/river-cruise/europe/danube/ultimate-european-journey/2016-amsterdam-to-istanbul">Ultimate European Journey (New in 2016)</a>
-												<h6>Amsterdam to Istanbul</h6>
-												<a href="/river-cruise/europe/danube/european-jewels/2016-budapest-to-amsterdam">European Jewels</a>
-												<h6>Budapest to Amsterdam</h6>
-												<h5>ITALY'S PO RIVER & THE VENICE LAGOON</h5>
-												<a href="/river-cruise/europe/italy/gems-of-northern-italy/2016-milan-to-venice">Gems of Northern Italy</a>
-												<h6>Milan to Venice</h6>
-												<a href="/river-cruise/europe/italy/splendors-of-italy/2016-milan-to-rome">Splendors of Italy (New in 2016)</a>
-												<h6>Milan to Rome</h6>
-											</div>
-											<div class="col-md-4">
-												<h5>FRANCE'S SEINE, RHÔNE, SAÔNE, GIRONDE & DORDOGNE RIVERS</h5>
-												<a href="/river-cruise/europe/france/paris-and-impressions-of-the-seine/2017-paris-to-paris">Paris & Impressions of the Seine (New in 2017)</a>
-												<h6>Paris to Paris</h6>
-												<a href="/river-cruise/europe/france/paris-and-normandy/2016-paris-to-paris">Paris & Normandy</a>
-												<h6>Paris to Paris</h6>
-												<a href="/river-cruise/europe/france/bordeaux-vineyards-and-chateaux/2016-bordeaux-to-bordeaux">Bordeaux, Vineyards & Châteaux</a>
-												<h6>Bordeaux to Bordeaux</h6>
-												<a href="/river-cruise/europe/france/burgundy-and-provence/2016-avignon-to-lyon">Burgundy & Provence</a>
-												<h6>Avignon to Lyon</h6>
-												<a href="/river-cruise/europe/france/a-portrait-of-majestic-france/2016-paris-to-bordeaux">A Portrait of Majestic France</a>
-												<h6>Paris to Bordeaux</h6>
-												<a href="/river-cruise/europe/france/grand-france/2016-paris-to-avignon">Grand France</a>
-												<h6>Paris to Avignon</h6>
-												<a href="/river-cruise/europe/france/ultimate-france/2016-paris-to-avignon">Ultimate France</a>
-												<h6>Paris to Avignon</h6>
-												<h5>PORTUGAL & SPAIN'S DOURO RIVER</h5>
-												<a href="/river-cruise/europe/spain-portugal/portugal-spain-and-the-douro-valley/2016-lisbon-to-porto">Portugal, Spain & the Douro River Valley</a>
-												<h6>Lisbon to Porto</h6>
-												<a href="/river-cruise/europe/spain-portugal/jewels-of-spain-portugal-and-the-douro-river/2016-lisbon-to-madrid">Jewels of Spain, Portugal & the Douro River</a>
-												<h6>Lisbon to Madrid</h6>
-											</div>
-										</div>
-									</div>
-									<div class="hide" id="menurightcontent_0_0_1">
-										<div class="row">
-											<div class="col-md-3">
-												<a href="/river-cruise/asia/yangtze/china-tibet-and-the-yangtze/2016-beijing-to-shanghai">China, Tibet & the Yangtze</a>
-												<h6>Beijing to shanghai</h6>
-												<a href="/river-cruise/asia/yangtze/grand-china-and-the-yangtze/2016-beijing-to-hong-kong">Grand China & the Yangtze</a>
-												<h6>Beijing to Hong Kong</h6>
-											</div>
-											<div class="col-md-6">
-												<a href="/river-cruise/asia/yangtze/highlights-of-china-and-the-yangtze/2016-beijing-to-shanghai">Highlights of China & the Yangtze</a>
-												<h6>Beijing to Shanghai</h6>
-												<a href="/river-cruise/asia/yangtze/treasures-of-china-and-the-yangtze/2016-shanghai-to-beijing">Treasures of China & the Yangtze</a>
-												<h6>Shanghai to Beijing</h6>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-md-6 text-center">
-												<hr />
-												<a class="btn btn-default btn-sm uni-btn uni-btn-primary hidden-sm-inline" type="button" href="/river-cruise/Asia">VIEW ALL CHINA</a>
-												<p> </p>
-											</div>
-										</div>
-									</div>
-									<div class="hide" id="menurightcontent_0_0_2">
-										<br />
-										<br />
-										<br />
-										<br />
-										<div class="row">
-											<div class="col-md-6">
-												<a href="/river-cruise/asia/mekong/timeless-wonders-of-vietnam-cambodia-and-the-mekong/2016-ho-chi-minh-city-to-hanoi">Timeless Wonders of Vietnam, Cambodia & the Mekong</a>
-												<h6>Ho Chi Minh City to Hanoi</h6>
-											</div>
-										</div>
-									</div>
-									<div class="hide" id="menurightcontent_0_0_3">
-										<br />
-										<br />
-										<br />
-										<br />
-										<div class="row">
-											<div class="col-md-6">
-												<a href="/river-cruise/russia/volga/imperial-waterways-of-russia/2016-moscow-to-st-petersburg">Imperial Waterways of Russia</a>
-												<h6>Moscow to St. Petersburg</h6>
-											</div>
-										</div>
-									</div>
-									<div class="hide" id="menurightcontent_0_0_4">
-										<br />
-										<br />
-										<br />
-										<br />
-										<div class="row">
-											<div class="col-md-6">
-												<a href="/river-cruise/egypt/nile/splendors-of-egypt-and-the-nile/2016-cairo-to-cairo">Splendors of Egypt & the Nile</a>
-												<h6>Cairo to Cairo</h6>
-											</div>
-										</div>
-									</div>
-									<div class="hide" id="menurightcontent_0_0_5">
-										<br />
-										<br />
-										<br />
-										<br />
-										<div class="row">
-											<div class="col-md-6">
-												<a href="/river-cruise/india/ganges/indias-golden-triangle-and-the-sacred-ganges/2016-new-delhi-to-kolkata">India's Golden Triangle & the Sacred Ganges</a>
-												<h6>New Dehli to Kolkata</h6>
-											</div>
-										</div>
-									</div>
-									<div class="hide" id="menurightcontent_0_0_6">
-										<div class="row">
-											<div class="col-md-4">
-												<a href="/themed-cruises/family-friendly-cruises">Generations: Family Adventures</a>
-												<h6>Life-enriching travel for all generations</h6>
-											</div>
-										</div>
-									</div>
-									<div class="hide" id="menurightcontent_0_0_7">
-										<div class="row">
-											<div class="col-md-3">
-												<a href="/river-cruise/europe/rhine/classic-christmas-markets/2016-nuremberg-to-frankfurt">Classic Christmas Markets</a>
-												<h6>Nuremberg to Frankfurt</h6>
-												<a href="/river-cruise/europe/danube/danube-holiday-markets/2016-budapest-to-passau">Danube Holiday Markets</a>
-												<h6>Budapest to Passau</h6>
-												<a href="/river-cruise/europe/danube/enchanting-christmas-and-new-years-cruise/2016-passau-to-budapest">Enchanting Christmas & New Year's Cruise</a>
-												<h6>Passau to Budapest</h6>
-											</div>
-											<div class="col-md-6">
-												<a href="/river-cruise/europe/rhine/european-holiday-markets/2016-nuremberg-to-vienna">European Holiday Markets</a>
-												<h6>Nuremberg to Vienna</h6>
-												<a href="/river-cruise/europe/danube/grand-christmas-and-new-years-cruise/2016-nuremberg-to-budapest">Grand Christmas & New Year's Eve</a>
-												<h6>Nuremberg to Budapest</h6>
-												<a href="/river-cruise/europe/france/parisian-holiday/2017-paris-to-paris">Parisian Holiday</a>
-												<h6>Paris to Paris</h6>
-												<a href="/river-cruise/europe/rhine/rhine-holiday-markets/2016-basel-to-cologne">Rhine Holiday Markets</a>
-												<h6>Basel to Cologne</h6>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-md-6 text-center">
-												<hr />
-												<a class="btn btn-default btn-sm uni-btn uni-btn-primary hidden-sm-inline" type="button" href="/river-cruise/europe">VIEW ALL HOLIDAY CRUISES</a>
-											</div>
-										</div>
-									</div>
-									<div class="hide" id="menurightcontent_0_0_8">
-										<div class="row">
-											<div class="col-md-4">
-												<a href="/themed-cruises/monarch-collection">The Monarch Collection</a>
-												<h6>Highlighting Europe’s royal heritage</h6>
-												<a href="/themed-cruises/connoisseur-collection">The Connoisseur Collection</a>
-												<h6>Journeys for lovers of French food & wine</h6>
-												<a href="/themed-cruises/holiday-collection">Holiday Season Cruises</a>
-												<h6>Showcasing Europe’s Christmas Markets</h6>
-												<a href="/themed-cruises/family-friendly-cruises">Family Adventures</a>
-												<h6>Life-enriching travel for all generations</h6>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</li>
-						<li class="dropdown">
-							<a class="dropdown-toggle primary" href="/" data-toggle='dropdown'>
-                                    Ships
-                                    <i class="fa fa-angle-down"></i>
-                                </a>
-							<ul class="dropdown-menu">
-								<li>
-									<div class="row five column ui stackable grid ">
-										<div class="column">
-											<ul class="list-unstyled">
-												<li>
-													<div class="list-heading">Europe</div>
-												</li>
-												<li>
-													<a href="/ships/river-beatrice" DisableLinkDescription="True" title="river-beatrice" DisableWebEdit="True">
-                                                            River Beatrice
-                                                            </a>
-												</li>
-												<li>
-													<a href="/ships/river-countess" DisableLinkDescription="True" title="river-countess" DisableWebEdit="True">
-                                                            River Countess
-                                                            </a>
-												</li>
-												<li>
-													<a href="/ships/s-s-catherine" DisableLinkDescription="True" title="s-s-catherine" DisableWebEdit="True">
-                                                            S.S. Catherine
-                                                            </a>
-												</li>
-												<li>
-													<a href="/ships/ss-antoinette" DisableLinkDescription="True" title="s-s-antoinette" DisableWebEdit="True">
-                                                            S.S. Antoinette
-                                                            </a>
-												</li>
-												<li>
-													<a href="/ships/ss-maria-theresa" DisableLinkDescription="True" title="s-s-maria-theresa" DisableWebEdit="True">
-                                                            S.S. Maria Theresa
-                                                            </a>
-												</li>
-											</ul>
-										</div>
-										<div class="column">
-											<ul class="">
-												<li>
-													<div class="list-heading"></div>
-												</li>
-												<li>
-													<a href="/ships/river-princess" DisableLinkDescription="True" title="river-princess" DisableWebEdit="True">
-                                                            River Princess
-                                                            </a>
-												</li>
-												<li>
-													<a href="/ships/river-ambassador" DisableLinkDescription="True" title="river-ambassador" DisableWebEdit="True">
-                                                            River Ambassador
-                                                            </a>
-												</li>
-												<li>
-													<a href="/ships/river-queen" DisableLinkDescription="True" title="river-queen" DisableWebEdit="True">
-                                                            River Queen
-                                                            </a>
-												</li>
-												<li>
-													<a href="/ships/river-royale" DisableLinkDescription="True" title="river-royale" DisableWebEdit="True">
-                                                            River Royale
-                                                            </a>
-												</li>
-												<li>
-													<a href="/ships/river-duchess" DisableLinkDescription="True" title="river-duchess" DisableWebEdit="True">
-                                                            River Duchess
-                                                            </a>
-												</li>
-												<li>
-													<a href="/ships/river-empress" DisableLinkDescription="True" title="river-empress" DisableWebEdit="True">
-                                                            River Empress
-                                                            </a>
-												</li>
-											</ul>
-										</div>
-										<div class="column">
-											<ul class="list-unstyled">
-												<li>
-													<div class="list-heading"></div>
-												</li>
-												<li>
-													<a href="/ships/river-baroness" DisableLinkDescription="True" title="river-baroness" DisableWebEdit="True">
-                                                            River Baroness
-                                                            </a>
-												</li>
-												<li>
-													<a href="/ships/queen-isabel" DisableLinkDescription="True" title="queen-isabel" DisableWebEdit="True">
-                                                            Queen Isabel
-                                                            </a>
-												</li>
-												<li>
-													Egypt
-												</li>
-												<li>
-													<a href="/ships/river-tosca" DisableLinkDescription="True" title="river-tosca" DisableWebEdit="True">
-                                                                    River Tosca
-                                                                    </a>
-												</li>
-												<li>
-													Vietnam and Cambodia
-												</li>
-												<li>
-													<a href="/ships/river-orchid" DisableLinkDescription="True" title="river-orchid" DisableWebEdit="True">
-                                                                    River Orchid
-                                                                    </a>
-												</li>
-											</ul>
-										</div>
-										<div class="column">
-											<ul class="list-unstyled">
-												<li>
-													<div class="list-heading"></div>
-												</li>
-												<li>
-													India
-												</li>
-												<li>
-													<a href="/ships/ganges-voyager-ii" DisableLinkDescription="True" title="ganges-voyager-II" DisableWebEdit="True">
-                                                                    Ganges Voyager II
-                                                                    </a>
-												</li>
-												<li>
-													Russia
-												</li>
-												<li>
-													<a href="/ships/river-victoria" DisableLinkDescription="True" title="river-victoria" DisableWebEdit="True">
-                                                                    River Victoria
-                                                                    </a>
-												</li>
-											</ul>
-										</div>
-										<div class="column">
-											<ul class="list-unstyled">
-												<li>
-													<div class="list-heading"></div>
-												</li>
-												<li>
-													China
-												</li>
-												<li>
-													<a href="/ships/century-legend" DisableLinkDescription="True" title="century-legend" DisableWebEdit="True">
-                                                                    Century Legend
-                                                                    </a>
-												</li>
-												<li>
-													<a href="/ships/century-paragon" DisableLinkDescription="True" title="century-paragon" DisableWebEdit="True">
-                                                                    Century Paragon
-                                                                    </a>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</li>
-						<li class="dropdown">
-							<a class="dropdown-toggle primary" href="/" data-toggle='dropdown'>
-                                    Why Uniworld
-                                    <i class="fa fa-angle-down"></i>
-                                </a>
-							<div class="dropdown-menu">
-								<div class="column-left">
-									<div>
-										<ul>
-											<li>
-												<div class="list-heading">Why Uniworld</div>
-											</li>
-											<li class="active">
-												<a href="/why-uniworld/hallmarks" data-content=menurightcontent_2_0_0>The Uniworld Difference</a>
-											</li>
-											<li>
-												<a href="/why-uniworld/videos" data-content=menurightcontent_2_0_1>Videos</a>
-											</li>
-											<li>
-												<a href="/themed-cruises/uniworlds-themed-cruises" data-content=menurightcontent_2_0_2>Collections</a>
-											</li>
-											<li>
-												<a href="/about-uniworld/about-us" data-content=menurightcontent_2_0_3>More About Us</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="column-right hidden-xs">
-									<div class="active" id="menurightcontent_2_0_0">
-										<div class="row UniCustomPaddingNav">
-											<div class="col-md-2">
-												<a href="/why-uniworld/hallmarks?tab=Unique">Uniworld Difference</a>
-												<h6>Pillars of our boutique perspective</h6>
-											</div>
-											<div class="col-md-2 UniColumnPipeNav">
-												<a href="/why-uniworld/luxury">Unsurpassed Luxury</a>
-												<h6>Perfecting the art of luxurious river cruising</h6>
-											</div>
-											<div class="col-md-2 UniColumnPipeNav">
-												<a href="/why-uniworld/All-Inclusive-Luxury">All-Inclusive</a>
-												<h6>Carefree and truly effortless travel</h6>
-											</div>
-											<div class="col-md-2 UniColumnPipeNav">
-												<a href="/why-uniworld/Wellness">Wellness</a>
-												<h6>Well-being for mind, body & spirit</h6>
-											</div>
-											<div class="col-md-2 UniColumnPipeNav">
-												<a href="/why-uniworld/Uniworld-Cares">Uniworld Cares</a>
-												<h6>Giving back via sustainable tourism</h6>
-											</div>
-											<div class="col-md-2 UniColumnPipeNav">
-												<a href="/why-uniworld/boutique-ships">Boutique Ships</a>
-												<h6>Our design philosophy</h6>
-											</div>
-										</div>
-									</div>
-									<div class="hide" id="menurightcontent_2_0_1">
-										<br />
-										<br />
-										<div class="row">
-											<div class="col-md-6">
-												<a href="/why-uniworld/Videos">Video Center</a>
-												<h6>Discover why a journey with Uniworld is unlike anything you’ve ever experienced and beyond anything you could have expected.</h6>
-											</div>
-										</div>
-									</div>
-									<div class="hide" id="menurightcontent_2_0_2">
-										<div class="row UniCustomPaddingNav">
-											<div class="col-md-3">
-												<a href="/themed-cruises/uniworlds-themed-cruises">2016 Themed Cruises</a>
-												<h6>Special interest journeys in Europe</h6>
-											</div>
-											<div class="col-md-2 UniColumnPipeNav">
-												<a href="/themed-cruises/monarch-collection">The Monarch Collection</a>
-												<h6>Highlighting Europe’s royal heritage</h6>
-											</div>
-											<div class="col-md-2 UniColumnPipeNav">
-												<a href="/themed-cruises/connoisseur-collection">The Connoisseur Collection</a>
-												<h6>Journeys for lovers of French food & wine</h6>
-											</div>
-											<div class="col-md-2 UniColumnPipeNav">
-												<a href="/themed-cruises/holiday-collection">Holiday Season Cruises</a>
-												<h6>Showcasing Europe’s Christmas Markets</h6>
-											</div>
-											<div class="col-md-3 UniColumnPipeNav">
-												<a href="/themed-cruises/family-friendly-cruises">Family Adventures</a>
-												<h6>Life-enriching travel for all generations</h6>
-											</div>
-										</div>
-									</div>
-									<div class="hide" id="menurightcontent_2_0_3">
-										<div class="row UniCustomPaddingNav">
-											<div class="col-md-3">
-												<a href="/why-uniworld/Awards-of-Distinction">Awards & Accolades</a>
-												<h6>A sampling of prestigious recognitions</h6>
-											</div>
-											<div class="col-md-3 UniColumnPipeNav">
-												<a href="/why-uniworld/Videos">Videos</a>
-												<h6>A galley of short films</h6>
-											</div>
-											<div class="col-md-3 UniColumnPipeNav">
-												<a href="/Already-Booked/River-Heritage-Club">River Heritage Club</a>
-												<h6>Exclusive benefits for our Past Guests</h6>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</li>
-						<li class="dropdown">
-							<a class="dropdown-toggle primary" href="/why-uniworld/videos">
-                                    Videos
+	
 
-                                </a>
-						</li>
-						<li class="hidden-xs nav-spacer">&nbsp;</li>
-						<li class="dropdown">
-							<a class="dropdown-toggle primary" href="/" data-toggle='dropdown'>
-                                    Offers
-                                    <i class="fa fa-angle-down"></i>
-                                </a>
-							<div class="dropdown-menu">
-								<div class="column-left">
-									<div>
-										<ul>
-											<li>
-												<div class="list-heading"></div>
-											</li>
-											<li class="active">
-												<a href="/current-offers" data-content=menurightcontent_4_0_0>Featured Offers</a>
-											</li>
-											<li>
-												<a href="/current-offers" data-content=menurightcontent_4_0_1>Asia</a>
-											</li>
-											<li>
-												<a href="/current-offers" data-content=menurightcontent_4_0_2>India</a>
-											</li>
-											<li>
-												<a href="/current-offers" data-content=menurightcontent_4_0_3>Russia</a>
-											</li>
-											<li>
-												<a href="/current-offers" data-content=menurightcontent_4_0_4>Europe</a>
-											</li>
-											<li>
-												<a href="/current-offers" data-content=menurightcontent_4_0_5>Egypt</a>
-											</li>
-											<li>
-												<a href="/current-offers" data-content=menurightcontent_4_0_6>Holiday Season</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="column-right hidden-xs">
-									<div class="active" id="menurightcontent_4_0_0">
-										<div class="row">
-											<div class="col-md-4">
-												<a href="/promotions/cruise-and-air-offers">Cruise And Air
-<p>2016 Europe</p>
-</a>
-												<p>Amazing Savings on select itineraries when you book Economy or Business Class air with Uniworld
-												</p>
-											</div>
-											<div class="col-md-4">
-												<a href="/current-offers/offer-details?offerDetailsId={7D831476-30F9-4487-862B-D90235398E59}">Solo Traveler Offers
-<p>2016 Europe</p>
-</a>
-												<p>Reduced or Waived Single Supplement on select 2016 itineraries and departures</p>
-											</div>
-											<div class="col-md-4">
-												<a href="/promotions/limited-time-2016-savings">Early-Booking Savings
-<p>2016 Europe</p>
-</a>
-												<p>The best savings for 2016 - Book Now!
-												</p>
-											</div>
-										</div>
-										<hr />
-										<div class="row">
-											<div class="col-md-4">
-												<p><a href="/current-offers" type="button" class="btn btn-default btn-sm uni-btn uni-btn-primary hidden-sm-inline">VIEW ALL OFFERS</a>
-												</p>
-											</div>
-										</div>
-									</div>
-									<div class="hide" id="menurightcontent_4_0_1">
-										<div class="row">
-											<div class="col-md-3">
-												<a href="/current-offers/offer-details?offerDetailsId={C963528C-7AF6-48BC-9DFD-3378AFF6CB73}">2016 Early Booking Savings</a>
-												<p>Make a deposit or pay in full at time of booking and save</p>
-											</div>
-											<div class="col-md-3">
-												<a href="/current-offers/offer-details?offerDetailsId={2BCC5F1A-C52E-4413-BF2C-F54DB7F52C0A}">2016 Solo Traveler</a>
-												<p>Book and deposit by Dec 31, 2016 for great deals</p>
-											</div>
-										</div>
-										<hr />
-										<div class="row">
-											<div class="col-md-4">
-												<p><a href="/current-offers" type="button" class="btn btn-default btn-sm uni-btn uni-btn-primary hidden-sm-inline">VIEW ALL OFFERS</a>
-												</p>
-											</div>
-										</div>
-									</div>
-									<div class="hide" id="menurightcontent_4_0_2">
-										<hr />
-										<div class="row">
-											<div class="col-md-4">
-												<p><a href="/current-offers" type="button" class="btn btn-default btn-sm uni-btn uni-btn-primary hidden-sm-inline">VIEW ALL OFFERS</a>
-												</p>
-											</div>
-										</div>
-									</div>
-									<div class="hide" id="menurightcontent_4_0_3">
-										<div class="row">
-											<div class="col-md-6">
-												<a href="/current-offers/offer-details?offerDetailsId={9E9753B7-C283-4A36-BE9F-ECC4E9B804EB}">2016 Early Booking Savings</a>
-												<p>Book and deposit by Nov. 30, 2015 for great deals</p>
-											</div>
-											<div class="col-md-6">
-												<a href="/current-offers/offer-details?offerDetailsId={9EEEBFF7-16C1-4329-806D-58F90EAFF5D1}">2016 Solo Traveler</a>
-												<p>Book and deposit by Dec 31, 2016 for great deals</p>
-											</div>
-										</div>
-										<hr />
-										<div class="row">
-											<div class="col-md-4">
-												<p><a href="/current-offers" type="button" class="btn btn-default btn-sm uni-btn uni-btn-primary hidden-sm-inline">VIEW ALL OFFERS</a>
-												</p>
-											</div>
-										</div>
-									</div>
-									<div class="hide" id="menurightcontent_4_0_4">
-										<div class="row">
-											<div class="col-md-6">
-												<a href="/current-offers/offer-details?offerDetailsId={517BBC71-8C9D-4CC8-A0C2-D4F10F93AE13}">2016 Early-Booking Savings</a>
-												<p>Make a deposit or pay in full at time of booking and save</p>
-											</div>
-											<div class="col-md-6">
-												<a href="/current-offers/offer-details?offerDetailsId={7D831476-30F9-4487-862B-D90235398E59}">2016 Solo Traveler</a>
-												<p>Book and deposit by Dec 31, 2016 for great deals</p>
-											</div>
-										</div>
-										<hr />
-										<div class="row">
-											<div class="col-md-4">
-												<p><a href="/current-offers" type="button" class="btn btn-default btn-sm uni-btn uni-btn-primary hidden-sm-inline">VIEW ALL OFFERS</a>
-												</p>
-											</div>
-										</div>
-									</div>
-									<div class="hide" id="menurightcontent_4_0_5">
-										<div class="row">
-											<div class="col-md-6">
-												<a href="/current-offers/offer-details?offerDetailsId={C5AAB025-477B-4235-A879-C7C5A56C564B}">2016 Early Booking Savings</a>
-												<p>Make a deposit or pay in full at time of booking and save</p>
-											</div>
-										</div>
-										<hr />
-										<div class="row">
-											<div class="col-md-4">
-												<p><a href="/current-offers" type="button" class="btn btn-default btn-sm uni-btn uni-btn-primary hidden-sm-inline">VIEW ALL OFFERS</a>
-												</p>
-											</div>
-										</div>
-									</div>
-									<div class="hide" id="menurightcontent_4_0_6">
-										<div class="row">
-											<div class="col-md-3">
-												<a href="/current-offers/offer-details?offerDetailsId={EF9D042C-7F07-4D18-AEEA-1E7FA9F2237B}">2016 Early Booking Savings</a>
-												<p>Make a deposit or pay in full at time of booking and save</p>
-											</div>
-										</div>
-										<hr />
-										<div class="row">
-											<div class="col-md-4">
-												<p><a href="/current-offers" type="button" class="btn btn-default btn-sm uni-btn uni-btn-primary hidden-sm-inline">VIEW ALL OFFERS</a>
-												</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</li>
-						<li class="dropdown">
-							<a class="dropdown-toggle primary" href="/already-booked/need-to-know">
-                                    Already Booked
-
-                                </a>
-						</li>
-						<li class="dropdown">
-							<a class="dropdown-toggle primary" href="/uniworld_community/community">
-                                    Community
-
-                                </a>
-						</li>
-						<li class="hidden-xs dropdown-search">
-							<a role="button" data-toggle="collapse" href="#collapse-desktop-search" aria-expanded="false" aria-controls="collapseExample">
-								<i class="icon-search"></i>
-							</a>
-							<div id="collapse-desktop-search" class="collapse">
-								<form action="/api/sitecore/SiteSearch/RedirectToSearchPage" method="post">
-									<div class="search">
-										<a href="#collapse-desktop-search" class="close" data-toggle="collapse" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</a>
-										<input type="text" placeholder="I WOULD LIKE TO SEARCH FOR..." id="nav-searchbar" name="searchTerm">
-									</div>
-								</form>
-							</div>
-							<script>
-							$(document).ready(function() {
-								$("#collapse-desktop-search").on('shown.bs.collapse', function() {
-									$('#nav-searchbar').focus();
-								});
-							});
-							</script>
-						</li>
-					</ul>
-					<ul class="nav navbar-nav">
-						<li class="visible-xs">
-							<a href="/modals/brochure" class="primary  fancybox fancybox.iframe ">Brochures</a>
-						</li>
-						<li class="visible-xs">
-							<a href="/modals/newsletter-signup" class="primary  fancybox fancybox.iframe ">Newsletter Signup</a>
-						</li>
-						<li class="visible-xs">
-							<a href="/agency/quick-links" class="primary ">Travel Agents</a>
-						</li>
-					</ul>
-				</div>
-				<script>
-				$(function() {
-					$("#headerSearchButton").click(function() {
-						var searchTerm = $("#nav-searchbar").val();
-						this.href = this.href.replace("replace", searchTerm);
-					});
-					$("#headerSearchButtonMobile").click(function() {
-						var searchTerm = $("#nav-searchbar-mobile").val();
-						this.href = this.href.replace("replace", searchTerm);
-					});
-				});
-				</script>
-			</div>
-		</nav>
-	</header>
-	<div class="home">
-		<section>
-			<div id="myCarousel" class="carousel carousel-hero" data-ride="carousel">
-				<ol class="carousel-indicators">
-				</ol>
-				<div class="carousel-inner" role="listbox">
-					<div class="item active ">
-						<img src="/~/media/home-page/hero/uw_hero_ssmt_lobby.ashx" sizes=" 100vw" srcset="/~/media/home-page/hero/uw_hero_ssmt_lobby.ashx?w=480 480w, /~/media/home-page/hero/uw_hero_ssmt_lobby.ashx?w=800 800w, /~/media/home-page/hero/uw_hero_ssmt_lobby.ashx?w=1200 1200w, /~/media/home-page/hero/uw_hero_ssmt_lobby.ashx?w=1920 2000w" alt="home page hero">
-						<div class="hero-shadow"></div>
-						<div class="hero-desc-right test">
-							<span>You Deserve <em>the best</em></span>
-							<div class="hero-cta">
-								<a href="/why-uniworld/luxury" Class="btn btn-lg btn-hero btn-home" DisableLinkDescription="True" role="button">
-                                    STEP INSIDE
-                                    </a>
-								<span class="hidden-xs">
-								</span>
-							</div>
-						</div>
-						<div class="container">
-							<div class="row">
-								<div class="col-md-12">
-									<div class="choose-destination">
-										<form action="/api/sitecore/DestinationsMap/RedirectToCruiseSearchPage" method="post">
-											<h4>I&#39;D LIKE TO GO TO:</h4>
-											<select class="form-control" id="destination" name="destination" onchange="location = '/cruises/' + this.options[this.selectedIndex].text;">
-												<option value="">Destination</option>
-												<option value="India">India</option>
-												<option value="Russia">Russia</option>
-												<option value="Europe">Europe</option>
-												<option value="Asia">Asia</option>
-												<option value="Egypt">Egypt</option>
-											</select>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right"></span>
-					<span class="sr-only">Next</span>
-				</a>
-			</div>
-		</section>
-		<section class="feefo-bar">
-			In the last year, our guests gave us a
-			<a href="/en/what-our-guests-say">
-				<big>99%</big>
-			</a>
-			<big></big> rating, with over
-			<a href="/en/what-our-guests-say">
-				<span>1,600 independent reviews</span>
-			</a> since partnering with
-			<div class="feefo-logo-wrapper">
-				<img class="feefo-logo-home" src="/Assets/img/feefo/feefo_logo_home.png" />
-				<img class="question-home" src="/Assets/img/feefo/question_tooltip_home.png" data-placement="right" data-toggle="tooltip" title="Our reviews are 100% genuine from our guests - undedited, uncurated and independently managed by Feefo.">
-			</div>
-		</section>
-		<section class="">
-			<div class="all-inclusive">
-				<header class="uni-module-header-flourish uni-module-header ">
-					<h2 class="uni-module-title">Hallmarks of Distinction</h2>
-				</header>
-				<div class="hallmark-desktop hidden-xs">
-					<!-- Tab panes -->
-					<div class="tab-content text-center">
-						<div role="tabpanel" class="tab-pane active" id="content_1_img">
-							<div class="tab-image">
-								<?xml version="1.0" encoding="iso-8859-1"?>
-								<img src="/~/media/home-page/hallmarks/uw_hallmarks_ssmt_unique.ashx?h=750&la=en&w=2500&hash=508E13F757D9615977E620754EF49FFF4A8A3953" alt="" width="2500" height="750" />
-							</div>
-						</div>
-						<div role="tabpanel" class="tab-pane" id="content_2_img">
-							<div class="tab-image">
-								<?xml version="1.0" encoding="iso-8859-1"?>
-								<img src="/~/media/home-page/hallmarks/uw_hallmarks_expertise.ashx?h=750&la=en&w=2500&hash=15C443DDF02FA0FBB83ADF391EBFE759A6C20D87" alt="" width="2500" height="750" />
-							</div>
-						</div>
-						<div role="tabpanel" class="tab-pane" id="content_3_img">
-							<div class="tab-image">
-								<?xml version="1.0" encoding="iso-8859-1"?>
-								<img src="/~/media/home-page/hallmarks/uw_hallmarks_service.ashx?h=750&la=en&w=2500&hash=5D0D9BF2BD5B4BE5E1FE7CE335E171C5A9BB3FA1" alt="" width="2500" height="750" />
-							</div>
-						</div>
-						<div role="tabpanel" class="tab-pane" id="content_4_img">
-							<div class="tab-image">
-								<?xml version="1.0" encoding="iso-8859-1"?>
-								<img src="/~/media/home-page/hallmarks/uw_hallmarks_culinary.ashx?h=750&la=en&w=2500&hash=0804166F1979FF123BB565E67BB63C1FB689EF4D" alt="" width="2500" height="750" />
-							</div>
-						</div>
-						<div role="tabpanel" class="tab-pane" id="content_5_img">
-							<div class="tab-image">
-								<?xml version="1.0" encoding="iso-8859-1"?>
-								<img src="/~/media/home-page/hallmarks/uw_hallmarks_personalized.ashx?h=750&la=en&w=2500&hash=F73CB91CCD851520B5669D9647B2086FD83C5197" alt="" width="2500" height="750" />
-							</div>
-						</div>
-						<div role="tabpanel" class="tab-pane" id="content_6_img">
-							<div class="tab-image">
-								<?xml version="1.0" encoding="iso-8859-1"?>
-								<img src="/~/media/home-page/hallmarks/uw_hallmarks_sustainability.ashx?h=750&la=en&w=2500&hash=030DC3DD68A8B5B65BD4148BB6F81B3FB4376433" alt="" width="2500" height="750" />
-							</div>
-						</div>
-					</div>
-					<!-- Tabs -->
-					<div class="tab-container six-up">
-						<ul class="tabs" role="tablist">
-							<li role="presentation" class="active">
-								<a href="#content_1" aria-controls="content_1" data-toggle="tab">
-									<h4>Unique</h4>
-								</a>
-							</li>
-							<li role="presentation" class="">
-								<a href="#content_2" aria-controls="content_2" data-toggle="tab">
-									<h4>Expertise</h4>
-								</a>
-							</li>
-							<li role="presentation" class="">
-								<a href="#content_3" aria-controls="content_3" data-toggle="tab">
-									<h4>Service</h4>
-								</a>
-							</li>
-							<li role="presentation" class="">
-								<a href="#content_4" aria-controls="content_4" data-toggle="tab">
-									<h4>Culinary</h4>
-								</a>
-							</li>
-							<li role="presentation" class="">
-								<a href="#content_5" aria-controls="content_5" data-toggle="tab">
-									<h4>Personalized</h4>
-								</a>
-							</li>
-							<li role="presentation" class="">
-								<a href="#content_6" aria-controls="content_6" data-toggle="tab">
-									<h4>Sustainability</h4>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<!-- Tab panes -->
-					<div class="tab-content text-center">
-						<div role="tabpanel" class="tab-pane active" id="content_1">
-							<div class="tab-body">
-								<p>Each exquisitely appointed Uniworld ship is a work of art designed to be as unique as our guests and as inspiring as the destinations we visit. </p>
-							</div>
-							<!-- .panel-body -->
-							<div class="tab-button">
-								<a href="/why-uniworld/hallmarks?tab=Unique" class="btn btn-default btn-sm uni-btn uni-btn-primary">LEARN MORE</a>
-							</div>
-						</div>
-						<div role="tabpanel" class="tab-pane" id="content_2">
-							<div class="tab-body">
-								<p>
-									Thanks to decades of experience in luxury travel, including with our sister company, Red Carnation Hotels, Uniworld sets the standard for excellence in hospitality, culinary and nautical practices in luxury river cruising.
-								</p>
-							</div>
-							<!-- .panel-body -->
-							<div class="tab-button">
-								<a href="/why-uniworld/hallmarks?tab=Expertise" class="btn btn-default btn-sm uni-btn uni-btn-primary">LEARN MORE</a>
-							</div>
-						</div>
-						<div role="tabpanel" class="tab-pane" id="content_3">
-							<div class="tab-body">
-								<p>
-									Our credo, “No request too large, no detail too small,” comes to life in every interaction we share with our guests. We never tire of going above and beyond to create extraordinary experiences both onboard and onshore.
-								</p>
-							</div>
-							<!-- .panel-body -->
-							<div class="tab-button">
-								<a href="/why-uniworld/hallmarks?tab=Service" class="btn btn-default btn-sm uni-btn uni-btn-primary">LEARN MORE</a>
-							</div>
-						</div>
-						<div role="tabpanel" class="tab-pane" id="content_4">
-							<div class="tab-body">
-								<p>
-									We bring together the finest chefs, the freshest ingredients sourced from local farmers’ markets and other regional suppliers and distinctive wines and beers chosen by acclaimed sommeliers, giving you a mouth-watering culinary journey for all of the senses.
-								</p>
-							</div>
-							<!-- .panel-body -->
-							<div class="tab-button">
-								<a href="/why-uniworld/hallmarks?tab=Culinary" class="btn btn-default btn-sm uni-btn uni-btn-primary">LEARN MORE</a>
-							</div>
-						</div>
-						<div role="tabpanel" class="tab-pane" id="content_5">
-							<div class="tab-body">
-								<p>
-									Our innovative onshore programs go well beyond landmarks and group tours. With personalized experiences tailored to match both your interests and lifestyle, you can choose excursions ranging from guided bicycle rides to exclusive wine tastings designed to immerse you in the local cultures.
-								</p>
-							</div>
-							<!-- .panel-body -->
-							<div class="tab-button">
-								<a href="/why-uniworld/hallmarks?tab=Personalized" class="btn btn-default btn-sm uni-btn uni-btn-primary">LEARN MORE</a>
-							</div>
-						</div>
-						<div role="tabpanel" class="tab-pane" id="content_6">
-							<div class="tab-body">
-								<p>
-									From supporting philanthropic efforts worldwide to protecting the destinations and inspiring cultures our guests visit, our connection to the world around us runs far deeper than any river.
-								</p>
-							</div>
-							<!-- .panel-body -->
-							<div class="tab-button">
-								<a href="/why-uniworld/hallmarks?tab=Sustainability" class="btn btn-default btn-sm uni-btn uni-btn-primary">LEARN MORE</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="hallmark-mobile visible-xs-block">
-				<!-- Carousel   ================================================== -->
-				<div id="carousel4BA3C9429FF042EB8BA7364EA8FF4348" class="carousel slide" data-ride="carousel">
-					<!-- Indicators
-                            <ol class="carou>sel-indicators">
-
-                                    <li data-target="#carousel4BA3C9429FF042EB8BA7364EA8FF4348" data-slide-to="0" class="active"></li>
-                                    <li data-target="#carousel4BA3C9429FF042EB8BA7364EA8FF4348" data-slide-to="1" class=""></li>
-                                    <li data-target="#carousel4BA3C9429FF042EB8BA7364EA8FF4348" data-slide-to="2" class=""></li>
-                                    <li data-target="#carousel4BA3C9429FF042EB8BA7364EA8FF4348" data-slide-to="3" class=""></li>
-                                    <li data-target="#carousel4BA3C9429FF042EB8BA7364EA8FF4348" data-slide-to="4" class=""></li>
-                                    <li data-target="#carousel4BA3C9429FF042EB8BA7364EA8FF4348" data-slide-to="5" class=""></li>
-                            </ol>
-                        -->
-					<div class="carousel-inner">
-						<div class="item">
-							<div class="tab-image">
-								<?xml version="1.0" encoding="iso-8859-1"?>
-								<img src="/~/media/home-page/hallmarks/uw_hallmarks_ssmt_unique.ashx?h=750&la=en&w=2500&hash=508E13F757D9615977E620754EF49FFF4A8A3953" alt="" width="2500" height="750" />
-							</div>
-							<div class="container">
-								<div class="carousel-caption-hallmark">
-									<h4>Unique</h4>
-									<div class="panel-body">
-										<p>Each exquisitely appointed Uniworld ship is a work of art designed to be as unique as our guests and as inspiring as the destinations we visit. </p>
-									</div>
-									<div class="tab-button">
-										<a href="/why-uniworld/hallmarks?tab=Unique" class="btn btn-default btn-sm uni-btn uni-btn-primary">LEARN MORE</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="tab-image">
-								<?xml version="1.0" encoding="iso-8859-1"?>
-								<img src="/~/media/home-page/hallmarks/uw_hallmarks_expertise.ashx?h=750&la=en&w=2500&hash=15C443DDF02FA0FBB83ADF391EBFE759A6C20D87" alt="" width="2500" height="750" />
-							</div>
-							<div class="container">
-								<div class="carousel-caption-hallmark">
-									<h4>Expertise</h4>
-									<div class="panel-body">
-										<p>
-											Thanks to decades of experience in luxury travel, including with our sister company, Red Carnation Hotels, Uniworld sets the standard for excellence in hospitality, culinary and nautical practices in luxury river cruising.
-										</p>
-									</div>
-									<div class="tab-button">
-										<a href="/why-uniworld/hallmarks?tab=Expertise" class="btn btn-default btn-sm uni-btn uni-btn-primary">LEARN MORE</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="tab-image">
-								<?xml version="1.0" encoding="iso-8859-1"?>
-								<img src="/~/media/home-page/hallmarks/uw_hallmarks_service.ashx?h=750&la=en&w=2500&hash=5D0D9BF2BD5B4BE5E1FE7CE335E171C5A9BB3FA1" alt="" width="2500" height="750" />
-							</div>
-							<div class="container">
-								<div class="carousel-caption-hallmark">
-									<h4>Service</h4>
-									<div class="panel-body">
-										<p>
-											Our credo, “No request too large, no detail too small,” comes to life in every interaction we share with our guests. We never tire of going above and beyond to create extraordinary experiences both onboard and onshore.
-										</p>
-									</div>
-									<div class="tab-button">
-										<a href="/why-uniworld/hallmarks?tab=Service" class="btn btn-default btn-sm uni-btn uni-btn-primary">LEARN MORE</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="tab-image">
-								<?xml version="1.0" encoding="iso-8859-1"?>
-								<img src="/~/media/home-page/hallmarks/uw_hallmarks_culinary.ashx?h=750&la=en&w=2500&hash=0804166F1979FF123BB565E67BB63C1FB689EF4D" alt="" width="2500" height="750" />
-							</div>
-							<div class="container">
-								<div class="carousel-caption-hallmark">
-									<h4>Culinary</h4>
-									<div class="panel-body">
-										<p>
-											We bring together the finest chefs, the freshest ingredients sourced from local farmers’ markets and other regional suppliers and distinctive wines and beers chosen by acclaimed sommeliers, giving you a mouth-watering culinary journey for all of the senses.
-										</p>
-									</div>
-									<div class="tab-button">
-										<a href="/why-uniworld/hallmarks?tab=Culinary" class="btn btn-default btn-sm uni-btn uni-btn-primary">LEARN MORE</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="tab-image">
-								<?xml version="1.0" encoding="iso-8859-1"?>
-								<img src="/~/media/home-page/hallmarks/uw_hallmarks_personalized.ashx?h=750&la=en&w=2500&hash=F73CB91CCD851520B5669D9647B2086FD83C5197" alt="" width="2500" height="750" />
-							</div>
-							<div class="container">
-								<div class="carousel-caption-hallmark">
-									<h4>Personalized</h4>
-									<div class="panel-body">
-										<p>
-											Our innovative onshore programs go well beyond landmarks and group tours. With personalized experiences tailored to match both your interests and lifestyle, you can choose excursions ranging from guided bicycle rides to exclusive wine tastings designed to immerse you in the local cultures.
-										</p>
-									</div>
-									<div class="tab-button">
-										<a href="/why-uniworld/hallmarks?tab=Personalized" class="btn btn-default btn-sm uni-btn uni-btn-primary">LEARN MORE</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="tab-image">
-								<?xml version="1.0" encoding="iso-8859-1"?>
-								<img src="/~/media/home-page/hallmarks/uw_hallmarks_sustainability.ashx?h=750&la=en&w=2500&hash=030DC3DD68A8B5B65BD4148BB6F81B3FB4376433" alt="" width="2500" height="750" />
-							</div>
-							<div class="container">
-								<div class="carousel-caption-hallmark">
-									<h4>Sustainability</h4>
-									<div class="panel-body">
-										<p>
-											From supporting philanthropic efforts worldwide to protecting the destinations and inspiring cultures our guests visit, our connection to the world around us runs far deeper than any river.
-										</p>
-									</div>
-									<div class="tab-button">
-										<a href="/why-uniworld/hallmarks?tab=Sustainability" class="btn btn-default btn-sm uni-btn uni-btn-primary">LEARN MORE</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /.carousel -->
-			</div>
-		</section>
-		<script>
-		$(document).ready(function() {
-			$('[data-toggle="tooltip"]').tooltip();
-
-			$('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
-				var target = $(e.target).attr("href") + "_img"; // activated tab
-				$(target).closest(".tab-content").find(".tab-pane").removeClass('active');
-				$(target).closest(".tab-pane").addClass('active');
-			});
-		});
-		</script>
-		<section class=" uni-module-border-bottom">
-			<div class="container">
-				<div class="col-xs-12">
-					<header class="uni-module-header displaynone">
-						<h2 class="uni-module-title"></h2>
-					</header>
-					<a class="fancybox-mediahome" href="http://www.youtube.com/watch?v=7p-52uYpikY">
-						<?xml version="1.0" encoding="iso-8859-1"?>
-						<img src="/~/media/video/uw_homepage_video_branding2.ashx?h=628&la=en&w=1400&hash=BFBD546E63F3F612B6A3C10F42D040DCB5C9292F" alt="Design Video" width="1400" height="628" class="img-responsive hidden-xs" title="Design Video" />
-					</a>
-				</div>
-			</div>
-		</section>
-		<div class="uni-module-spacing uni-module-border-top uni-module-border-bottom uni-widgetShell">
-			<div class="container">
-				<div class="col-xs-12">
-					<header class="uni-module-header uni-module-header-flourish">
-						<h2 class="uni-module-title">Uniworld's Themed Cruises</h2>
-					</header>
-					<style type="text/css">
-					.home section + div:nth-of-type(1) {
-						background-color: #FFF;
-					}
-
-					.containerParent {
-						position: relative;
-					}
-
-					.themedContainerOverlay a {
-						display: inline-block;
-						position: absolute;
-						transform: translate(-50%, -50%);
-						z-index: 5;
-						top: 50%;
-						left: 50%;
-					}
-
-					.themedContainerOverlay {
-						position: absolute;
-						top: 0;
-						bottom: 0;
-						width: 100%;
-						background-color: rgba(0, 0, 0, 0.5);
-						opacity: 0;
-					}
-					/*hover states*/
-
-					.themedContainerOverlay:hover {
-						opacity: 100;
-					}
-
-					.themedContainerOverlay {
-						transition-property: opacity;
-						transition-duration: .5s;
-						transition-timing-function: ease-in-out;
-					}
-
-					@media screen and (max-width: 1150px) {
-						.themedContainerOverlay {
-							/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+99&0+0,1+99 */
-							background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 99%);
-							/* FF3.6-15 */
-							background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 99%);
-							/* Chrome10-25,Safari5.1-6 */
-							background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 99%);
-							/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-							filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000', GradientType=0);
-							/* IE6-9 */
-							opacity: 100;
-							top: initial;
-							padding: 50px 0 50px 0;
-						}
-						.containerParent a {
-							transform: translate(-50%, 0%);
-							bottom: 20%;
-							top: initial;
-						}
-					}
-					</style>
-					<div class="containerParent">
-						<div class="themedContainerOverlay">
-							<a href="/themed-cruises/uniworlds-themed-cruises" class="btn btn-lg btn-hero btn-home">Learn More</a>
-						</div>
-						<img src="/~/media/home-page/graphics/theme_cruises_image.ashx?la=en&hash=1CB3CFB157A0ECBEEE87659A0C289D3DB68C9C90" alt="theme_cruises_image" width="1170" height="350">
-					</div>
-				</div>
-			</div>
-		</div>
-		<section class="uni-module-border-bottom">
-			<div class="river-crusing">
-				<div class="container">
-					<div class="col-sm-6  col-lg-3">
-						<a href="/why-uniworld/about-the-rivers" Class="darken" DisableLinkDescription="True" DisableWebEdit="True">
-							<?xml version="1.0" encoding="iso-8859-1"?>
-							<img src="/~/media/home-page/about-the-rivers/uw_rivercruising_the_rivers_sa_350x350.ashx?h=350&la=en&w=350&hash=DA39CB6E427EB064E1180AA67EFBDE1EC8E0FF5E" alt="" width="350" height="350" />
-							<span class="image-banner-heading">
-								<i class="icon-fan"></i> The Rivers
-							</span>
-							<span class="image-banner-blurb">
-								Enjoy ever-changing, wrap-around views of beautiful scenery as you cruise the world’s greatest rivers in luxury.
-								<span class="span-btn-cta">
-									Learn More
-								</span>
-							</span>
-						</a>
-					</div>
-					<div class="col-sm-6  col-lg-3">
-						<a href="/why-uniworld/boutique-ships" Class="darken" DisableLinkDescription="True" DisableWebEdit="True">
-							<?xml version="1.0" encoding="iso-8859-1"?>
-							<img src="/~/media/home-page/about-the-rivers/uw_rivercruising_effortless_travel_rr_350x350.ashx?h=350&la=en&w=350&hash=4E9CB8FB87438DD627D45464BA93FDC3BB8B36C0" alt="" width="350" height="350" />
-							<span class="image-banner-heading">
-								<i class="icon-fan"></i> EFFORTLESS TRAVEL
-							</span>
-							<span class="image-banner-blurb">
-								Our floating boutique hotels can often dock in the historic heart of towns and cities, steps away from top sites.
-								<span class="span-btn-cta">
-									Learn More
-								</span>
-							</span>
-						</a>
-					</div>
-					<div class="col-sm-6  col-lg-3">
-						<a href="/why-uniworld/wellness" Class="darken" DisableLinkDescription="True" DisableWebEdit="True">
-							<?xml version="1.0" encoding="iso-8859-1"?>
-							<img src="/~/media/home-page/about-the-rivers/uw_rivercruising_health_wellness_rr_350x350.ashx?h=350&la=en&w=350&hash=46B16DDA4732F812DD31C15688DBC09FAD5C6D80" alt="" width="350" height="350" />
-							<span class="image-banner-heading">
-								<i class="icon-fan"></i> well-being
-							</span>
-							<span class="image-banner-blurb">
-								Pamper your mind, body and spirit on a journey of personal health and wellness, both onboard and onshore.
-								<span class="span-btn-cta">
-									Learn More
-								</span>
-							</span>
-						</a>
-					</div>
-					<div class="col-sm-6  col-lg-3">
-						<a href="/why-uniworld/luxury" Class="darken" DisableLinkDescription="True" DisableWebEdit="True">
-							<?xml version="1.0" encoding="iso-8859-1"?>
-							<img src="/~/media/home-page/about-the-rivers/uw_rivercruising_uniworld_cares_ssc_350x350.ashx?h=350&la=en&w=350&hash=803667FA8E0922FE2A0DFD41D96E7AC72EA246FD" alt="" width="350" height="350" />
-							<span class="image-banner-heading">
-								<i class="icon-fan"></i> Luxury
-							</span>
-							<span class="image-banner-blurb">
-								Our relaxing, elegant and sophisticated river cruises are designed for your ultimate comfort and enjoyment.
-								<span class="span-btn-cta">
-									Learn More
-								</span>
-							</span>
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class=" uni-module-border-bottom ">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12">
-						<header class="uni-module-header uni-module-header-flourish">
-							<h2 class="uni-module-title">Explore our Ships</h2>
-						</header>
-					</div>
-				</div>
-				<div class="uni-module-border-top">
-					<div class="row">
-						<div class="col-xs-12">
-							<div id="masonry">
-								<div class="mason-wrap">
-									<ul class="collageda9b32ac705246ba86003cee5bfc9b8c collage-image effect-parent collage testslider">
-										<li class="image-wrapper open-img" data-caption=Ships data-object=slideshow1>
-											<?xml version="1.0" encoding="iso-8859-1"?>
-											<img src="/~/media/home-page/mosiac/1_ship_456x_417.ashx?h=417&la=en&w=456&hash=5D6B95247257FC38CF3BE83A1294B16979B34E35" alt="" width="456" height="417" />
-										</li>
-										<li class="image-wrapper open-img" data-caption=Leisure data-object=slideshow2>
-											<?xml version="1.0" encoding="iso-8859-1"?>
-											<img src="/~/media/home-page/mosiac/2_guest_245x_208.ashx?h=208&la=en&w=245&hash=CB679637598765E7181513B89FEC2206BC7C8FD9" alt="" width="245" height="208" />
-										</li>
-										<li class="image-wrapper open-img" data-caption=Suites data-object=slideshow3>
-											<?xml version="1.0" encoding="iso-8859-1"?>
-											<img src="/~/media/home-page/mosiac/6_suite_456x_208.ashx?h=208&la=en&w=456&hash=2F1A000765789F45EE94C5B094A33DCB72B64CB9" alt="" width="456" height="208" />
-										</li>
-										<li class="image-wrapper open-img" data-caption=Staterooms data-object=slideshow4>
-											<?xml version="1.0" encoding="iso-8859-1"?>
-											<img src="/~/media/home-page/mosiac/3_suite_247x_208.ashx?h=208&la=en&w=247&hash=7E8CC8D9860611630C905DB85D420CE7A467EB24" alt="" width="247" height="208" />
-										</li>
-										<li class="image-wrapper open-img" data-caption=Dining data-object=slideshow5>
-											<?xml version="1.0" encoding="iso-8859-1"?>
-											<img src="/~/media/home-page/mosiac/8_dining_243x_208.ashx?h=208&la=en&w=243&hash=8A3FA776C5CD649CCD1B28EEA0987B05813148CD" alt="" width="243" height="208" />
-										</li>
-										<li class="image-wrapper open-img" data-caption=Lobbies data-object=slideshow6>
-											<?xml version="1.0" encoding="iso-8859-1"?>
-											<img src="/~/media/home-page/mosiac/5_lobby_491x_209.ashx?h=209&la=en&w=491&hash=491BFA15D4ACC1D91F72F8C96DB9290EC972ECCC" alt="" width="491" height="209" />
-										</li>
-										<li class="image-wrapper open-img" data-caption=Service data-object=slideshow7>
-											<?xml version="1.0" encoding="iso-8859-1"?>
-											<img src="/~/media/home-page/mosiac/7_service_245x_208.ashx?h=208&la=en&w=245&hash=F188F9DC1E45085CD0E1E02D1A17175B89E33889" alt="" width="245" height="208" />
-										</li>
-										<li class="image-wrapper open-img" data-caption=Lounges data-object=slideshow8>
-											<?xml version="1.0" encoding="iso-8859-1"?>
-											<img src="/~/media/home-page/mosiac/9_lounge_456x_417.ashx?h=417&la=en&w=456&hash=CD7CD2E5533C5586BDC8F3D53D543E1CA637AF01" alt="" width="456" height="417" />
-										</li>
-									</ul>
-								</div>
-								<div class="slideshow1 slideshowhideload">
-									<div class="modal-slideshow-close">
-										<a title="Close" class="slide-img-overlay-close" data-object="slideshow1" href="javascript:void(0);">
-											<img src="/Assets/img/img-overlay-close.png" alt="" />
-										</a>
-									</div>
-									<ul class="pgwSlideshowLight pgwslideshow1">
-										<li>
-											<img src="/~/media/uniworld/images/homepage/gallery/ships1.ashx" alt="River Countess" data-description="" />
-										</li>
-										<li>
-											<img src="/~/media/uniworld/images/homepage/gallery/ships2.ashx" alt="River Royale" data-description="" />
-										</li>
-										<li>
-											<img src="/~/media/uniworld/images/homepage/gallery/ships3.ashx" alt="S.S. Catherine" data-description="" />
-										</li>
-										<li>
-											<img src="/~/media/uniworld/images/homepage/gallery/ships4.ashx" alt="S.S. Antoinette" data-description="" />
-										</li>
-										<li>
-											<img src="/~/media/uniworld/images/homepage/gallery/ships5.ashx" alt="River Beatrice" data-description="" />
-										</li>
-										<li>
-											<img src="/~/media/uniworld/images/homepage/gallery/ships6.ashx" alt="River Princess" data-description="" />
-										</li>
-									</ul>
-								</div>
-								<div class="slideshow2 slideshowhideload">
-									<div class="modal-slideshow-close">
-										<a title="Close" class="slide-img-overlay-close" data-object="slideshow2" href="javascript:void(0);">
-											<img src="/Assets/img/img-overlay-close.png" alt="" />
-										</a>
-									</div>
-									<ul class="pgwSlideshowLight pgwslideshow2">
-										<li>
-											<img src="/~/media/home-page/mosiac/misc_1_1400x_625.ashx" alt="Onboard pampering" data-description="" />
-										</li>
-										<li>
-											<img src="/~/media/home-page/mosiac/misc_2_1400x_625.ashx" alt="S.S. Catherine pool" data-description="" />
-										</li>
-										<li>
-											<img src="/~/media/home-page/mosiac/misc_3_1400x_625.ashx" alt="Relax &amp; Recharge" data-description="" />
-										</li>
-										<li>
-											<img src="/~/media/home-page/mosiac/misc_4_1400x_625.ashx" alt="S.S. Maria Theresa pool" data-description="" />
-										</li>
-										<li>
-											<img src="/~/media/home-page/mosiac/misc_5_1400x_625.ashx" alt="Well-equipped fitness center" data-description="" />
-										</li>
-									</ul>
-								</div>
-								<div class="slideshow3 slideshowhideload">
-									<div class="modal-slideshow-close">
-										<a title="Close" class="slide-img-overlay-close" data-object="slideshow3" href="javascript:void(0);">
-											<img src="/Assets/img/img-overlay-close.png" alt="" />
-										</a>
-									</div>
-									<ul class="pgwSlideshowLight pgwslideshow3">
-										<li>
-											<img src="/~/media/home-page/mosiac/suites_1_1400x_625.ashx" alt="S.S. Catherine Suite" data-description="" />
-										</li>
-										<li>
-											<img src="/~/media/home-page/mosiac/suites_2_1400x_625.ashx" alt="S.S. Maria Theresa Suite" data-description="" />
-										</li>
-										<li>
-											<img src="/~/media/home-page/mosiac/suites_3_1400x_625.ashx" alt="S.S. Antoinette Suite" data-description="" />
-										</li>
-										<li>
-											<img src="/~/media/home-page/mosiac/suites_4_1400x_625.ashx" alt="River Duchess Suite" data-description="" />
-										</li>
-										<li>
-											<img src="/~/media/home-page/mosiac/suites_5_1400x_625.ashx" alt="River Countess Suite" data-description="" />
-										</li>
-									</ul>
-								</div>
-								<div class="slideshow4 slideshowhideload">
-									<div class="modal-slideshow-close">
-										<a title="Close" class="slide-img-overlay-close" data-object="slideshow4" href="javascript:void(0);">
-											<img src="/Assets/img/img-overlay-close.png" alt="" />
-										</a>
-									</div>
-									<ul class="pgwSlideshowLight pgwslideshow4">
-										<li>
-											<img src="/~/media/home-page/mosiac/staterooms_1_1400x_625.ashx" alt="S.S. Catherine Stateroom" data-description="" />
-										</li>
-										<li>
-											<img src="/~/media/home-page/mosiac/staterooms_2_1400x_625.ashx" alt="S.S. Antoinette Stateroom" data-description="" />
-										</li>
-										<li>
-											<img src="/~/media/home-page/mosiac/staterooms_3_1400x_625.ashx" alt="Queen Isabel Stateroom" data-description="" />
-										</li>
-										<li>
-											<img src="/~/media/home-page/mosiac/staterooms_4_1400x_625.ashx" alt="River Empress Stateroom" data-description="" />
-										</li>
-										<li>
-											<img src="/~/media/home-page/mosiac/staterooms_5_1400x_625.ashx" alt="River Baroness Stateroom" data-description="" />
-										</li>
-									</ul>
-								</div>
-								<div class="slideshow5 slideshowhideload">
-									<div class="modal-slideshow-close">
-										<a title="Close" class="slide-img-overlay-close" data-object="slideshow5" href="javascript:void(0);">
-											<img src="/Assets/img/img-overlay-close.png" alt="" />
-										</a>
-									</div>
-									<ul class="pgwSlideshowLight pgwslideshow5">
-										<li>
-											<img src="/~/media/home-page/mosiac/dining_1_1400x_625.ashx" alt="Savoy Restaurant, River Countess" data-description="" />
-										</li>
-										<li>
-											<img src="/~/media/home-page/mosiac/dining_2_1400x_625.ashx" alt="Cezanne Restaurant, S.S. Catherine " data-description="" />
-										</li>
-										<li>
-											<img src="/~/media/home-page/mosiac/dining_3_1400x_625.ashx" alt="Palace Restaurant, River Duchess" data-description="" />
-										</li>
-										<li>
-											<img src="/~/media/home-page/mosiac/dining_4_1400x_625.ashx" alt="Baroque Restaurant, S.S. Maria Theresa " data-description="" />
-										</li>
-										<li>
-											<img src="/~/media/home-page/mosiac/dining_5_1400x_625.ashx" alt="Van Gogh Restaurant, River Baroness " data-description="" />
-										</li>
-									</ul>
-								</div>
-								<div class="slideshow6 slideshowhideload">
-									<div class="modal-slideshow-close">
-										<a title="Close" class="slide-img-overlay-close" data-object="slideshow6" href="javascript:void(0);">
-											<img src="/Assets/img/img-overlay-close.png" alt="" />
-										</a>
-									</div>
-									<ul class="pgwSlideshowLight pgwslideshow6">
-										<li>
-											<img src="/~/media/home-page/mosiac/lobby_1_1400x_625.ashx" alt="S.S. Maria Theresa" data-description="" />
-										</li>
-										<li>
-											<img src="/~/media/home-page/mosiac/lobby_2_1400x_625.ashx" alt="S.S. Catherine" data-description="" />
-										</li>
-										<li>
-											<img src="/~/media/home-page/mosiac/lobby_3_1400x_625.ashx" alt="River Countess" data-description="" />
-										</li>
-										<li>
-											<img src="/~/media/home-page/mosiac/lobby_4_1400x_625.ashx" alt="River Princess" data-description="" />
-										</li>
-										<li>
-											<img src="/~/media/home-page/mosiac/lobby_5_1400x_625.ashx" alt="River Duchess" data-description="" />
-										</li>
-									</ul>
-								</div>
-								<div class="slideshow7 slideshowhideload">
-									<div class="modal-slideshow-close">
-										<a title="Close" class="slide-img-overlay-close" data-object="slideshow7" href="javascript:void(0);">
-											<img src="/Assets/img/img-overlay-close.png" alt="" />
-										</a>
-									</div>
-									<ul class="pgwSlideshowLight pgwslideshow7">
-										<li>
-											<img src="/~/media/home-page/mosiac/service_1_1400x_625.ashx" alt="Butler service in every suite on European ships (2016)" data-description="" />
-										</li>
-										<li>
-											<img src="/~/media/home-page/mosiac/service_2_1400x_625.ashx" alt="Twice-daily suite service, Queen Isabel " data-description="" />
-										</li>
-										<li>
-											<img src="/~/media/home-page/mosiac/service_3_1400x_625.ashx" alt="Refreshing post-excursion towel service, S.S. Antoinette " data-description="" />
-										</li>
-										<li>
-											<img src="/~/media/home-page/mosiac/service_4_1400x_625.ashx" alt="Exceptional dining room service, River Countess " data-description="" />
-										</li>
-										<li>
-											<img src="/~/media/home-page/mosiac/service_5_1400x_625.ashx" alt="Lobby and Reception, River Countess " data-description="" />
-										</li>
-									</ul>
-								</div>
-								<div class="slideshow8 slideshowhideload">
-									<div class="modal-slideshow-close">
-										<a title="Close" class="slide-img-overlay-close" data-object="slideshow8" href="javascript:void(0);">
-											<img src="/Assets/img/img-overlay-close.png" alt="" />
-										</a>
-									</div>
-									<ul class="pgwSlideshowLight pgwslideshow8">
-										<li>
-											<img src="/~/media/home-page/mosiac/lounge_1_1400x_625.ashx" alt="Salon du Grand Trianon, S.S. Antoinette " data-description="" />
-										</li>
-										<li>
-											<img src="/~/media/home-page/mosiac/lounge_2_1400x_625.ashx" alt="Habsburg Salon, S.S. Maria Theresa " data-description="" />
-										</li>
-										<li>
-											<img src="/~/media/home-page/mosiac/lounge_3_1400x_625.ashx" alt="Van Gogh Lounge, S.S. Catherine " data-description="" />
-										</li>
-										<li>
-											<img src="/~/media/home-page/mosiac/lounge_4_1400x_625.ashx" alt="Il Castillo Lounge, River Countess " data-description="" />
-										</li>
-										<li>
-											<img src="/~/media/home-page/mosiac/lounge_5_1400x_625.ashx" alt="Monet Lounge, River Baroness " data-description="" />
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<script type="text/javascript">
-		jQuery(window).load(function() {
-			jQuery(document).ready(function() {
-				var w = parseInt(window.innerWidth);
-				if (w >= 480) {
-					collage();
-					jQuery(".collageda9b32ac705246ba86003cee5bfc9b8c").collageCaption();
-				} else {
-					jQuery(".testslider").pgwSlideshow({
-						mainClassName: "pgwSlideshowLight",
-						transitionEffect: "sliding",
-						displayControls: true,
-						displayList: false,
-						autoSlide: false
-					});
-				}
-			});
-		});
-
-		function collage() {
-			jQuery(".collageda9b32ac705246ba86003cee5bfc9b8c").removeWhitespace().collagePlus({
-				'fadeSpeed': 2000,
-				'targetHeight': 200,
-				'allowPartialLastRow': false
-			});
-		};
-
-		var resizeTimer = null;
-		jQuery(window).bind("resize", function() {
-			jQuery(".collageda9b32ac705246ba86003cee5bfc9b8c .image-wrapper").css("opacity", 0);
-			if (resizeTimer) clearTimeout(resizeTimer);
-			resizeTimer = setTimeout(collage, 200);
-		});
-
-		jQuery(".slideshowhideload").hide();
-
-		var lastWatchedSlideShow = '';
-		var activeSlideShow = [];
-		var reloaded = false;
-
-		//jQuery(".open-img").click(function () {
-		//    var slideid = jQuery(this).data("object");
-		//    if (slideid != null && slideid.length > 0) {
-		//        MosaicSlideshowHideShow("mason-wrap", slideid);
-		//        if (!reloaded) {
-		//            MosaicSlideshowReload(slideid);
-		//            reloaded = true;
-		//        }
-		//    }
-		//});
-
-
-		jQuery(".open-img").click(function() {
-			var slideid = jQuery(this).data("object");
-			console.log("slideid: " + slideid);
-			if (slideid != null && slideid.length > 0) {
-				MosaicSlideshowHideShow("mason-wrap", slideid);
-				//if (lastWatchedSlideShow != slideid)
-				var found = false;
-				for (var i = 0; i < activeSlideShow.length && !found; i++) {
-					if (activeSlideShow[i] == slideid) {
-						found = true;
-					}
-				}
-				if (!found) {
-					MosaicSlideshowReload(slideid);
-					activeSlideShow.push(slideid);
-				}
-
-				console.log("value = '" + document.getElementsByClassName("pgw" + slideid)[0].style.width + "'");
-				if (document.getElementsByClassName("pgw" + slideid)[0].style.width == '0px') {
-					document.getElementsByClassName("pgw" + slideid)[0].style.width = '520px';
-					document.getElementsByClassName("pgw" + slideid)[0].style.left = '0px';
-				}
-
-				//lastWatchedSlideShow = slideid;
-				//console.log(lastWatchedSlideShow, activeSlideShow);
-			}
-		});
-
-		//jQuery(".open-img").click(function() {
-		//    var slideid = jQuery(this).data("object");
-		//    if (slideid !== null && slideid.length > 0) {
-		//        MosaicSlideshowHideShow("mason-wrap", slideid);
-		//        MosaicSlideshowReload(slideid);
-		//   }
-		//});
-
-		jQuery(".slide-img-overlay-close").click(function(e) {
-			//Cancel the link behavior
-			e.preventDefault();
-			var slideid = jQuery(this).data("object");
-			if (slideid !== null && slideid.length > 0) {
-				MosaicSlideshowHideShow(slideid, "mason-wrap");
-			}
-		});
-
-		var MosaicSlideshowHideShow = function(hide, show) {
-			jQuery("." + hide).hide();
-			jQuery("." + show).show();
-		};
-
-		var MosaicSlideshowStart = function(slideshowName) {
-			var pgwSlideshow = jQuery("." + slideshowName).pgwSlideshow();
-			if (pgwSlideshow !== null) {
-				pgwSlideshow.pgwSlideshow({
-					mainClassName: "pgwSlideshowLight",
-					transitionEffect: "fading",
-					displayControls: true,
-					maxHeight: 620,
-					autoSlide: false
-				});
-			}
-		};
-
-
-		var MosaicSlideshowReload = function(slideshowName) {
-			var pgwSlideshow = jQuery(".pgw" + slideshowName).pgwSlideshow();
-			if (pgwSlideshow !== null) {
-				var newConfig = {};
-				newConfig.mainClassName = "pgwSlideshowLight";
-				newConfig.transitionEffect = "fading";
-				newConfig.maxHeight = 620;
-				newConfig.autoSlide = true;
-				pgwSlideshow.reload(newConfig);
-			}
-
-		};
-		</script>
-		<section class="uni-module-border-bottom">
-			<div class="uni-fullbleed">
-				<div class="container uni-map-large">
-					<div class="row">
-						<form action="/api/sitecore/DestinationsMap/RedirectToCruiseSearchPage" method="post">
-							<div class="col-lg-5 text-center uni-map-text">
-								<h2 class="uni-module-title">Explore Our Destinations</h2>
-								<p>For nearly four decades, Uniworld has taken guests to the most spectacular destinations in Europe, Russia, India, Vietnam, Cambodia, China and Egypt.</p>
-								<hr />
-								<h3>Where would you like to go ?</h3>
-								<div class="uni-select">
-									<select class="form-control" id="destination" name="destination">
-										<option>Choose your destination...</option>
-									</select>
-									<!-- .form-control -->
-								</div>
-								<!-- .uni-select -->
-								<input class="btn btn-primary uni-btn uni-btn-primary" type="submit" value="Discover" />
-							</div>
-						</form>
-						<div class="col-lg-7 hidden-xs">
-							<div role="tabpanel">
-								<ul class="nav nav-pills" role="tablist">
-								</ul>
-								<div class="tab-content">
-								</div>
-								<!-- .tab-content -->
-							</div>
-						</div>
-						<!-- .col -->
-					</div>
-					<!-- .row -->
-				</div>
-				<!-- .container -->
-			</div>
-			<!-- .uni-fullbleed -->
-		</section>
-		<section class="uni-module-spacing uni-module-border-bottom">
-			<div class="container">
-				<header class="uni-module-header uni-module-header-lines">
-					<h2 class="uni-module-title">Current Offers & News</h2>
-				</header>
-				<div class="owl-carousel uni-carouselPromo">
-					<a href="/themed-cruises/family-friendly-cruises" Class="uni-carouselPromo-item" DisableLinkDescription="True" DisableWebEdit="True">
-						<figure>
-							<?xml version="1.0" encoding="iso-8859-1"?>
-							<img src="/~/media/offers/uw_offers_rr_family.ashx?h=230&la=en&w=375&hash=BBAD7624D0412BB378B3636CACC579ED897382BD" alt="" width="375" height="230" class="lazyOwl img-responsive" />
-							<figcaption>EVEN BETTER IN 2016!</figcaption>
-						</figure>
-						<article>
-							<h4 class=uni-promo-item-title>
-								Generations
-							</h4>
-							<p class=uni-promo-item-detail>
-								World's Best
-								<br /> River Cruising for Families
-							</p>
-							<p class=uni-promo-item-overview>
-							</p>
-						</article>
-					</a>
-					<a href="/promotions/limited-time-2016-savings" Class="uni-carouselPromo-item" DisableLinkDescription="True" DisableWebEdit="True">
-						<figure>
-							<?xml version="1.0" encoding="iso-8859-1"?>
-							<img src="/~/media/offers/uw_offers_deck.ashx?h=230&la=en&w=375&hash=A4EB01BA5078C5D0976B6382B424C9D9D055C62E" alt="" width="375" height="230" class="lazyOwl img-responsive" />
-							<figcaption>BOOK EARLY AND SAVE</figcaption>
-						</figure>
-						<article>
-							<h4 class=uni-promo-item-title>
-								2016 Early-Booking Savings Offers
-							</h4>
-							<p class=uni-promo-item-detail>
-								Our Best Savings of the Season
-							</p>
-							<p class=uni-promo-item-overview>
-							</p>
-						</article>
-					</a>
-					<a href="/promotions/cruise-and-air-offers" Class="uni-carouselPromo-item" DisableLinkDescription="True" DisableWebEdit="True">
-						<figure>
-							<?xml version="1.0" encoding="iso-8859-1"?>
-							<img src="/~/media/offers/preair_euro_427x292.ashx?h=292&la=en&w=474&hash=1D7757BAEAC755B9522D3E052DF4033D1EFE0F3B" alt="" width="474" height="292" class="lazyOwl img-responsive" />
-							<figcaption>NEW 2016 OFFER</figcaption>
-						</figure>
-						<article>
-							<h4 class=uni-promo-item-title>
-								2016 Cruise & Air Offers
-							</h4>
-							<p class=uni-promo-item-detail>
-								Save big when you book your Cruise + Air together with Uniworld
-							</p>
-							<p class=uni-promo-item-overview>
-							</p>
-						</article>
-					</a>
-					<a href="/themed-cruises/monarch-collection" Class="uni-carouselPromo-item" DisableLinkDescription="True" DisableWebEdit="True">
-						<figure>
-							<?xml version="1.0" encoding="iso-8859-1"?>
-							<img src="/~/media/offers/uw_offers_ssmt_lobby.ashx?h=230&la=en&w=375&hash=613AF9DF738302FC5AAAB3D5911237F28117F7EB" alt="" width="375" height="230" class="lazyOwl img-responsive" />
-							<figcaption>NEW FOR 2016</figcaption>
-						</figure>
-						<article>
-							<h4 class=uni-promo-item-title>
-								The Monarch Collection
-							</h4>
-							<p class=uni-promo-item-detail>
-								Highlighting Europe’s royal heritage
-							</p>
-							<p class=uni-promo-item-overview>
-							</p>
-						</article>
-					</a>
-				</div>
-			</div>
-		</section>
+<!--code starts here-->
+<div class="uniIntro row row-centered ">
+	<a name="pageTop"></a>
+	<div class="col-md-6  ">
+		<h3>DISCOVER THE RIVER CRUISE LINE PREFERRED BY LGBT TRAVELERS</h3>
+		<p>For sophisticated, culturally curious travelers who appreciate Europe’s timeless élan, rich historical heritage, resplendent natural beauty and fabulous food and wine, there’s no finer choice than a luxurious Uniworld river cruise.
+		</p>
+		<p>We put the <em>all</em> in all-inclusive journeys, with meticulously designed floating boutique hotels, thoughtful touches and superb service, a tantalizing choice of unique excursions, and a warm and welcoming ambiance that is always exclusive, never exclusionary.</p>
+		<p> Don’t you deserve the <em>best</em>?</p>
 	</div>
-	<footer class="uni-footer-global">
-		<nav class="navbar navbar-default uni-socialHub">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-lg-5 text-center text-left-lg">
-						<form class="form-inline" role="form">
-							<div class="form-group">
-								<a href="https://www.facebook.com/uniworldrivercruises" DisableLinkDescription="True" DisableWebEdit="True"><i class="icon-facebook"></i></a><a href="https://twitter.com/uniworldcruises" DisableLinkDescription="True" DisableWebEdit="True" target="_blank"><i class="icon-twitter"></i></a><a href="https://www.pinterest.com/uniworldcruises/" DisableLinkDescription="True" DisableWebEdit="True"><i class="icon-pinterest"></i></a><a href="/uniworld_community/community" DisableLinkDescription="True" DisableWebEdit="True">#EXPLOREUNIWORLD</a> </div>
-						</form>
-					</div>
-					<div class="col-lg-7 text-center text-right-lg">
-						<a class="btn btn-default btn-sm uni-btn uni-btn-primary visible-lg-inline fancybox fancybox.iframe" type="button" href="/modals/newsletter-signup?langId=en-US">Newsletter Sign Up</a>
-					</div>
-				</div>
-			</div>
-		</nav>
-		<div class="container-fluid container-fluid-max">
-			<div class="panel-group five column doubling ui grid" id="footerAccordion" role="tablist" aria-multiselectable="true">
-				<div class="panel panel-default column">
-					<div class="panel-heading visible-xs" role="tab" id="#1A27E3B4F0D54A1880FB165A26F383A2">
-						<h5 class="panel-title">
-							<a class="collapsed" data-toggle="collapse" data-parent="#footerAccordion" href="#Uniworld" aria-expanded="false" aria-controls="#Uniworld">
-                                        Uniworld
-                                    </a>
-						</h5>
-					</div>
-					<div class="panel-collapse collapse" role="tabpanel" aria-labelledby="1A27E3B4F0D54A1880FB165A26F383A2" id="Uniworld">
-						<div class="panel-body">
-							<section>
-								<h5 class="hidden-xs">
-									Uniworld
-								</h5>
-								<ul class="list-unstyled">
-									<li>
-										<a href="/about-uniworld/about-us" DisableLinkDescription="True" DisableWebEdit="True">
-                                                            About Us
-                                                            </a>
-									</li>
-									<li>
-										<a href="/why-uniworld/awards-of-distinction" DisableLinkDescription="True" DisableWebEdit="True">
-                                                            World-class Acclaim
-                                                            </a>
-									</li>
-									<li>
-										<a href="/why-uniworld/hallmarks" DisableLinkDescription="True" DisableWebEdit="True">
-                                                            Hallmarks of Distinction
-                                                            </a>
-									</li>
-									<li>
-										<a href="/why-uniworld/uniworld-cares" DisableLinkDescription="True" DisableWebEdit="True">
-                                                            Uniworld Cares
-                                                            </a>
-									</li>
-									<li>
-										<a href="/why-uniworld/videos" DisableLinkDescription="True" DisableWebEdit="True">
-                                                            Videos
-                                                            </a>
-									</li>
-								</ul>
-							</section>
-						</div>
-					</div>
-				</div>
-				<div class="panel panel-default column">
-					<div class="panel-heading visible-xs" role="tab" id="#CB1064389069494382362A16EE8A170A">
-						<h5 class="panel-title">
-							<a class="collapsed" data-toggle="collapse" data-parent="#footerAccordion" href="#Destinations" aria-expanded="false" aria-controls="#Destinations">
-                                        Destinations
-                                    </a>
-						</h5>
-					</div>
-					<div class="panel-collapse collapse" role="tabpanel" aria-labelledby="CB1064389069494382362A16EE8A170A" id="Destinations">
-						<div class="panel-body">
-							<section>
-								<h5 class="hidden-xs">
-									Destinations
-								</h5>
-								<ul class="list-unstyled">
-									<li>
-										<a href="/cruise-archive/cruises/europe" DisableLinkDescription="True" DisableWebEdit="True">
-                                                            Europe
-                                                            </a>
-									</li>
-									<li>
-										<a href="/cruise-archive/cruises/russia" DisableLinkDescription="True" DisableWebEdit="True">
-                                                            Russia
-                                                            </a>
-									</li>
-									<li>
-										<a href="/cruise-archive/cruises/asia" DisableLinkDescription="True" DisableWebEdit="True">
-                                                            China
-                                                            </a>
-									</li>
-									<li>
-										<a href="/cruise-archive/cruises/asia" DisableLinkDescription="True" DisableWebEdit="True">
-                                                            Vietnam & Cambodia
-                                                            </a>
-									</li>
-									<li>
-										<a href="/cruise-archive/cruises/egypt" DisableLinkDescription="True" DisableWebEdit="True">
-                                                            Egypt
-                                                            </a>
-									</li>
-									<li>
-										<a href="/cruise-archive/cruises/india" DisableLinkDescription="True" DisableWebEdit="True">
-                                                            India
-                                                            </a>
-									</li>
-								</ul>
-							</section>
-						</div>
-					</div>
-				</div>
-				<div class="panel panel-default column">
-					<div class="panel-heading visible-xs" role="tab" id="#1344BC141F684F69BF7A4338E6BA67B6">
-						<h5 class="panel-title">
-							<a class="collapsed" data-toggle="collapse" data-parent="#footerAccordion" href="#Planyourcruise" aria-expanded="false" aria-controls="#Planyourcruise">
-                                        Plan your cruise
-                                    </a>
-						</h5>
-					</div>
-					<div class="panel-collapse collapse" role="tabpanel" aria-labelledby="1344BC141F684F69BF7A4338E6BA67B6" id="Planyourcruise">
-						<div class="panel-body">
-							<section>
-								<h5 class="hidden-xs">
-									Plan your cruise
-								</h5>
-								<ul class="list-unstyled">
-									<li>
-										<a href="/agency/find-an-agent" DisableLinkDescription="True" DisableWebEdit="True">
-                                                            Locate a Cruise Specialist
-                                                            </a>
-									</li>
-									<li>
-										<a href="/solo-travelers-2016" DisableLinkDescription="True" DisableWebEdit="True">
-                                                            Solo Travelers
-                                                            </a>
-									</li>
-									<li>
-										<a href="/themed-cruises/family-friendly-cruises" DisableLinkDescription="True" DisableWebEdit="True">
-                                                            Family Adventures
-                                                            </a>
-									</li>
-									<li>
-										<a href="/already-booked/need-to-know" DisableLinkDescription="True" DisableWebEdit="True">
-                                                            Already Booked
-                                                            </a>
-									</li>
-									<li>
-										<a href="/already-booked/travel-protection" DisableLinkDescription="True" DisableWebEdit="True">
-                                                            Travel Protection
-                                                            </a>
-									</li>
-									<li>
-										<a href="/already-booked/river-heritage-club" DisableLinkDescription="True" DisableWebEdit="True">
-                                                            River Heritage Club
-                                                            </a>
-									</li>
-								</ul>
-							</section>
-						</div>
-					</div>
-				</div>
-				<div class="panel panel-default column">
-					<div class="panel-heading visible-xs" role="tab" id="#2EAEF81A5D52465B9558E48B2B32AD2D">
-						<h5 class="panel-title">
-							<a class="collapsed" data-toggle="collapse" data-parent="#footerAccordion" href="#MoreInfo" aria-expanded="false" aria-controls="#MoreInfo">
-                                        More Info
-                                    </a>
-						</h5>
-					</div>
-					<div class="panel-collapse collapse" role="tabpanel" aria-labelledby="2EAEF81A5D52465B9558E48B2B32AD2D" id="MoreInfo">
-						<div class="panel-body">
-							<section>
-								<h5 class="hidden-xs">
-									More Info
-								</h5>
-								<ul class="list-unstyled">
-									<li>
-										<a href="/faq" DisableLinkDescription="True" DisableWebEdit="True">
-                                                            FAQ
-                                                            </a>
-									</li>
-									<li>
-										<a href="/agency" DisableLinkDescription="True" DisableWebEdit="True">
-                                                            Travel Agents
-                                                            </a>
-									</li>
-									<li>
-										<a href="/about-uniworld/media-center" DisableLinkDescription="True" DisableWebEdit="True">
-                                                            Media Center
-                                                            </a>
-									</li>
-									<li>
-										<a href="/careers" DisableLinkDescription="True" DisableWebEdit="True">
-                                                            Careers
-                                                            </a>
-									</li>
-									<li>
-										<a href="/about-uniworld/contact" DisableLinkDescription="True" DisableWebEdit="True">
-                                                            Contact
-                                                            </a>
-									</li>
-									<li>
-										<a href="/terms-and-conditions" DisableLinkDescription="True" DisableWebEdit="True">
-                                                            Terms & Conditons
-                                                            </a>
-									</li>
-								</ul>
-							</section>
-						</div>
-					</div>
-				</div>
+	<div class="col-md-6 centered ">
+		<div class="VideoImage UniVid">
+			<a class="fancybox-mediahome" href=" https://youtu.be/bcEjkxOgHS4" rel="media-gallery">
+				<img alt="" height="440" width="714" src="~/media/67be8aa309fb44f2b5a16e2bc419c96f.ashx" class="img-responsive" />
+				<div class="thumb-shadow"></div>
+				<span class="VideoPlay">
+					<span>&nbsp;</span>
+				</span>
+			</a>
+			<p class="centered"><strong>Watch our newest video, “Exclusive. Inclusive. Uniworld."</strong></p>
+		</div>
+	</div>
+</div>
+<div class="row tripleSpaceBottom">
+	<div class="col-md-12 centered ctaSpacer"><a href="#itinTop" class="btn btn-primary btn-small">VIEW FEATURED ITINERARIES</a></div>
+</div>
+<div class="section centered doubleSpaceBottom">
+	<h3>SEE WHAT MAKES US “UNIQUELY UNIWORLD”</h3>
+	<p>
+		Uniworld is the only river cruise line endorsed by the International Gay & Lesbian Travel Association (IGTLA) and gay-friendly digital magazine ManAboutWorld. Read on to learn more about our award-winning, one-of-a-kind attributes.
+	</p>
+	<div style="display: inline-block; background-color: black; padding: 20px 20px; margin-right:15px;">
+		<img height="34" alt="ILGTA logo" width="98" src="~/media/a887e7b62e404c7aae6f99913c028438.ashx" title="ILGTA logo">
+	</div>
+	<img height="70" alt="Man About World logo" width="187" src="~/media/3fbacd3663dd45c7a4cde56b736959c3.ashx" title="Man About World logo">
+</div>
+<div class="row masonary tripleSpaceBottom">
+	<div class="imgWrapper col-md-6 col-lg-7">
+		<img alt="" height="558" width="683" src="~/media/3bb30f366de64d97814bbc5a8f7d251e.ashx" class="visible-lg-block" />
+		<img alt="" height="350" width="720" src="~/media/0e7c16fb382940ff874ad87abbf06c0e.ashx" class="img-responsive hidden-lg" />
+		<div class="imgTextOverlay">
+			<div class="imgTextFloat">
+				<h3>FOOD &amp; WINE</h3>
+				<p>Our farm-to-table cuisine celebrates local ingredients and recipes. With delicious gourmet fare, onboard sommeliers and superb wines, beers and premium spirits, it’s clear why <em>SAVEUR</em> named Uniworld “Best Culinary Cruise Line.”</p>
 			</div>
 		</div>
-		<nav class="navbar navbar-inverse uni-footer-bottom">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-6 col-sm-push-6 text-center text-right-sm">
-						The World's Only Authentic Boutique Cruise Line™
-						<br />
-						<br />
-					</div>
-					<!-- .col -->
-					<div class="col-sm-6 col-sm-pull-6 text-center text-left-sm">
-						Part of <a href="https://thetravelcorporation.com/" target="_blank">The Travel Corporation</a> family of companies.
-						<br /> ©2015 Uniworld Boutique River Cruise Collection, Inc.
-						<br /> All rights reserved. <a href="/About-Uniworld/privacy-policy">Privacy Policy</a> CST #2075415-20
-						<br />
-						<br />
-					</div>
-					<!-- .col -->
-				</div>
-				<!-- .row -->
-				<div class="row hidden-xs">
-					<div class="col-xs-6 text-left">
-						<label for="xsmallSelectUni">Select a country</label>
-						<div class="uni-select uni-select-xs">
-							<form action="/api/sitecore/pageInformation/redirectToLanguageSite" method="post">
-								<select class="chosen-select" id="SelectedLanguageItem" name="SelectedLanguageItem" select="select-language">
-									<option selected="selected" value="en">United States</option>
-									<option value="en-IE">Ireland</option>
-									<option value="en-CA">Canada</option>
-									<option value="en-NZ">New Zealand</option>
-									<option value="en-AU">Australia</option>
-									<option value="en-GB">United Kingdom</option>
-									<option value="en-IN">India</option>
-									<option value="en-ZA">South Africa</option>
-									<option value="zh-SG">Singapore</option>
-								</select>
-							</form>
-						</div>
-						<!-- .uni-select -->
-					</div>
-					<!-- .col -->
-					<div class="col-xs-6 text-right uni-logoGarden">
-						<?xml version="1.0" encoding="iso-8859-1"?>
-						<div class="row">
-							<a href="https://thetravelcorporation.com/" target="_blank">
-								<img alt="" height="60" width="60" src="/~/media/home-page/logos/ttc_white_01.ashx?la=en&hash=716BA5D8AD3A36D6649C40D2350B3FD153C5F7EF" />
-							</a>
-							<a href="">
-								<img alt="" height="60" width="60" src="/~/media/home-page/logos/logotollman.ashx?la=en&hash=6AF7A318D799D1505CDAC692D50334FB25AD76A6" />
-							</a>
-							<a href="http://www.treadright.org/" target="_blank">
-								<img alt="" height="60" width="135" src="/~/media/home-page/logos/logotreadright.ashx?la=en&hash=C7B3BE318720FE7BFCD0A906E7BD04005988B550" />
-							</a>
-							<img alt="" class="betterBusiness" height="39" width="90" src="/~/media/home-page/logos/img4.ashx?la=en&hash=FF894B86352627CF287771653DC1D1A016180870" />
-						</div>
-					</div>
-					<!-- .col -->
-				</div>
-				<!-- .row -->
+	</div>
+	<div class="imgWrapper col-md-6 col-lg-5">
+		<img alt="" height="279" width="487" src="~/media/0f750a894a6e4004a59e96e022073380.ashx" class="visible-lg-block" />
+		<img alt="" height="350" width="720" src="~/media/bd0775a424224146adacbef96bc4079e.ashx" class="img-responsive hidden-lg" />
+		<div class="imgTextOverlay">
+			<div class="imgTextFloat">
+				<h3>Unique Ships</h3>
+				<p>Uniworld’s intimate ships are rich in character and one-of-a-kind, featuring stylish lounges, elegant accommodations with handcrafted Savoir beds, and marble bathrooms with Hèrmes bath products.</p>
 			</div>
-			<!-- .container -->
-		</nav>
-		<!-- .navbar -->
-		<script type='text/javascript'>
-		var axel = Math.random() + '';
-		var a = axel * 10000000000000;
-		document.write('<img src=""https://pubads.g.doubleclick.net/activity;dc_iu=/5349/DFPAudiencePixel;ord=' + a + ';dc_seg=33792010?"" width=1 height=1 border=0/>');
-		</script>
-		<noscript>
-			<img src="" https://pubads.g.doubleclick.net/activity;dc_iu=/5349/DFPAudiencePixel;ord=1;dc_seg=33792010? "" width=1 height=1 border=0/>
-		</noscript>
-		<script type="text/javascript" src="https://ws.sharethis.com/button/buttons.js"></script>
-		<script type="text/javascript">
-		stLight.options({
-			publisher: "9fc05a7f-1e6e-42e0-b7c4-76f7af6d261a",
-			doNotHash: true,
-			doNotCopy: false,
-			hashAddressBar: false
-		});
-		</script>
-		<!--Affiliate.js-->
-		<script src="https://services.uniworld.com/token/v10/affiliate.js"></script>
-		<!--Sitecore.js-->
-		<script>
-		//Inject "//services.uniworld.com/Integration/Scripts/Sitecore.js"
-		var ScriptElement = document.createElement("script");
-		ScriptElement.src = "//services.uniworld.com/Integration/Scripts/Sitecore.js?" + Number(new Date());
-		document.getElementsByTagName("head")[0].appendChild(ScriptElement);
-		</script>
-	</footer>
-	<script src="/bundles/javascript?v=8dy8K5grSU5dxd58HfEaoXUujVMC9_02n9TpVZqTxdk1"></script>
-	<script src="/Components/XBlog Assets/JS/RRSSB/rrssb.min.js"></script>
-	<script type="text/javascript">
-	jQuery(document).ready(function() {
-		jQuery('.fancybox').fancybox();
-	})
-	</script>
-	<script type="text/javascript">
-	jQuery(document).ready(function() {
-		$('.compareTripCheckbox').change(function() {
-			var data = {};
-			data[$(this).attr('name')] = $(this).is(':checked');
+		</div>
+	</div>
+	<div class="imgWrapper col-md-6 col-lg-5">
+		<img alt="" height="279" width="487" src="~/media/150ae8a352724362a62985a1671e11fc.ashx" class="visible-lg-block" />
+		<img alt="" height="350" width="720" src="~/media/99793c62ab1d476b918cf1ebbe2ef158.ashx" class="img-responsive hidden-lg" />
+		<div class="imgTextOverlay">
+			<div class="imgTextFloat">
+				<h3>Bespoke Experiences</h3>
+				<p>Enjoy VIP access and exclusive, once-in-a-lifetime moments, such as sipping cocktails with a princess. Follow your bliss on a themed cruise or create your own adventure with our onboard concierge services.</p>
+			</div>
+		</div>
+	</div>
+	<div class="imgWrapper col-md-6 col-lg-7 imgFloatRight">
+		<img alt="" height="558" width="682" src="~/media/2bd97611ee7641caadce86a819361235.ashx" class="visible-lg-block" />
+		<img alt="" height="350" width="720" src="~/media/d965ae45b55b4853a454de7a2995322e.ashx" class="img-responsive hidden-lg" />
+		<div class="imgTextOverlay">
+			<div class="imgTextFloat">
+				<h3>Legendary Service</h3>
+				<p>Our elite team has a passion for exceptional service—for them, there’s “no request too large, no detail too small.” We have one of the highest staff-to-crew ratios in the industry and butlers trained to the same lofty standards as Buckingham Palace.</p>
+			</div>
+		</div>
+	</div>
+	<div class="imgWrapper col-md-6 col-lg-5 imgFloatRight">
+		<img alt="" height="279" width="488" src="~/media/2b10cd7cbd7a4f4182d91f28d9d9d250.ashx" class="visible-lg-block" />
+		<img alt="" height="350" width="720" src="~/media/39e21bfe2c1c475087538345ea8f8987.ashx" class="img-responsive hidden-lg" />
+		<div class="imgTextOverlay">
+			<div class="imgTextFloat">
+				<h3>Health & Wellness</h3>
+				<p>Pamper yourself at our onboard Serenity River Spa, keep fit with complimentary exercise, yoga & meditation classes, and refuel with fresh smoothies, juices and a Traveling Lite menu.</p>
+			</div>
+		</div>
+	</div>
+	<div class="imgWrapper col-md-6 col-lg-5 imgFloatRight">
+		<img alt="" height="279" width="488" src="~/media/1410dea1b60643b295150abbe1c6b10b.ashx" class="visible-lg-block" />
+		<img alt="" height="350" width="720" src="~/media/fff2bfcd52824978b5b231bdb509edf3.ashx" class="img-responsive hidden-lg" />
+		<div class="imgTextOverlay">
+			<div class="imgTextFloat">
+				<h3>Active Travel</h3>
+				<p>On our “Go Active” excursions, you can cycle along a riverside bike path, hike through lush vineyards, kayak under a Roman aqueduct and even golf along France’s Alabaster Coast. </p>
+			</div>
+		</div>
+	</div>
+	<div class="imgWrapper col-md-6">
+		<img alt="" height="400" width="585" src="~/media/4cd98dbacbf143a8a08a981f432237ab.ashx" class="img-responsive visible-lg-block" />
+		<img alt="" height="350" width="720" src="~/media/b9ac4c0b6e614a7a9411ca42924b0ac1.ashx" class="img-responsive hidden-lg" />
+		<div class="imgTextOverlay">
+			<div class="imgTextFloat">
+				<h3>All-Inclusive Luxury</h3>
+				<p>Savor the peace of mind that comes with having everything taken care of—all meals and beverages onboard, 24-hour dining, gratuities, transfers, port charges, excursions and more.</p>
+			</div>
+		</div>
+	</div>
+	<div class="imgWrapper col-md-6">
+		<img alt="" height="400" width="585" src="~/media/1669174563b84b549b95f61a7d5c5685.ashx" class="img-responsive visible-lg-block" />
+		<img alt="" height="350" width="720" src="~/media/10b29547d11242329bb608b443cb5f26.ashx" class="img-responsive hidden-lg" />
+		<div class="imgTextOverlay">
+			<div class="imgTextFloat">
+				<h3>Eco-Friendly Journeys</h3>
+				<p>Our devotion to sustainable tourism is inspired by the destinations and diverse cultures we visit, and we’re proud of the many industry-leading “green” initiatives we’ve pioneered. </p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="section centered">
+	<a name="itinTop"></a>
+	<h3>CURATED JOURNEYS</h3>
+	<p>Uniworld’s European itineraries are especially popular with our gay and lesbian guests—many of whom time their trips to coincide with special LGBT events, such as Amsterdam’s annual gay Pride festival. Some of our favorite itineraries to consider for 2017: </p>
+</div>
+<!--Itins-->
+<div class="itinWrapper row">
+	<!-- Bordeaux, Vineyards & Chateaux Full -->
+	<div class="uniTall row">
+		<div class="col-lg-12 uniItinFull">
+			<div class="itinImage col-lg-6 col-md-12">
+				<div class="itinImageWrap">
+					<img class="img-responsive" alt="Bordeaux_Vineyards_Chateaux_Bordeaux_RF_2016_M" width="1500" height="682.5" src="~/media/eaf528298265442abb36685c67af79b8.ashx" />
+				</div>
+			</div>
+			<article class="col-lg-6 col-md-12">
+				<div class="uni-itin-copy">
+					<h2>
+						<a href="/cruises/europe/paris-and-normandy/2017">Bordeaux, Vineyards &amp; Ch&acirc;teaux</a>
+					</h2>
+					<h3>
+						<span class="uniItinYear"><strong>2017</strong> | </span><strong>8 DAYS</strong> FROM Bordeaux to Bordeaux
+					</h3>
+					<p>
+						<strong>SHIP:</strong>
+						<span class="shipName"><em>River Royale</em></span>
+					</p>
+					<p class="uniItinCities">
+						<strong>Cities Include:</strong> Bordeaux, Cadillac, Bordeaux, Pauillac, Blaye, Libourne, Libourne, Libourne, Bordeaux,
+					</p>
+					<p class="uniItinExcursions">
+						<strong>Featured Highlights:</strong> Excursions Here
+					</p>
+					<p class="uniItinBeauty">
+						Ah, France….need we say more? Lovers of French food and wine will find our Bordeaux itinerary ideally suited for epicureans, as are our exclusive <a href="/themed-cruises/connoisseur-collection">Connoisseur Collection</a> themed cruises, available on select departures throughout France. Extend your stay with an optional pre- or post-cruise extension in glamorous Paris.
+					</p>
+					<div class="buttonContainer">
+						<a class="btn btn-maroon btn-small fancybox fancybox.iframe" type="button" href="/modals/request-a-quote?a=200">Request a quote</a>
+						<a class="btn btn-primary btn-small" type="button" href="/cruises/europe/paris-and-normandy/2017">Learn More</a>
+					</div>
+				</div>
+			</article>
+		</div>
+	</div>
+	<!-- END Bordeaux, Vineyards & Chateaux Full -->
+	<!-- Gems of Northern Italy Full -->
+	<div class="uniTall row">
+		<div class="col-lg-12 uniItinFull">
+			<div class="itinImage col-lg-6 col-md-12">
+				<div class="itinImageWrap">
+					<img class="img-responsive" alt="Gems_Northern_Italy_Venice_RF_2016_M" width="1500" height="682" src="~/media/804f2402028c489bbf329d8bafbd94b6.ashx" />
+				</div>
+			</div>
+			<article class="col-lg-6 col-md-12">
+				<div class="uni-itin-copy">
+					<h2>
+						<a href="/cruises/europe/gems-of-northern-italy/2017">Gems of Northern Italy</a>
+					</h2>
+					<h3>
+						<span class="uniItinYear"><strong>2017</strong> | </span><strong>10 DAYS</strong> FROM Milan to Venice
+					</h3>
+					<p>
+						<strong>SHIP:</strong>
+						<span class="shipName"><em>River Countess</em></span>
+					</p>
+					<p class="uniItinCities">
+						<strong>Cities Include:</strong> Milan, Verona, Venice, Chioggia, Polesella, Taglio di Po, Chioggia, Venice Islands, Venice
+					</p>
+					<p class="uniItinExcursions">
+						<strong>Featured Highlights:</strong> Excursions Here
+					</p>
+					<p class="uniItinBeauty">
+						Italy’s many charms are on display throughout this perfectly paced itinerary, an unforgettable journey for travelers looking to experience Italian fashion and design, food and wine, art and architecture, and incomparable la dolce vita. This is the perfect adventure for kids, too—our top-rated <a href="/themed-cruises/family-friendly-cruises">Generations program</a> is available on select summer departures.
+					</p>
+					<div class="buttonContainer">
+						<a class="btn btn-maroon btn-small fancybox fancybox.iframe" type="button" href="/modals/request-a-quote?a=210">Request a quote</a>
+						<a class="btn btn-primary btn-small" type="button" href="/cruises/europe/gems-of-northern-italy/2017">Learn More</a>
+					</div>
+				</div>
+			</article>
+		</div>
+	</div>
+	<!-- END Gems of Northern Italy Full -->
+	<!-- Jewels of Spain, Portugal & the Douro River Full -->
+	<div class="uniTall row">
+		<div class="col-lg-12 uniItinFull">
+			<div class="itinImage col-lg-6 col-md-12">
+				<div class="itinImageWrap">
+					<img class="img-responsive" alt="Jewels_Spain_Portugal_Douro_River_Toledo_2016_M" width="1500" height="682" src="~/media/bc451589785d49ceaa754b71c584c5aa.ashx" />
+				</div>
+			</div>
+			<article class="col-lg-6 col-md-12">
+				<div class="uni-itin-copy">
+					<h2>
+						<a href="/cruises/europe/jewels-of-spain-portugal-and-the-douro-river/2017">Jewels of Spain, Portugal &amp; the Douro River</a>
+					</h2>
+					<h3>
+						<span class="uniItinYear"><strong>2017</strong> | </span><strong>13 DAYS</strong> FROM Madrid to Lisbon
+					</h3>
+					<p>
+						<strong>SHIP:</strong>
+						<span class="shipName"><em>Queen Isabel</em></span>
+					</p>
+					<p class="uniItinCities">
+						<strong>Cities Include:</strong> Madrid, Salamanca, Vega de Terr&oacute;n, Barca d&rsquo;Alva, Pinh&acirc;o, R&eacute;gua, Caldas de Aregos, Entre-os-Rios, Porto, Coimbra, &Oacute;bidos, Lisbon
+					</p>
+					<p class="uniItinExcursions">
+						<strong>Featured Highlights:</strong> Excursions Here
+					</p>
+					<p class="uniItinBeauty">
+						Discover three Spanish cities—Madrid, Toledo, and Salamanca—as well as the best of Spanish and Portuguese cuisine, culture and soul-stirring landscapes. Make the most of your international airfare by bookending your cruise with extra days in two under-the-radar LGBT hot spots, Lisbon and Madrid.
+					</p>
+					<div class="buttonContainer">
+						<a class="btn btn-maroon btn-small fancybox fancybox.iframe" type="button" href="/modals/request-a-quote?a=212">Request a quote</a>
+						<a class="btn btn-primary btn-small" type="button" href="/cruises/europe/jewels-of-spain-portugal-and-the-douro-river/2017">Learn More</a>
+					</div>
+				</div>
+			</article>
+		</div>
+	</div>
+	<!-- END Jewels of Spain, Portugal & the Douro River Full -->
+	<!-- European Jewels Full -->
+	<div class="uniTall row">
+		<div class="col-lg-12 uniItinFull">
+			<div class="itinImage col-lg-6 col-md-12">
+				<div class="itinImageWrap">
+					<img class="img-responsive" alt="European_Jewels_Bamberg_RF_2016_M" width="1500" height="682" src="~/media/62f086eaea4741fbb9d64cf65b06e7c0.ashx" />
+				</div>
+			</div>
+			<article class="col-lg-6 col-md-12">
+				<div class="uni-itin-copy">
+					<h2>
+						<a href="/cruises/europe/european-jewels/2016">European Jewels</a>
+					</h2>
+					<h3>
+						<span class="uniItinYear"><strong>2017</strong> | </span><strong>15 DAYS</strong> FROM Budapest to Amsterdam
+					</h3>
+					<p>
+						<strong>SHIP:</strong>
+						<span class="shipName"><em>River Princess, River Duchess, River Empress, River Queen</em></span>
+					</p>
+					<p class="uniItinCities">
+						<strong>Cities Include:</strong> Budapest, Vienna, Weissenkirchen, Engelhartszell, Passau, Regensburg, Nuremberg, Bamberg, W&uuml;rzburg, Wertheim, Frankfurt, R&uuml;desheim, Cologne, Amsterdam
+					</p>
+					<p class="uniItinExcursions">
+						<strong>Featured Highlights:</strong> Excursions Here
+					</p>
+					<p class="uniItinBeauty">
+						Venture forth on a three-river journey featuring the best of the revitalized nations of Eastern Europe. Among the cities you’ll explore on this 15-day adventure are Cologne and Amsterdam, two locales popular with LGBT travelers. Travel like royalty onboard our exclusive <a href="/themed-cruises/monarch-collection">Monarch Collection</a> themed cruises, available on select departures of this itinerary.
+					</p>
+					<div class="buttonContainer">
+						<a class="btn btn-maroon btn-small fancybox fancybox.iframe" type="button" href="/modals/request-a-quote?a=187">Request a quote</a>
+						<a class="btn btn-primary btn-small" type="button" href="/cruises/europe/european-jewels/2016">Learn More</a>
+					</div>
+				</div>
+			</article>
+		</div>
+	</div>
+	<!-- END European Jewels Full -->
+	<!-- Danube Discovery & Prague Full -->
+	<div class="uniTall row last">
+		<div class="col-lg-12 uniItinFull">
+			<div class="itinImage col-lg-6 col-md-12">
+				<div class="itinImageWrap">
+					<img class="img-responsive" alt="Danube_Discovery_And_Prague_Melk_RF_2016_M" width="1500" height="682" src="~/media/f9ee4215167d44f0a9aacb74417fd0df.ashx" />
+				</div>
+			</div>
+			<article class="col-lg-6 col-md-12">
+				<div class="uni-itin-copy">
+					<h2>
+						<a href="/cruises/europe/danube-discovery-prague/2017">Danube Discovery &amp; Prague</a>
+					</h2>
+					<h3>
+						<span class="uniItinYear"><strong>2017</strong> | </span><strong>10 DAYS</strong> FROM Vienna to Prague
+					</h3>
+					<p>
+						<strong>SHIP:</strong>
+						<span class="shipName"><em>River Ambassador</em></span>
+					</p>
+					<p class="uniItinCities">
+						<strong>Cities Include:</strong> Vienna, Weissenkirchen or Melk, Engelhartszell, Passau, Deggendorf, Straubing, Regensburg, Kelheim, Nuremberg, Prague
+					</p>
+					<p class="uniItinExcursions">
+						<strong>Featured Highlights:</strong> Excursions Here
+					</p>
+					<p class="uniItinBeauty">
+						Explore one of the world’s most romantic and scenic rivers, cruising through the heart of the former Habsburg Empire and spending two nights in charming Prague. For old-world ambiance and charm, this in-depth 10-day journey is a superb choice, encompassing classical music, history, art and architecture, and much more.
+					</p>
+					<div class="buttonContainer">
+						<a class="btn btn-maroon btn-small fancybox fancybox.iframe" type="button" href="/modals/request-a-quote?a=180">Request a quote</a>
+						<a class="btn btn-primary btn-small" type="button" href="/cruises/europe/danube-discovery-prague/2017">Learn More</a>
+					</div>
+				</div>
+			</article>
+		</div>
+	</div>
+	<!-- END Danube Discovery & Prague Full -->
+</div>
+<div class="section centered tripleSpaceBottom">
+	<p>For more information or to book your 2017 adventure, please contact your preferred travel professional or Uniworld reservations at
+		<span> <strong> 1-800-257-2407</strong></span>.</p>
+	<a href="#pageTop" class="btn btn-primary btn-small">BACK TO TOP</a>
+</div>
 
-			$.ajax({
-				url: $(this).data('url'),
-				type: 'GET',
-				data: data,
-				success: function(result) {
-					if (result.Success) {
-						alert(result.Message);
-					} else {
-						alert(result.Message);
-					}
-				}
-			});
-		});
-	});
-	</script>
-	<script type="text/javascript">
-	jQuery(window).load(function() {
-		jQuery(document).ready(function() {
-			jQuery('.large-map-display').hide();
-		});
-	});
-	</script>
-	<script type="text/javascript">
-	$(document).ready(function() {
-		$(".fancybox-mediahome")
-			.attr("rel", "media-gallery")
-			.fancybox({
-				openEffect: "none",
-				closeEffect: "none",
-				prevEffect: "none",
-				nextEffect: "none",
-				helpers: {
-					media: true
-				},
-				width: '100%',
-				height: '100%',
-				padding: [0, 0, 0, 0],
-				aspectRatio: true,
-				scrolling: 'no'
-			});
-	});
-	</script>
+
+	
 </body>
-
 </html>
