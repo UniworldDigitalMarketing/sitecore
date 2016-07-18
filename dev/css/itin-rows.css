@@ -1,5 +1,8 @@
+/*///////////////////////////////////////////////
+        2017 Itin Rows
+//////////////////////////////////////////////*/
 .uniTall article {
-  font-size: 13px;
+  font-size: 14px;
   font-family: proxima-nova;
   letter-spacing: .05em; }
 .uniTall h2 {
@@ -11,7 +14,7 @@
   text-transform: uppercase;
   margin: 0 0 1.25em 0; }
 .uniTall p {
-  font-size: 1.15em;
+  font-size: 1em;
   margin-bottom: 1em; }
   .uniTall p strong {
     text-transform: uppercase; }
@@ -72,7 +75,7 @@
   .uniTall .uniItinHalf {
     margin-bottom: 35px; }
     .uniTall .uniItinHalf .buttonContainer .btn {
-      display: block; }
+      width: 100%; }
     .uniTall .uniItinHalf .buttonContainer .btn-small {
       margin: 5px 0 0; }
     .uniTall .uniItinHalf .itinImage {
@@ -80,7 +83,7 @@
     .uniTall .uniItinHalf article {
       margin: 0 -15px; }
   .uniTall .uniItinFull .buttonContainer .btn {
-    display: block; }
+    width: 100%; }
   .uniTall .uniItinFull .buttonContainer .btn-small {
     margin: 5px 0 0; } }
 @media screen and (min-width: 1200px) {
@@ -122,6 +125,9 @@
     text-align: center; } }
 @media (max-width: 767px) {
   .buttonContainer .btn {
-    display: block; }
+    width: 100%; }
   .buttonContainer .btn-small {
     margin: 5px 0 0; } }
+/*///////////////////////////////////////////////
+        END 2017 Itin Rows
+//////////////////////////////////////////////*/
