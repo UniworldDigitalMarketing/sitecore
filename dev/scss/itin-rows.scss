@@ -1,3 +1,7 @@
+
+/*///////////////////////////////////////////////
+        2017 Itin Rows
+//////////////////////////////////////////////*/
 //colors
 $color_matisse: #1b5b92;
 $color_chathams_blue: #174e7c;
@@ -6,9 +10,10 @@ $color_calypso: #356b99;
 //fonts
 $font_0: proxima-nova;
 $font_1: civita-lightregular;
+
 .uniTall {
     article {
-        font-size: 13px;
+        font-size: 14px;
         font-family: $font_0;
         letter-spacing: .05em;
     }
@@ -23,7 +28,7 @@ $font_1: civita-lightregular;
         margin: 0 0 1.25em 0;
     }
     p {
-        font-size: 1.15em;
+        font-size: 1em;
         margin-bottom: 1em;
         strong {
             text-transform: uppercase;
@@ -105,7 +110,7 @@ $font_1: civita-lightregular;
             margin-bottom: 35px;
             .buttonContainer {
                 .btn {
-                    display: block;
+                    width: 100%;
                 }
                 .btn-small {
                     margin: 5px 0 0;
@@ -120,7 +125,7 @@ $font_1: civita-lightregular;
         }
         .uniItinFull .buttonContainer {
             .btn {
-                display: block;
+                width: 100%;
             }
             .btn-small {
                 margin: 5px 0 0;
@@ -189,10 +194,13 @@ $font_1: civita-lightregular;
 @media(max-width: 767px) {
     .buttonContainer {
         .btn {
-            display: block;
+            width: 100%;
         }
         .btn-small {
             margin: 5px 0 0;
         }
     }
 }
+/*///////////////////////////////////////////////
+        END 2017 Itin Rows
+//////////////////////////////////////////////*/

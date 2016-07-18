@@ -6,12 +6,6 @@ $activeTabBG: #89a5be;
 $tabLinkColor: #7b97b1;
 $activeTabLinkColor: #00315a;
 $headColor: #356b99;
-$bluefont: #356b99;
-$altcall: #002353;
-$borderOne: #EFEFEF;
-$borderTwo: #D4D4D4;
-$sans: proxima-nova;
-$serif: civita-lightregular;
 @mixin transform($transforms) {
     -moz-transform: $transforms;
     -o-transform: $transforms;
@@ -26,34 +20,6 @@ $serif: civita-lightregular;
     -ms-transition: $transitions;
     -o-transition: $transitions;
     transition: $transitions;
-}
-
-// Extra Small Devices, Phones 
-@mixin bp-smaller {
-    @media only screen and (min-width: 480px) {
-        @content;
-    }
-}
-
-// Small Devices, Tablets 
-@mixin bp-small {
-    @media only screen and (min-width: 768px) {
-        @content;
-    }
-}
-
-// Medium Devices, Desktops 
-@mixin bp-medium {
-    @media only screen and (min-width: 992px) {
-        @content;
-    }
-}
-
-// Large Devices, Wide Screens 
-@mixin bp-large {
-    @media only screen and (min-width: 1200px) {
-        @content;
-    }
 }
 
 
@@ -332,258 +298,33 @@ figcaption {
 
 /*-------CALL OUT----------*/
 
-// .jj-call-out {
-//     outline: solid 8px #ededed;
-//     border: solid 1px darken(#ededed, 15%);
-//     padding: 10px 20px 20px 20px;
-//     margin-top: 10px;
-//     margin-bottom: 10px;
-//     h2 {
-//         color: $activeTabLinkColor;
-//         font-size: 2em;
-//         letter-spacing: .01em;
-//     }
-//     ul {
-//         list-style: disc;
-//         font-size: 1em;
-//         list-style-position: inside;
-//         li {
-//             &:first-child {
-//                 list-style: none;
-//                 font-weight: 600;
-//             }
-//             &:last-child {
-//                 list-style: none;
-//                 font-style: italic;
-//             }
-//         }
-//     }
-// }
-.uni-flex-full {
-    flex: 1 100%;
-    max-width: 320px;
-    margin: 50px auto;
-
-    //height: 320px;
-    //background: #EEE;
-    @include bp-smaller {
-        //margin-top: 7px;
+.jj-call-out {
+    outline: solid 8px #ededed;
+    border: solid 1px darken(#ededed, 15%);
+    padding: 10px 20px 20px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    h2 {
+        color: $activeTabLinkColor;
+        font-size: 2em;
+        letter-spacing: .01em;
     }
-    @include bp-small {
-        max-width: 960px;
-    }
-}
-
-
-/*-------------OFFER------------------*/
-
-.offer-section {
-    margin-bottom: 70px;
-}
-
-.uniofferwrap {
-    text-align: center;
-    border: solid 2px #d6dadd;
-    outline: solid 2px #d6dadd;
-    outline-offset: -8px;
-    padding: 25px 0;
-    font-size: 14px;
-    color: #567caa;
-    //max-width: 700px;
-    //margin: 50px auto;
-    float: none;
-}
-
-.uniofferwrap .offer-left {
-    margin-right: 1px;
-    flex: 1 100%;
-    margin-bottom: 50px;
-    padding: 0;
-    @include bp-small {
-        flex: 1 30%;
-        margin-bottom: 0px;
-        font-size: .8em;
-    }
-    @include bp-large {
+    ul {
+        list-style: disc;
         font-size: 1em;
-    }
-    &:last-child {
-        margin-bottom: 0;
-    }
-}
-
-.uniofferwrap .offer-right {
-    margin-left: 1px;
-    max-width: 50%;
-}
-
-.uniofferwrap .date {
-    position: relative;
-    width: 90%;
-    max-width: 300px;
-    margin: 10px 0;
-    transform: translateX(-50%);
-    //background: #dee5ee;
-    border-bottom: dotted 2px #dee5ee;
-    left: 50%;
-    top: 0;
-    height: 1px;
-    font-size: 2em;
-    //font-weight: 600;
-}
-
-.uniofferwrap .date div {
-    background: #FFF;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 0;
-    padding: 0 15px;
-    z-index: 1;
-    min-width: 200px;
-}
-
-.uniofferwrap h3 {
-    margin: 0 0 35px 0;
-    color: #244c7e;
-    text-transform: uppercase;
-    font-size: 2em;
-    font-weight: 100;
-    letter-spacing: 0.06em;
-    line-height: 1.3em;
-    @include bp-small {
-        font-size: 3em;
-    }
-}
-
-.uniofferwrap .offersaver {
-    font-size: 1.7em;
-    color: #244c7e;
-    font-weight: 600;
-}
-
-.uniofferwrap .offersaver small {
-    color: #567caa;
-    font-weight: 100;
-}
-
-.uniofferwrap .ammount {
-    font-size: 2em;
-    font-weight: 600;
-}
-
-.uniofferwrap .per {
-    font-size: 1.3em;
-}
-
-.uniofferwrap .ammount small {
-    font-size: .5em;
-}
-
-.uniofferwrap .ammount .currency {
-    font-size: .5em;
-    margin-right: 2px;
-    position: relative;
-    top: -.5em;
-}
-
-.uniofferwrapinner {
-    display: flex;
-    justify-content: space-around;
-    align-items: stretch;
-    padding: 5px 0;
-    flex-flow: row wrap;
-}
-
-.uniofferwrapinner .uniofferrow {
-    display: block;
-}
-
-// .uniofferwrapinner .uniofferrow small {
-//     @include bp-large {
-//         display: block;
-//     }
-//     @include bp-medium {
-//         display: inline-block;
-//     }
-//     @include bp-smaller {
-//         display: block;
-//     }
-// }
-.uniofferwrapinner .uniofferor {
-    position: relative;
-    background: #dadada;
-    top: -25px;
-    width: 85%;
-    max-width: 250px;
-    height: 1px;
-    @include bp-small {
-        width: 2px;
-        left: 1px;
-        top: auto;
-        height: auto;
-    }
-}
-
-.uniofferwrapinner .uniofferor .or-bridge {
-    position: absolute;
-    //top: 50%;
-    left: 50%;
-    font-size: 2em;
-    transform: translate(-50%, -50%);
-    font-family: $serif;
-    background: #FFF;
-    font-weight: 600;
-    color: #567caa;
-    //padding: 3px;
-    padding: 0 10px;
-    top: -1px;
-    @include bp-small {
-        top: 50%;
-        padding: 3px;
-        font-size: 1.5em;
-    }
-    @include bp-large {
-        font-size: 2.2em;
-    }
-}
-
-.learner {
-    display: block;
-    margin-top: 25px;
-    font-size: 1em;
-    letter-spacing: 0.05em;
-    @include bp-small {
-        font-size: 1.25em;
-    }
-    a {
-        text-decoration: none;
-        position: relative;
-        text-transform: uppercase;
-        color: $altcall;
-        i {
-            //font-size: .85em;
-            right: -15px;
-            position: absolute;
-            top: 50%;
-            margin-left: 0px;
-            transform: translate(1px, -50%);
-            transition: all 200ms ease;
-        }
-        &:hover i {
-            transform: translate(4px, -50%);
+        list-style-position: inside;
+        li {
+            &:first-child {
+                list-style: none;
+                font-weight: 600;
+            }
+            &:last-child {
+                list-style: none;
+                font-style: italic;
+            }
         }
     }
 }
-
-@media only screen and (max-width: 768px) {
-    .uniofferwrap {
-        font-size: 13px;
-    }
-}
-
-
-/*-----------END OFFER------------*/
 
 
 /* Small devices (tablets, 768px and up) */
@@ -653,39 +394,10 @@ figcaption {
     }
 }
 
-    .learner {
-        display: block;
-        margin-top: 25px;
-        font-size: 1em;
-        letter-spacing: 0.05em;
-        @include bp-small {
-            font-size: 1.25em;
-        }
-        a {
-            text-decoration: none;
-            position: relative;
-            text-transform: uppercase;
-            color: $altcall;
-            i {
-                //font-size: .85em;
-                right: -15px;
-                position: absolute;
-                top: 50%;
-                margin-left: 0px;
-                transform: translate(1px, -50%);
-                transition: all 200ms ease;
-            }
-            &:hover i {
-                transform: translate(4px, -50%);
-            }
-        }
-    }
-
 #uniDisclaimer {
     font-size: 11px;
     padding: 15px 0 100px 0;
 }
-
 
 /* Medium devices (desktops, 992px and up) */
 
