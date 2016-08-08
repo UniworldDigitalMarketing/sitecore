@@ -1,2 +1,492 @@
-.row-centered{text-align:center}.VideoImage{position:relative}.VideoImage .VideoPlay{border:3px solid #fff;border-radius:30px;box-shadow:1px 1px 2px rgba(0,0,0,.2);height:50px;transform:translate(-50%,-50%);width:50px;z-index:1}.VideoImage .VideoPlay,.VideoImage .VideoPlay span{left:50%;position:absolute;top:50%;pointer-events:none}.VideoImage .VideoPlay span{border-bottom:12px solid transparent;border-left:20px solid #fff;border-top:12px solid transparent;height:0;transform:translate(-38%,-50%);width:0}.uniTall h2{font-family:civita-lightregular;font-size:2em}.uniTall h3{font-size:1.25em;text-transform:uppercase}.uniTall h2,.uniTall h3{margin:0 0 5px}.uniTall p{font-size:1em;margin-bottom:.5em}.uniTall p strong{text-transform:uppercase}.uniTall.row{border-bottom:1px solid #d8d8d8;height:auto;margin-bottom:35px!important;padding-bottom:35px}.itinImageWrap{border:5px solid #e2e5e8;padding:3px}.shipName{color:#356b99}.uniTall .buttonContainer{margin-top:10px}@media screen and (min-width:1200px){.buttonContainer a{margin-bottom:5px;width:186px}.uniTall article{padding:0 0 0 15px}.uniTall{font-size:14px}}@media screen and (max-width:1199px){.uniTall article{padding:10px 15px}.uniTall{font-size:13px}}@media screen and (max-width:991px){.itinImageWrap{margin-bottom:10px}.buttonContainer{text-align:center}}.centered{text-align:center}.ctaSpacer{margin-top:20px}.uniIntro h3{margin-top:0;margin-bottom:30px}.section p,.uniIntro p{font-size:18px}.doubleSpaceBottom{margin-bottom:50px}.tripleSpaceBottom{margin-bottom:75px}.itinWrapper .last{border-bottom:0}.imgWrapper{position:relative}.imgFloatRight{float:right}.imgTextFloat{text-align:center}.imgTextFloat h3{line-height:1;text-transform:uppercase}.imgTextFloat p{margin-bottom:0}@media only screen and (min-width:1200px){.row.masonary div{padding-left:0;padding-right:0}.imgTextOverlay{position:absolute;top:0;width:100%;bottom:0;opacity:0;transition:opacity 1.5s;background:radial-gradient(ellipse at center,rgba(0,0,0,.38) 0,rgba(0,0,0,.38) 3%,rgba(0,0,0,.86) 100%);filter:progid: DXImageTransform.Microsoft.gradient(startColorstr='#61000000',endColorstr='#db000000',GradientType=1)}.imgTextOverlay:hover{opacity:100}.imgTextFloat{display:inline-block;top:50%;left:50%;position:absolute;transform:translate(-50%,-50%);color:#fff;z-index:2;width:69%}.imgTextFloat h3{margin-top:0}.imgTextFloat p{font-size:18px;line-height:1.4}}@media only screen and (max-width:1200px){.imgTextOverlay{background:none;position:static;min-height:134px}.imgTextFloat h3{margin-top:10px}.imgWrapper{margin-bottom:20px}.imgWrapper:last-child{margin-bottom:0}}@media (min-width:990px){.uniIntro h3,.uniIntro p{text-align:left}}@media (max-width:991px){.imgTextOverlay{min-height:0!important}}
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRpZHkuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWdCQSxjQUNFLGlCQUFtQixDQUNwQixBQW9DRCxZQUNFLGlCQUFtQixDQUNwQixBQUVELHVCQUNFLHNCQUF1QixBQUN2QixtQkFBb0IsQUFDcEIsc0NBQTBDLEFBQzFDLFlBQWEsQUFJYiwrQkFBaUMsQUFDakMsV0FBWSxBQUNaLFNBQVcsQ0FFWixBQUVELG1EQVRFLFNBQVUsQUFDVixrQkFBbUIsQUFDbkIsUUFBUyxBQUlULG1CQUFxQixDQWN0QixBQVhELDRCQUNFLHFDQUFzQyxBQUN0Qyw0QkFBNkIsQUFDN0Isa0NBQW1DLEFBQ25DLFNBQVUsQUFJViwrQkFBaUMsQUFDakMsT0FBUyxDQUVWLEFBNEJELFlBQ0UsZ0NBQWlDLEFBQ2pDLGFBQWUsQ0FDaEIsQUFFRCxZQUNFLGlCQUFrQixBQUNsQix3QkFBMEIsQ0FDM0IsQUFFRCx3QkFFRSxjQUFrQixDQUNuQixBQUVELFdBQ0UsY0FBZSxBQUNmLGtCQUFvQixDQUNyQixBQUVELGtCQUNFLHdCQUEwQixDQUMzQixBQWdCRCxhQUNFLGdDQUFpQyxBQUNqQyxZQUFhLEFBQ2IsNkJBQStCLEFBQy9CLG1CQUFxQixDQUN0QixBQUVELGVBQ0UseUJBQTBCLEFBQzFCLFdBQWEsQ0FDZCxBQUVELFVBQ0UsYUFBZSxDQUNoQixBQUVELDBCQUNFLGVBQWlCLENBQ2xCLEFBc0dELHFDQUNFLG1CQUNFLGtCQUFtQixBQUNuQixXQUFhLENBQ2QsQUFFRCxpQkFDRSxrQkFBb0IsQ0FDckIsQUFFRCxTQUNFLGNBQWdCLENBQ2pCLENBQ0YsQUFFRCxxQ0FDRSxpQkFDRSxpQkFBbUIsQ0FDcEIsQUFFRCxTQUNFLGNBQWdCLENBQ2pCLENBQ0YsQUFRRCxvQ0FDRSxlQUNFLGtCQUFvQixDQUNyQixBQUVELGlCQUNFLGlCQUFtQixDQUNwQixDQUNGLEFBc0NELFVBQ0UsaUJBQW1CLENBQ3BCLEFBRUQsV0FDRSxlQUFpQixDQUNsQixBQUVELGFBQ0UsYUFBZ0IsQUFDaEIsa0JBQW9CLENBQ3JCLEFBRUQsdUJBRUUsY0FBZ0IsQ0FDakIsQUFFRCxtQkFDRSxrQkFBb0IsQ0FDckIsQUFFRCxtQkFDRSxrQkFBb0IsQ0FDckIsQUFFRCxtQkFDRSxlQUFpQixDQUNsQixBQUlELFlBQ0UsaUJBQW1CLENBQ3BCLEFBRUQsZUFDRSxXQUFhLENBQ2QsQUFFRCxjQUNFLGlCQUFtQixDQUNwQixBQUVELGlCQUNFLGNBQWUsQUFDZix3QkFBMEIsQ0FDM0IsQUFFRCxnQkFDRSxlQUFpQixDQUNsQixBQVFELDBDQUNFLGtCQUNFLGVBQWdCLEFBQ2hCLGVBQWlCLENBQ2xCLEFBRUQsZ0JBQ0Usa0JBQW1CLEFBQ25CLE1BQU8sQUFDUCxXQUFZLEFBQ1osU0FBVSxBQUNWLFVBQVcsQUFFWCx3QkFBeUIsQUFNekIsd0dBQXlILEFBRXpILG9IQUF5SCxDQUUxSCxBQUVELHNCQUNFLFdBQWEsQ0FDZCxBQUVELGNBQ0UscUJBQXNCLEFBQ3RCLFFBQVMsQUFDVCxTQUFVLEFBQ1Ysa0JBQW1CLEFBRW5CLCtCQUFpQyxBQUNqQyxXQUFhLEFBQ2IsVUFBWSxBQUNaLFNBQVcsQ0FDWixBQUVELGlCQUNFLFlBQWMsQ0FDZixBQUVELGdCQUNFLGVBQWdCLEFBQ2hCLGVBQWlCLENBQ2xCLENBQ0YsQUFNRCwwQ0FDRSxnQkFDRSxnQkFBaUIsQUFDakIsZ0JBQWlCLEFBQ2pCLGdCQUFrQixDQUNuQixBQUVELGlCQUNFLGVBQWlCLENBQ2xCLEFBRUQsWUFDRSxrQkFBb0IsQ0FDckIsQUFFRCx1QkFDRSxlQUFpQixDQUNsQixDQUNGLEFBRUQseUJBQ0UseUJBRUUsZUFBaUIsQ0FDbEIsQ0FDRixBQUVELHlCQUNFLGdCQUNFLHNCQUF5QixDQUMxQixDQUNGIiwiZmlsZSI6InRpZHkuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyoqKiB1bmNzcz4gZmlsZW5hbWU6IGRldi9jc3Mvc2l0ZS1iYXNlLmNzcyAqKiovXG5cbi8qPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG4hISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhIVxuISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhIVNJVEUtV0lERSBTVFlMRVMtU0lURS1XSURFIFNUWUxFUy1TSVRFLVdJREUgU1RZTEVTISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISFcbiEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhXG49PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0qL1xuXG4vKj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuISEhISEhISEhISEhISEhISEhISEhISEhIUdFTkVSQUwtR0VORVJBTC1HRU5FUkFMISEhISEhISEhISEhISEhISEhISEhISEhIVxuPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Ki9cblxuLypcbmNlbnRlcmVkIGNvbHVtbnMgc3R5bGVzXG49PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0qL1xuXG4ucm93LWNlbnRlcmVkIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4vKlxubGlzdHNcbj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSovXG5cbi8qXG5zdWJoZWFkc1xuPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Ki9cblxuLyp1c2UgdG8gc2VwZXJhdGUgdGhlIGludHJvIGNvbnRlbnQgZnJvbSBpdGlucyovXG5cbi8qZm9yIGxhbmRpbmcgcGFnZXMgdG8gc2VwZXJhdGUgc2VjdGlvbnMgb2YgY29udGVudCovXG5cbi8qZm9yIGNlbnRlciBhbGlnbmVkIHN1YmhlYWRzIHcvbyBydWxlcyovXG5cbi8qXG50YWJsZXNcbj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSovXG5cbi8qXG5Qc3Vkb3RhYnNcbj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0qL1xuXG4vKlxuZGlzY2xhaW1lcnNcbj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSovXG5cbi8qXG5uZXcgdmlkZW8gcm93IGZvcm1hdFxuPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Ki9cblxuLypcbnZpZGVvIHBsYXkgYnV0dG9uXG49PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0qL1xuXG4uVmlkZW9JbWFnZSB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbn1cblxuLlZpZGVvSW1hZ2UgLlZpZGVvUGxheSB7XG4gIGJvcmRlcjogM3B4IHNvbGlkICNmZmY7XG4gIGJvcmRlci1yYWRpdXM6IDMwcHg7XG4gIGJveC1zaGFkb3c6IDFweCAxcHggMnB4IHJnYmEoMCwgMCwgMCwgLjIpO1xuICBoZWlnaHQ6IDUwcHg7XG4gIGxlZnQ6IDUwJTtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDUwJTtcbiAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gIHdpZHRoOiA1MHB4O1xuICB6LWluZGV4OiA1O1xuICBwb2ludGVyLWV2ZW50czogbm9uZTtcbn1cblxuLlZpZGVvSW1hZ2UgLlZpZGVvUGxheSBzcGFuIHtcbiAgYm9yZGVyLWJvdHRvbTogMTJweCBzb2xpZCB0cmFuc3BhcmVudDtcbiAgYm9yZGVyLWxlZnQ6IDIwcHggc29saWQgI2ZmZjtcbiAgYm9yZGVyLXRvcDogMTJweCBzb2xpZCB0cmFuc3BhcmVudDtcbiAgaGVpZ2h0OiAwO1xuICBsZWZ0OiA1MCU7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiA1MCU7XG4gIHRyYW5zZm9ybTogdHJhbnNsYXRlKC0zOCUsIC01MCUpO1xuICB3aWR0aDogMDtcbiAgcG9pbnRlci1ldmVudHM6IG5vbmU7XG59XG5cbi8qXG5sb3cgdmlzaWJpbGl0eSBjdGEgZm9yIGl0aW4gcm93c1xuPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Ki9cblxuLypcbnBhc3NlbmdlciBxdW90ZSBzdHlsZVxuPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0qL1xuXG4vKj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhIVBBR0UgU1BFQ0lGSUMhISEhISEhISEhISEhISEhISEhISEhISEhISEhIVxuPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Ki9cblxuLyo9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cbkxhbmRpbmcgUGFnZXNcbj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSovXG5cbi8qXG5sYW5kaW5nIHBhZ2UgZ2VuZXJhbCBzdHlsZXNcbj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Ki9cblxuLypcbnR3byBjb2x1bW4gY29udGVudFxuPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSovXG5cbi8qc2hhcmVkIGl0aW4gc3R5bGVzKi9cblxuLnVuaVRhbGwgaDIge1xuICBmb250LWZhbWlseTogY2l2aXRhLWxpZ2h0cmVndWxhcjtcbiAgZm9udC1zaXplOiAyZW07XG59XG5cbi51bmlUYWxsIGgzIHtcbiAgZm9udC1zaXplOiAxLjI1ZW07XG4gIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XG59XG5cbi51bmlUYWxsIGgyLFxuLnVuaVRhbGwgaDMge1xuICBtYXJnaW46IDAgMCA1cHggMDtcbn1cblxuLnVuaVRhbGwgcCB7XG4gIGZvbnQtc2l6ZTogMWVtO1xuICBtYXJnaW4tYm90dG9tOiAuNWVtO1xufVxuXG4udW5pVGFsbCBwIHN0cm9uZyB7XG4gIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XG59XG5cbi8qXG5sYW5kaW5nIHBhZ2UgYWx0ZXJuYXRpbmcgaXRpbiByb3cgZ2VuZXJhbCBzdHlsZXNcbj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0qL1xuXG4vKlxubGFuZGluZyBwYWdlIGhhbGYgaXRpbiByb3cgZ2VuZXJhbCBzdHlsZXNcbj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0qL1xuXG4vKlxudGllciAzIGxhbmRpbmcgcGFnZSBjb250ZW50XG49PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Ki9cblxuLyp1bmlUYWxsIGdlbmVyYWwqL1xuXG4udW5pVGFsbC5yb3cge1xuICBib3JkZXItYm90dG9tOiAxcHggc29saWQgI2Q4ZDhkODtcbiAgaGVpZ2h0OiBhdXRvO1xuICBtYXJnaW4tYm90dG9tOiAzNXB4ICFpbXBvcnRhbnQ7XG4gIHBhZGRpbmctYm90dG9tOiAzNXB4O1xufVxuXG4uaXRpbkltYWdlV3JhcCB7XG4gIGJvcmRlcjogNXB4IHNvbGlkICNlMmU1ZTg7XG4gIHBhZGRpbmc6IDNweDtcbn1cblxuLnNoaXBOYW1lIHtcbiAgY29sb3I6ICMzNTZiOTk7XG59XG5cbi51bmlUYWxsIC5idXR0b25Db250YWluZXIge1xuICBtYXJnaW4tdG9wOiAxMHB4O1xufVxuXG4vKlxudGFiIGFkanVzdG1lbnRzXG49PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Ki9cblxuLypcbml0aW4gcm93cyBpbiB0YWJzXG49PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Ki9cblxuLyo9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cbk9mZmVyIFRpbGVzXG49PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0qL1xuXG4vKlxuY29udGVudCBibG9ja3Ncbj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0qL1xuXG4vKlxub2ZmZXIgdHlwZSBzdHlsZXNcbj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0qL1xuXG4vKj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuV2h5IFVuaXdvcmxkXG49PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0qL1xuXG4vKlxuQWJvdXQgdGhlIFJpdmVyc1xuPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Ki9cblxuLypcbkhhbGxtYXJrcyBvZiBEaXN0aW5jdGlvbiB0YWJzXG49PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Ki9cblxuLypcbkZhbWlseSBGcmllbmRseVxuPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSovXG5cbi8qPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG4gICAgU3RhY2tsYSBTb2NpYWwgV2VkZ2V0XG49PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0qL1xuXG4vKmNvbW1vbiB1bmlTdGFja2xhYnV0dG9uIGFzcGVjdHMqL1xuXG4vKnVuaVN0YWNrbGFGaWx0ZXIgdW5pU3RhY2tsYWJ1dHRvbnMgdHlwZSB2MSovXG5cbi8qaW5hY3RpdmUgc3RhdGUqL1xuXG4vKmFjdGl2ZSBzdGF0ZSovXG5cbi8qPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG4gICAgVHJhdmVsem9vXG4gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Ki9cblxuLypUcmF2ZXpvbyBmb3JtKi9cblxuLyo9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cbiAgICBDYXJlZXIgU2VjdGlvblxuID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSovXG5cbi8qXG4gQXBwbHkgTm93IGJsb2NrIGZvciBzdWJwYWdlc1xuID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSovXG5cbi8qPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG4gTm90IFN1cmUgQWJvdXQgLSBsb29rIGF0IGRlcHJpY2F0aW5nXG49PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0qL1xuXG4vKlxuUFJPVFlQRTogZmlyc3QgaW1wbGltZW50YXRpb24gb2YgZmxleCBmb3IgTFAgaW50cm8vb2ZmZXJcbj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSovXG5cbi8qXG4gICAganVtcCBidXR0b24gcm93XG4gICAgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Ki9cblxuLypcbiAgICBidXR0b24gYWxpZ25tZW50XG4gICAgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Ki9cblxuLypcbnZpZGVvIHJvdyBlbWJlZCAtIGRlcHJpY2F0ZWQgdXNpbmcgbmV3IHN0eWxlXG49PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0qL1xuXG4vKj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuISEhISEhISEhISEhISEhISEhISEhISEhIURFU0tUT1AtREVTS1RPUC1ERVNLVE9QISEhISEhISEhISEhISEhISEhISEhISEhIVxuPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Ki9cblxuQG1lZGlhIChtaW4td2lkdGg6IDEyMDBweCkge1xuICAvKlxuICAgICAgICAyMDE2IEl0aW5lcmFyeSBSb3cgaW1hZ2VzXG4gICAgICAgID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSovXG5cbiAgLypcbiAgICAgICAgbGFuZGluZyBwYWdlIGhhbGYgaXRpbiByb3cgZ2VuZXJhbCBzdHlsZXNcbiAgICAgICAgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSovXG59XG5cbi8qPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG4hISEhISEhISEhISEhISEhISEhISFSRVNQT05TSVZFLVJFU1BPTlNJVkUtUkVTUE9OU0lWRSEhISEhISEhISEhISEhISEhISEhIVxuPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Ki9cblxuQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogMTIwMHB4KSB7XG4gIC5idXR0b25Db250YWluZXIgYSB7XG4gICAgbWFyZ2luLWJvdHRvbTogNXB4O1xuICAgIHdpZHRoOiAxODZweDtcbiAgfVxuXG4gIC51bmlUYWxsIGFydGljbGUge1xuICAgIHBhZGRpbmc6IDAgMCAwIDE1cHg7XG4gIH1cblxuICAudW5pVGFsbCB7XG4gICAgZm9udC1zaXplOiAxNHB4O1xuICB9XG59XG5cbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDExOTlweCkge1xuICAudW5pVGFsbCBhcnRpY2xlIHtcbiAgICBwYWRkaW5nOiAxMHB4IDE1cHg7XG4gIH1cblxuICAudW5pVGFsbCB7XG4gICAgZm9udC1zaXplOiAxM3B4O1xuICB9XG59XG5cbkBtZWRpYSAobWluLXdpZHRoOiAxMTAxcHgpIHtcbiAgLypcbiAgICAgICAgbGFuZGluZyBwYWdlIGhhbGYgaXRpbiByb3cgZ2VuZXJhbCBzdHlsZXNcbiAgICAgICAgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSovXG59XG5cbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDk5MXB4KSB7XG4gIC5pdGluSW1hZ2VXcmFwIHtcbiAgICBtYXJnaW4tYm90dG9tOiAxMHB4O1xuICB9XG5cbiAgLmJ1dHRvbkNvbnRhaW5lciB7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB9XG59XG5cbkBtZWRpYSAobWF4LXdpZHRoOiA3NjdweCkge1xuICAvKlxuICAgICAgICBsYW5kaW5nIHBhZ2UgaGFsZiBpdGluIHJvdyBnZW5lcmFsIHN0eWxlc1xuICAgICAgICA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Ki9cbn1cblxuQG1lZGlhIChtYXgtd2lkdGg6IDY0MHB4KSB7XG4gIC8qXG4gICAgICAgIG9mZmVyIHN0eWxlc1xuICAgICAgICA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSovXG59XG5cbkBtZWRpYSAobWF4LXdpZHRoOiA0MDBweCkge1xuICAvKlxuICAgICAgICB0aWVyIDMgbGFuZGluZyBwYWdlIGNvbnRlbnRcbiAgICAgICAgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSovXG59XG5cbi8qPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG4hISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhIVxuISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhIUVORCBTSVRFLVdJREUgU1RZTEVTLUVORCBTSVRFLVdJREUgU1RZTEVTLUVORCBTSVRFLVdJREUgU1RZTEVTISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISFcbiEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhXG49PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0qL1xuXG4vKioqIHVuY3NzPiBmaWxlbmFtZTogZGV2L2Nzcy9wYWdlLXNwZWNpZmljLmNzcyAqKiovXG5cbi8qXG5jYXJvdXNlbFxuPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Ki9cblxuLypyZXNldCBvZiBzdHlsZSBmcm9tIG1haW4uY3NzKi9cblxuLypcbmdlbmVyYWwgc3R5bGVzXG49PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0qL1xuXG4uY2VudGVyZWQge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5jdGFTcGFjZXIge1xuICBtYXJnaW4tdG9wOiAyMHB4O1xufVxuXG4udW5pSW50cm8gaDMge1xuICBtYXJnaW4tdG9wOiAwcHg7XG4gIG1hcmdpbi1ib3R0b206IDMwcHg7XG59XG5cbi51bmlJbnRybyBwLFxuLnNlY3Rpb24gcCB7XG4gIGZvbnQtc2l6ZTogMThweDtcbn1cblxuLmRvdWJsZVNwYWNlQm90dG9tIHtcbiAgbWFyZ2luLWJvdHRvbTogNTBweDtcbn1cblxuLnRyaXBsZVNwYWNlQm90dG9tIHtcbiAgbWFyZ2luLWJvdHRvbTogNzVweDtcbn1cblxuLml0aW5XcmFwcGVyIC5sYXN0IHtcbiAgYm9yZGVyLWJvdHRvbTogMDtcbn1cblxuLyptYXNvbmFyeSBib290c3RyYXAgYmxvY2sqL1xuXG4uaW1nV3JhcHBlciB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbn1cblxuLmltZ0Zsb2F0UmlnaHQge1xuICBmbG9hdDogcmlnaHQ7XG59XG5cbi5pbWdUZXh0RmxvYXQge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5pbWdUZXh0RmxvYXQgaDMge1xuICBsaW5lLWhlaWdodDogMTtcbiAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcbn1cblxuLmltZ1RleHRGbG9hdCBwIHtcbiAgbWFyZ2luLWJvdHRvbTogMDtcbn1cblxuLypcbnJlc3BvbnNpdmVcbj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSovXG5cbi8qZm9yIHNjcmVlbnMgbGFyZ2VyIHRoYW4gMTIwMHB4Ki9cblxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWluLXdpZHRoOiAxMjAwcHgpIHtcbiAgLnJvdy5tYXNvbmFyeSBkaXYge1xuICAgIHBhZGRpbmctbGVmdDogMDtcbiAgICBwYWRkaW5nLXJpZ2h0OiAwO1xuICB9XG5cbiAgLmltZ1RleHRPdmVybGF5IHtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgdG9wOiAwO1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGJvdHRvbTogMDtcbiAgICBvcGFjaXR5OiAwO1xuICAgIC13ZWJraXQtdHJhbnNpdGlvbjogb3BhY2l0eSAxLjVzO1xuICAgIHRyYW5zaXRpb246IG9wYWNpdHkgMS41cztcbiAgICAvKiBQZXJtYWxpbmsgLSB1c2UgdG8gZWRpdCBhbmQgc2hhcmUgdGhpcyBncmFkaWVudDogaHR0cDovL2NvbG9yemlsbGEuY29tL2dyYWRpZW50LWVkaXRvci8jMDAwMDAwKzAsMDAwMDAwKzEwMCYwLjM4KzMsMC44NisxMDAgKi9cbiAgICAvKiBGRjMuNi0xNSAqL1xuICAgIGJhY2tncm91bmQ6IC13ZWJraXQtcmFkaWFsLWdyYWRpZW50KGNlbnRlciwgZWxsaXBzZSBjb3ZlciwgcmdiYSgwLCAwLCAwLCAwLjM4KSAwJSwgcmdiYSgwLCAwLCAwLCAwLjM4KSAzJSwgcmdiYSgwLCAwLCAwLCAwLjg2KSAxMDAlKTtcbiAgICAvKiBDaHJvbWUxMC0yNSxTYWZhcmk1LjEtNiAqL1xuICAgIGJhY2tncm91bmQ6IC13ZWJraXQtcmFkaWFsLWdyYWRpZW50KGNlbnRlciBlbGxpcHNlLCByZ2JhKDAsIDAsIDAsIDAuMzgpIDAlLCByZ2JhKDAsIDAsIDAsIDAuMzgpIDMlLCByZ2JhKDAsIDAsIDAsIDAuODYpIDEwMCUpO1xuICAgIGJhY2tncm91bmQ6IHJhZGlhbC1ncmFkaWVudChlbGxpcHNlIGF0IGNlbnRlciwgcmdiYSgwLCAwLCAwLCAwLjM4KSAwJSwgcmdiYSgwLCAwLCAwLCAwLjM4KSAzJSwgcmdiYSgwLCAwLCAwLCAwLjg2KSAxMDAlKTtcbiAgICAvKiBXM0MsIElFMTArLCBGRjE2KywgQ2hyb21lMjYrLCBPcGVyYTEyKywgU2FmYXJpNysgKi9cbiAgICBmaWx0ZXI6IHByb2dpZDogRFhJbWFnZVRyYW5zZm9ybS5NaWNyb3NvZnQuZ3JhZGllbnQoIHN0YXJ0Q29sb3JzdHI9JyM2MTAwMDAwMCcsIGVuZENvbG9yc3RyPScjZGIwMDAwMDAnLCBHcmFkaWVudFR5cGU9MSk7XG4gICAgLyogSUU2LTkgZmFsbGJhY2sgb24gaG9yaXpvbnRhbCBncmFkaWVudCAqL1xuICB9XG5cbiAgLmltZ1RleHRPdmVybGF5OmhvdmVyIHtcbiAgICBvcGFjaXR5OiAxMDA7XG4gIH1cblxuICAuaW1nVGV4dEZsb2F0IHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgdG9wOiA1MCU7XG4gICAgbGVmdDogNTAlO1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAtd2Via2l0LXRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICB6LWluZGV4OiAxMDtcbiAgICB3aWR0aDogNjklO1xuICB9XG5cbiAgLmltZ1RleHRGbG9hdCBoMyB7XG4gICAgbWFyZ2luLXRvcDogMDtcbiAgfVxuXG4gIC5pbWdUZXh0RmxvYXQgcCB7XG4gICAgZm9udC1zaXplOiAxOHB4O1xuICAgIGxpbmUtaGVpZ2h0OiAxLjQ7XG4gIH1cbn1cblxuLypmb3Igc2NyZWVucyBzbWFsbGVyIHRoYW4gMTIwMHB4Ki9cblxuLypmb3IgbWFzb25hcnkgZ3JpZCBvbmx5Ki9cblxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiAxMjAwcHgpIHtcbiAgLmltZ1RleHRPdmVybGF5IHtcbiAgICBiYWNrZ3JvdW5kOiBub25lO1xuICAgIHBvc2l0aW9uOiBzdGF0aWM7XG4gICAgbWluLWhlaWdodDogMTM0cHg7XG4gIH1cblxuICAuaW1nVGV4dEZsb2F0IGgzIHtcbiAgICBtYXJnaW4tdG9wOiAxMHB4O1xuICB9XG5cbiAgLmltZ1dyYXBwZXIge1xuICAgIG1hcmdpbi1ib3R0b206IDIwcHg7XG4gIH1cblxuICAuaW1nV3JhcHBlcjpsYXN0LWNoaWxkIHtcbiAgICBtYXJnaW4tYm90dG9tOiAwO1xuICB9XG59XG5cbkBtZWRpYSAobWluLXdpZHRoOiA5OTBweCkge1xuICAudW5pSW50cm8gcCxcbiAgLnVuaUludHJvIGgzIHtcbiAgICB0ZXh0LWFsaWduOiBsZWZ0O1xuICB9XG59XG5cbkBtZWRpYSAobWF4LXdpZHRoOiA5OTFweCkge1xuICAuaW1nVGV4dE92ZXJsYXkge1xuICAgIG1pbi1oZWlnaHQ6IDAgIWltcG9ydGFudDtcbiAgfVxufVxuIl19 */
+/*** uncss> filename: dev/css/site-base.css ***/
+
+/*================================================================================================================================================
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!SITE-WIDE STYLES-SITE-WIDE STYLES-SITE-WIDE STYLES!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+================================================================================================================================================*/
+
+/*========================================================================
+!!!!!!!!!!!!!!!!!!!!!!!!!GENERAL-GENERAL-GENERAL!!!!!!!!!!!!!!!!!!!!!!!!!
+========================================================================*/
+
+/*
+centered columns styles
+========================================================================*/
+
+.row-centered {
+  text-align: center;
+}
+
+/*
+lists
+========================================================================*/
+
+/*
+subheads
+========================================================================*/
+
+/*use to seperate the intro content from itins*/
+
+/*for landing pages to seperate sections of content*/
+
+/*for center aligned subheads w/o rules*/
+
+/*
+tables
+========================================================================*/
+
+/*
+Psudotabs
+=========================================================================*/
+
+/*
+disclaimers
+========================================================================*/
+
+/*
+new video row format
+========================================================================*/
+
+/*
+video play button
+========================================================================*/
+
+.VideoImage {
+  position: relative;
+}
+
+.VideoImage .VideoPlay {
+  border: 3px solid #fff;
+  border-radius: 30px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
+  height: 50px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.VideoImage .VideoPlay span {
+  border-bottom: 12px solid transparent;
+  border-left: 20px solid #fff;
+  border-top: 12px solid transparent;
+  height: 0;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-38%, -50%);
+  width: 0;
+  pointer-events: none;
+}
+
+/*
+low visibility cta for itin rows
+========================================================================*/
+
+/*
+passenger quote style
+=======================================================================*/
+
+/*========================================================================
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!PAGE SPECIFIC!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+========================================================================*/
+
+/*========================================================================
+Landing Pages
+========================================================================*/
+
+/*
+landing page general styles
+=======================================================================*/
+
+/*
+two column content
+======================================================================*/
+
+/*shared itin styles*/
+
+.uniTall h2 {
+  font-family: civita-lightregular;
+  font-size: 2em;
+}
+
+.uniTall h3 {
+  font-size: 1.25em;
+  text-transform: uppercase;
+}
+
+.uniTall h2,
+.uniTall h3 {
+  margin: 0 0 5px 0;
+}
+
+.uniTall p {
+  font-size: 1em;
+  margin-bottom: .5em;
+}
+
+.uniTall p strong {
+  text-transform: uppercase;
+}
+
+/*
+landing page alternating itin row general styles
+======================================================================*/
+
+/*
+landing page half itin row general styles
+======================================================================*/
+
+/*
+tier 3 landing page content
+======================================================================*/
+
+/*uniTall general*/
+
+.uniTall.row {
+  border-bottom: 1px solid #d8d8d8;
+  height: auto;
+  margin-bottom: 35px !important;
+  padding-bottom: 35px;
+}
+
+.itinImageWrap {
+  border: 5px solid #e2e5e8;
+  padding: 3px;
+}
+
+.shipName {
+  color: #356b99;
+}
+
+.uniTall .buttonContainer {
+  margin-top: 10px;
+}
+
+/*
+tab adjustments
+=========================================================================*/
+
+/*
+itin rows in tabs
+=========================================================================*/
+
+/*========================================================================
+Offer Tiles
+========================================================================*/
+
+/*
+content blocks
+======================================================================*/
+
+/*
+offer type styles
+============================================================================*/
+
+/*========================================================================
+Why Uniworld
+========================================================================*/
+
+/*
+About the Rivers
+========================================================================*/
+
+/*
+Hallmarks of Distinction tabs
+=========================================================================*/
+
+/*
+Family Friendly
+=========================================================================*/
+
+/*========================================================================
+    Stackla Social Wedget
+========================================================================*/
+
+/*common uniStacklabutton aspects*/
+
+/*uniStacklaFilter uniStacklabuttons type v1*/
+
+/*inactive state*/
+
+/*active state*/
+
+/*========================================================================
+    Travelzoo
+ ========================================================================*/
+
+/*Travezoo form*/
+
+/*========================================================================
+    Career Section
+ ========================================================================*/
+
+/*
+ Apply Now block for subpages
+ ========================================================================*/
+
+/*========================================================================
+ Not Sure About - look at depricating
+========================================================================*/
+
+/*
+PROTYPE: first implimentation of flex for LP intro/offer
+========================================================================*/
+
+/*
+    jump button row
+    ========================================================================*/
+
+/*
+    button alignment
+    ========================================================================*/
+
+/*
+video row embed - depricated using new style
+========================================================================*/
+
+/*========================================================================
+!!!!!!!!!!!!!!!!!!!!!!!!!DESKTOP-DESKTOP-DESKTOP!!!!!!!!!!!!!!!!!!!!!!!!!
+========================================================================*/
+
+@media (min-width: 1200px) {
+  /*
+        2016 Itinerary Row images
+        ========================================================================*/
+
+  /*
+        landing page half itin row general styles
+        ======================================================================*/
+}
+
+/*========================================================================
+!!!!!!!!!!!!!!!!!!!!!RESPONSIVE-RESPONSIVE-RESPONSIVE!!!!!!!!!!!!!!!!!!!!!
+========================================================================*/
+
+@media screen and (min-width: 1200px) {
+  .buttonContainer a {
+    margin-bottom: 5px;
+    width: 186px;
+  }
+
+  .uniTall article {
+    padding: 0 0 0 15px;
+  }
+
+  .uniTall {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .uniTall article {
+    padding: 10px 15px;
+  }
+
+  .uniTall {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1101px) {
+  /*
+        landing page half itin row general styles
+        ======================================================================*/
+}
+
+@media screen and (max-width: 991px) {
+  .itinImageWrap {
+    margin-bottom: 10px;
+  }
+
+  .buttonContainer {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  /*
+        landing page half itin row general styles
+        ======================================================================*/
+}
+
+@media (max-width: 640px) {
+  /*
+        offer styles
+        ==========================================================================*/
+}
+
+@media (max-width: 400px) {
+  /*
+        tier 3 landing page content
+        ======================================================================*/
+}
+
+/*================================================================================================================================================
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!END SITE-WIDE STYLES-END SITE-WIDE STYLES-END SITE-WIDE STYLES!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+================================================================================================================================================*/
+
+/*** uncss> filename: dev/css/page-specific.css ***/
+
+/*
+carousel
+========================================================================*/
+
+/*reset of style from main.css*/
+
+/*
+general styles
+========================================================================*/
+
+.centered {
+  text-align: center;
+}
+
+.ctaSpacer {
+  margin-top: 20px;
+}
+
+.uniIntro h3 {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.uniIntro p,
+.section p {
+  font-size: 18px;
+}
+
+.doubleSpaceBottom {
+  margin-bottom: 50px;
+}
+
+.tripleSpaceBottom {
+  margin-bottom: 75px;
+}
+
+.itinWrapper .last {
+  border-bottom: 0;
+}
+
+/*masonary bootstrap block*/
+
+.imgWrapper {
+  position: relative;
+}
+
+.imgFloatRight {
+  float: right;
+}
+
+.imgTextFloat {
+  text-align: center;
+}
+
+.imgTextFloat h3 {
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.imgTextFloat p {
+  margin-bottom: 0;
+}
+
+/*
+responsive
+========================================================================*/
+
+/*for screens larger than 1200px*/
+
+@media only screen and (min-width: 1200px) {
+  .row.masonary div {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .imgTextOverlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    bottom: 0;
+    opacity: 0;
+    -webkit-transition: opacity 1.5s;
+    transition: opacity 1.5s;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.38+3,0.86+100 */
+    /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.38) 0%, rgba(0, 0, 0, 0.38) 3%, rgba(0, 0, 0, 0.86) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: -webkit-radial-gradient(center ellipse, rgba(0, 0, 0, 0.38) 0%, rgba(0, 0, 0, 0.38) 3%, rgba(0, 0, 0, 0.86) 100%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.38) 0%, rgba(0, 0, 0, 0.38) 3%, rgba(0, 0, 0, 0.86) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#61000000', endColorstr='#db000000', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+  }
+
+  .imgTextOverlay:hover {
+    opacity: 100;
+  }
+
+  .imgTextFloat {
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 10;
+    width: 69%;
+  }
+
+  .imgTextFloat h3 {
+    margin-top: 0;
+  }
+
+  .imgTextFloat p {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+}
+
+/*for screens smaller than 1200px*/
+
+/*for masonary grid only*/
+
+@media only screen and (max-width: 1200px) {
+  .imgTextOverlay {
+    background: none;
+    position: static;
+    min-height: 134px;
+  }
+
+  .imgTextFloat h3 {
+    margin-top: 10px;
+  }
+
+  .imgWrapper {
+    margin-bottom: 20px;
+  }
+
+  .imgWrapper:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 990px) {
+  .uniIntro p,
+  .uniIntro h3 {
+    text-align: left;
+  }
+}
+
+@media (max-width: 991px) {
+  .imgTextOverlay {
+    min-height: 0 !important;
+  }
+}

@@ -8,14 +8,14 @@ $color_chathams_blue: #174e7c;
 $color_mercury: #e2e5e8;
 $color_calypso: #356b99;
 //fonts
-$font_0: proxima-nova;
+$font_0: ProximaNova-Regular;
 $font_1: civita-lightregular;
 
 .uniTall {
     article {
         font-size: 14px;
         font-family: $font_0;
-        letter-spacing: .05em;
+        
     }
     h2 {
         font-family: $font_1;
@@ -28,10 +28,11 @@ $font_1: civita-lightregular;
         margin: 0 0 1.25em 0;
     }
     p {
-        font-size: 1em;
+        font-size: 1.15em;
         margin-bottom: 1em;
         strong {
             text-transform: uppercase;
+            letter-spacing: .05em;
         }
     }
     &.row {
