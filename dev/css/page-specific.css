@@ -1,296 +1,322 @@
+        .location {
+            display: none!important;
+        }
+        
+        .upper {
+            text-transform: uppercase;
+            font-size: 1.1em;
+        }
+        
+        .subheader {
+            text-transform: uppercase;
+            font-size: 1.7em;
+            margin-bottom: 30px;
+            letter-spacing: 0.04em;
+        }
+        
+        .box-header {
+            margin-bottom: 30px;
+        }
+        
+        .uni-module-header {
+            margin-bottom: 0px;
+        }
+        
+        .unniofferintro {
+            font-size: 18px;
+        }
+        
 
+        
+        .offers-details .intro .unniofferintro p {
+            font-size: 1em;
+            text-align: center;
+        }
+        /*.offers-details .intro .unniofferintro .offer-box-price {
+        font-size: .8em;
+        }*/
+        
+        .offers-details .intro .unniofferintro .offer-box-price span {
+            display: block;
+        }
+        
+        .offers-details .intro .disclaimer {
+            text-align: left;
+            font-size: 1.29em;
+        }
+        
+        .row-centered {
+            text-align: center;
+        }
+        /*page specific*/
+        
+        .departureGateways .panel {
+            background-color: #EBEDEF;
+            padding: 10px;
+        }
+        
+        .departureGateways .panel h4 {
+            margin-top: 5px;
+        }
+        
+        .departureGateways .panel p {
+            margin-bottom: 0;
+        }
+        
+        .nav-centered li {
+            display: inline-block;
+            text-align: center;
+            float: none;
+        }
+        
+        .offers-details .intro .myIntro p {
+            margin-bottom: 0;
+            font-size: 18.5px !important;
+            letter-spacing: .025em;
+            line-height: 1.65em;
+        }
+        
+        .myIntro h3 {
+            margin-top: 0;
+        }
+        
+        .orContainer {
+            display: table;
+        }
+        
+        .offers-details .intro p.orSeperator {
+            /*margin: 15px 0;*/
+            text-align: center !important;
+            vertical-align: centered;
+        }
+        
+        .card-title {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        span.city {
+            font-weight: bold;
+        }
+        
+        .offers-details .intro p.card-text {
+            font-size: 15px;
+            margin: 0 0 10px 0;
+        }
+        
+        .offers-details .intro span.location {
+            display: none;
+        }
+        
+        .myIntro.row.row-centered {
+            margin-bottom: 40px;
+        }
+        
+        .offers-details .intro .disclaimer {
+            text-align: left;
+        }
+        
+        .nav-pills > li > a {
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+        
+        .drop-size {
+            font-size: 0.9em;
+        }
+        
+        .undie {
+            text-decoration: underline;
+        }
+        
+        .offers-details .intro .disclaimer {
+            display: none;
+        }
+        
+        @media (min-width:991px) {
+            .col-centered {
+                display: inline-block;
+                float: none;
+                margin-right: -4px;
+                /* reset the text-align */
+                /* text-align: left; */
+                vertical-align: top;
+                /* inline-block space fix */
+                vertical-align: top;
+            }
+            .offers-details .intro .myIntro p {
+                text-align: justify;
+            }
+        }
+        
+        @media (max-width:990px) {
+            .col-centered {
+                display: block;
+            }
+            .offers-details .intro .myIntro p {
+                margin-bottom: 15px;
+                margin-top: 15px;
+            }
+            .offers-details .intro .myIntro p {
+                text-align: center;
+            }
+        }
+        /* CUSTOM STYLES */
+/*  Offer 2 X 1 */
+.view-terms {
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: 10px; }
+  .view-terms:hover, .view-terms:active, .view-terms:focus {
+    text-decoration: none; }
+  .view-terms:before {
+    content: "Close "; }
+  .view-terms.collapsed:before {
+    content: "View "; }
 
-/*
-carousel
-========================================================================*/
+#terms {
+  margin-top: 15px;
+  text-align: left; }
+  #terms p {
+    font-size: .80em; }
 
-#myCarousel.carousel .carousel-inner .item img {
-	height: auto;
-	position: initial;
-	max-width: 100% !important;
-}
+.offers-details .intro .location,
+.offers-details .intro .disclaimer {
+  display: none; }
 
-.choose-destination {
-	display: none;
-}
+h3.box-header {
+  margin-bottom: 17px; }
 
-.hero-shadow {
-	background: none;
-}
-
-.hero-cta {
-	display: none;
-}
-
-
-/*reset of style from main.css*/
-
-.hero-desc-right {
-	bottom: initial !important;
-	left: initial !important;
-	top: initial !important;
-	right: initial !important;
-	max-width: initial !important;
-	min-width: initial !important;
-}
-
-.hero-desc-right span {
-	font-family: civita-lightregular, serif;
-}
-
-.carousel-inner .hero-desc-right.test {
-	display: inline-block;
-	/* font-family: 'civita-lightitalic'; */
-}
-
-
-/*
-general styles
-========================================================================*/
-
-.centered {
-	text-align: center;
-}
-
-.ctaSpacer {
-	margin-top: 20px;
-}
-
-.uniIntro h3 {
-	margin-top: 0px;
-	margin-bottom: 30px;
-}
-
-.uniIntro p,
-.section p {
-	font-size: 18px;
-}
-
-.singleSpaceBottom {
-	margin-bottom: 25px;
-}
-
-.doubleSpaceBottom {
-	margin-bottom: 50px;
-}
-
-.tripleSpaceBottom {
-	margin-bottom: 75px;
-}
-
-.itinWrapper .last {
-	border-bottom: 0;
-}
-
-
-/*masonary bootstrap block*/
-
-.imgWrapper {
-	position: relative;
-}
-
-.imgFloatRight {
-	float: right;
-}
-
-.imgTextFloat {
-	text-align: center;
-}
-
-.imgTextFloat h3 {
-	line-height: 1;
-	text-transform: uppercase;
-}
-
-.imgTextFloat p {
-	margin-bottom: 0;
-}
-
-
-/*
-responsive
-========================================================================*/
-
-
-/*for screens larger than 1200px*/
-
-@media only screen and (min-width: 1200px) {
-	.row.masonary div {
-		padding-left: 0;
-		padding-right: 0;
-	}
-	.imgTextOverlay {
-		position: absolute;
-		top: 0;
-		width: 100%;
-		bottom: 0;
-		opacity: 0;
-		-webkit-transition: opacity 1.5s;
-		transition: opacity 1.5s;
-		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.38+3,0.86+100 */
-		/* FF3.6-15 */
-		background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.38) 0%, rgba(0, 0, 0, 0.38) 3%, rgba(0, 0, 0, 0.86) 100%);
-		/* Chrome10-25,Safari5.1-6 */
-		background: -webkit-radial-gradient(center ellipse, rgba(0, 0, 0, 0.38) 0%, rgba(0, 0, 0, 0.38) 3%, rgba(0, 0, 0, 0.86) 100%);
-		background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.38) 0%, rgba(0, 0, 0, 0.38) 3%, rgba(0, 0, 0, 0.86) 100%);
-		/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-		filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#61000000', endColorstr='#db000000', GradientType=1);
-		/* IE6-9 fallback on horizontal gradient */
-	}
-	.imgTextOverlay:hover {
-		opacity: 100;
-	}
-	.imgTextFloat {
-		display: inline-block;
-		top: 50%;
-		left: 50%;
-		position: absolute;
-		-webkit-transform: translate(-50%, -50%);
-		transform: translate(-50%, -50%);
-		color: white;
-		z-index: 10;
-		width: 69%;
-	}
-	.imgTextFloat h3 {
-		margin-top: 0;
-	}
-	.imgTextFloat p {
-		font-size: 18px;
-		line-height: 1.4;
-	}
-	.hero-desc-right span {
-		font-size: 24px;
-	}
-}
-
-
-/*for screens smaller than 1200px*/
-
-
-/*for masonary grid only*/
-
-@media only screen and (max-width: 1200px) {
-	.imgTextOverlay {
-		background: none;
-		position: static;
-		min-height: 134px;
-	}
-	.imgTextFloat h3 {
-		margin-top: 10px;
-	}
-	.imgWrapper {
-		margin-bottom: 20px;
-	}
-	.imgWrapper:last-child {
-		margin-bottom: 0;
-	}
-}
-
-@media (min-width: 990px) {
-	.uniIntro p,
-	.uniIntro h3 {
-		text-align: left;
-	}
-}
-
-@media (max-width: 991px) {
-	.imgTextOverlay {
-		min-height: 0 !important;
-	}
-}
-
-
-}
-@media (min-width: 1004px) {
-	.hero-desc-right span {
-		font-size: 22px;
-	}
-}
-
-/*for screens larger than 940px*/
-@media (min-width: 940px) {
-	.carousel-inner div:nth-child(1) .hero-desc-right,
-	.carousel-inner div:nth-child(2) .hero-desc-right,
-	.carousel-inner div:nth-child(3) .hero-desc-right {
-		width: 42%;
-		bottom: 50px !important;
-	}
-	
-	.carousel-inner div:nth-child(1) .hero-desc-right {
-		right: 25px !important;
-		/*-webkit-transform: translate(-125%, 0);
-		transform: translate(-125%, 0);*/
-	}
-	
-	.carousel-inner div:nth-child(2) .hero-desc-right,
-	.carousel-inner div:nth-child(3) .hero-desc-right {
-		left: 25px !important;
-		/*-webkit-transform: translate(-125%, 0);
-		transform: translate(-125%, 0);*/
-	}
-	
-	.hero-desc-right span {
-		font-size: 20px;
-	}
-}
-
-/*for screens smaller than 940px and larger than 767px*/
-@media (min-width: 767px) and (max-width: 939px) {
-	.carousel-inner div:nth-child(1) .hero-desc-right,
-	.carousel-inner div:nth-child(2) .hero-desc-right,
-	.carousel-inner div:nth-child(3) .hero-desc-right {
-		/*left: 50% !important;*/
-		width: 100%;
-		bottom: 40px !important;
-		/*-webkit-transform: translate(-50%, 0);
-		transform: translate(-50%, 0);*/
-	}
-	
-	.hero-desc-right span {
-		font-size: 20px;
-	}
-}
-
-/*for screens larger than 767px*/
-@media (min-width: 767px) {
-	.section p {
-		padding-left: 13%;
-		padding-right: 13%;
-	}
-	
-	.hero-desc-right {
-		display: inline-block !important;
-		background-color: rgba(0, 0, 0, .5);
-		top: auto;
-		padding: 17px;
-		margin: 0;
-		line-height: 2em;
-		text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
-	}
-}
-
-/*for screens smaller than 768px*/
-@media (max-width: 768px) {
-	.hero-desc-right {
-		margin: 0;
-		width: 100%;
-		display: block;
-	}
-	
-	.hero-desc-right span {
-		font-size: 18px;
-	}
-	
-	.carousel-indicators {
-		bottom: -40px;
-	}
-	
-	.uniIntro {
-		text-align: center;
-	}
-}
-
-/*for itin rows*/
-.uniItinExcursions {
-	display: none;
-}
+.unniofferintro {
+  font-size: 16px; }
+  @media only screen and (min-width: 768px) {
+    .unniofferintro {
+      font-size: 18px; } }
+  .unniofferintro .intro-p {
+    font-size: 1.2em; }
+  .unniofferintro h2 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: #356b99;
+    margin-top: 0; }
+    .unniofferintro h2.itinheader {
+      margin-top: 50px; }
+  .unniofferintro .offer-box {
+    background: #eff1f3;
+    text-align: center;
+    max-width: 750px;
+    padding: 10px;
+    margin: 50px auto; }
+    .unniofferintro .offer-box h2 {
+      color: #254674;
+      font-family: ProximaNova-Regular;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      letter-spacing: 0.05em;
+      font-size: 1.5em; }
+      .unniofferintro .offer-box h2 .bold-head {
+        font-family: ProximaNova-Bold; }
+      .unniofferintro .offer-box h2 small {
+        display: block;
+        font-size: .65em;
+        letter-spacing: normal; }
+    .unniofferintro .offer-box .offer-box-inner {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 1 100%;
+          -ms-flex: 0 1 100%;
+              flex: 0 1 100%;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 10px; }
+      @media only screen and (min-width: 480px) {
+        .unniofferintro .offer-box .offer-box-inner {
+          -webkit-flex-flow: row nowrap;
+              -ms-flex-flow: row nowrap;
+                  flex-flow: row nowrap; } }
+      .unniofferintro .offer-box .offer-box-inner .offer-details {
+        padding: 30px 15px;
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 1 100%;
+            -ms-flex: 0 1 100%;
+                flex: 0 1 100%;
+        border: solid 2px #e3e9ee;
+        background: #FFF;
+        -webkit-align-self: stretch;
+            -ms-flex-item-align: stretch;
+                align-self: stretch; }
+        @media only screen and (min-width: 480px) {
+          .unniofferintro .offer-box .offer-box-inner .offer-details {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 1 45%;
+                -ms-flex: 0 1 45%;
+                    flex: 0 1 45%;
+            max-width: 45%; } }
+        .unniofferintro .offer-box .offer-box-inner .offer-details h3 {
+          font-family: ProximaNova-Bold;
+          color: #254674;
+          margin-top: 0;
+          font-size: 1.3em;
+          letter-spacing: 0.05em; }
+        .unniofferintro .offer-box .offer-box-inner .offer-details .offer-details-copy {
+          font-size: 1em; }
+        @media only screen and (min-width: 480px) {
+          .unniofferintro .offer-box .offer-box-inner .offer-details.offer-details-alt {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 1 100%;
+                -ms-flex: 0 1 100%;
+                    flex: 0 1 100%;
+            max-width: 100%; } }
+      .unniofferintro .offer-box .offer-box-inner .offer-seperator {
+        width: 100%;
+        border: dashed 0px rgba(86, 124, 170, 0.4);
+        border-bottom-width: 1px;
+        position: relative;
+        -webkit-align-self: stretch;
+            -ms-flex-item-align: stretch;
+                align-self: stretch;
+        margin: 30px auto;
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 1 100%;
+            -ms-flex: 0 1 100%;
+                flex: 0 1 100%;
+        text-transform: uppercase; }
+        @media only screen and (min-width: 480px) {
+          .unniofferintro .offer-box .offer-box-inner .offer-seperator {
+            width: 0;
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 1 0%;
+                -ms-flex: 0 1 0%;
+                    flex: 0 1 0%;
+            margin: 1% 0;
+            border-bottom-width: 0px;
+            border-left-width: 1px; } }
+        .unniofferintro .offer-box .offer-box-inner .offer-seperator .offer-seperator-or {
+          position: absolute;
+          border-radius: 50%;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -52%);
+              -ms-transform: translate(-50%, -52%);
+                  transform: translate(-50%, -52%);
+          background: #eff1f3;
+          padding: .4em;
+          font-family: ProximaNova-Regular;
+          font-size: 1.2em;
+          color: #567caa; }
+    .unniofferintro .offer-box .currency-symbal {
+      position: relative;
+      font-size: .7em;
+      top: -0.4em; }

@@ -1,0 +1,296 @@
+
+
+/*
+carousel
+========================================================================*/
+
+#myCarousel.carousel .carousel-inner .item img {
+	height: auto;
+	position: initial;
+	max-width: 100% !important;
+}
+
+.choose-destination {
+	display: none;
+}
+
+.hero-shadow {
+	background: none;
+}
+
+.hero-cta {
+	display: none;
+}
+
+
+/*reset of style from main.css*/
+
+.hero-desc-right {
+	bottom: initial !important;
+	left: initial !important;
+	top: initial !important;
+	right: initial !important;
+	max-width: initial !important;
+	min-width: initial !important;
+}
+
+.hero-desc-right span {
+	font-family: civita-lightregular, serif;
+}
+
+.carousel-inner .hero-desc-right.test {
+	display: inline-block;
+	/* font-family: 'civita-lightitalic'; */
+}
+
+
+/*
+general styles
+========================================================================*/
+
+.centered {
+	text-align: center;
+}
+
+.ctaSpacer {
+	margin-top: 20px;
+}
+
+.uniIntro h3 {
+	margin-top: 0px;
+	margin-bottom: 30px;
+}
+
+.uniIntro p,
+.section p {
+	font-size: 18px;
+}
+
+.singleSpaceBottom {
+	margin-bottom: 25px;
+}
+
+.doubleSpaceBottom {
+	margin-bottom: 50px;
+}
+
+.tripleSpaceBottom {
+	margin-bottom: 75px;
+}
+
+.itinWrapper .last {
+	border-bottom: 0;
+}
+
+
+/*masonary bootstrap block*/
+
+.imgWrapper {
+	position: relative;
+}
+
+.imgFloatRight {
+	float: right;
+}
+
+.imgTextFloat {
+	text-align: center;
+}
+
+.imgTextFloat h3 {
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+.imgTextFloat p {
+	margin-bottom: 0;
+}
+
+
+/*
+responsive
+========================================================================*/
+
+
+/*for screens larger than 1200px*/
+
+@media only screen and (min-width: 1200px) {
+	.row.masonary div {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.imgTextOverlay {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		bottom: 0;
+		opacity: 0;
+		-webkit-transition: opacity 1.5s;
+		transition: opacity 1.5s;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.38+3,0.86+100 */
+		/* FF3.6-15 */
+		background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.38) 0%, rgba(0, 0, 0, 0.38) 3%, rgba(0, 0, 0, 0.86) 100%);
+		/* Chrome10-25,Safari5.1-6 */
+		background: -webkit-radial-gradient(center ellipse, rgba(0, 0, 0, 0.38) 0%, rgba(0, 0, 0, 0.38) 3%, rgba(0, 0, 0, 0.86) 100%);
+		background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.38) 0%, rgba(0, 0, 0, 0.38) 3%, rgba(0, 0, 0, 0.86) 100%);
+		/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#61000000', endColorstr='#db000000', GradientType=1);
+		/* IE6-9 fallback on horizontal gradient */
+	}
+	.imgTextOverlay:hover {
+		opacity: 100;
+	}
+	.imgTextFloat {
+		display: inline-block;
+		top: 50%;
+		left: 50%;
+		position: absolute;
+		-webkit-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		color: white;
+		z-index: 10;
+		width: 69%;
+	}
+	.imgTextFloat h3 {
+		margin-top: 0;
+	}
+	.imgTextFloat p {
+		font-size: 18px;
+		line-height: 1.4;
+	}
+	.hero-desc-right span {
+		font-size: 24px;
+	}
+}
+
+
+/*for screens smaller than 1200px*/
+
+
+/*for masonary grid only*/
+
+@media only screen and (max-width: 1200px) {
+	.imgTextOverlay {
+		background: none;
+		position: static;
+		min-height: 134px;
+	}
+	.imgTextFloat h3 {
+		margin-top: 10px;
+	}
+	.imgWrapper {
+		margin-bottom: 20px;
+	}
+	.imgWrapper:last-child {
+		margin-bottom: 0;
+	}
+}
+
+@media (min-width: 990px) {
+	.uniIntro p,
+	.uniIntro h3 {
+		text-align: left;
+	}
+}
+
+@media (max-width: 991px) {
+	.imgTextOverlay {
+		min-height: 0 !important;
+	}
+}
+
+
+}
+@media (min-width: 1004px) {
+	.hero-desc-right span {
+		font-size: 22px;
+	}
+}
+
+/*for screens larger than 940px*/
+@media (min-width: 940px) {
+	.carousel-inner div:nth-child(1) .hero-desc-right,
+	.carousel-inner div:nth-child(2) .hero-desc-right,
+	.carousel-inner div:nth-child(3) .hero-desc-right {
+		width: 42%;
+		bottom: 50px !important;
+	}
+	
+	.carousel-inner div:nth-child(1) .hero-desc-right {
+		right: 25px !important;
+		/*-webkit-transform: translate(-125%, 0);
+		transform: translate(-125%, 0);*/
+	}
+	
+	.carousel-inner div:nth-child(2) .hero-desc-right,
+	.carousel-inner div:nth-child(3) .hero-desc-right {
+		left: 25px !important;
+		/*-webkit-transform: translate(-125%, 0);
+		transform: translate(-125%, 0);*/
+	}
+	
+	.hero-desc-right span {
+		font-size: 20px;
+	}
+}
+
+/*for screens smaller than 940px and larger than 767px*/
+@media (min-width: 767px) and (max-width: 939px) {
+	.carousel-inner div:nth-child(1) .hero-desc-right,
+	.carousel-inner div:nth-child(2) .hero-desc-right,
+	.carousel-inner div:nth-child(3) .hero-desc-right {
+		/*left: 50% !important;*/
+		width: 100%;
+		bottom: 40px !important;
+		/*-webkit-transform: translate(-50%, 0);
+		transform: translate(-50%, 0);*/
+	}
+	
+	.hero-desc-right span {
+		font-size: 20px;
+	}
+}
+
+/*for screens larger than 767px*/
+@media (min-width: 767px) {
+	.section p {
+		padding-left: 13%;
+		padding-right: 13%;
+	}
+	
+	.hero-desc-right {
+		display: inline-block !important;
+		background-color: rgba(0, 0, 0, .5);
+		top: auto;
+		padding: 17px;
+		margin: 0;
+		line-height: 2em;
+		text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+	}
+}
+
+/*for screens smaller than 768px*/
+@media (max-width: 768px) {
+	.hero-desc-right {
+		margin: 0;
+		width: 100%;
+		display: block;
+	}
+	
+	.hero-desc-right span {
+		font-size: 18px;
+	}
+	
+	.carousel-indicators {
+		bottom: -40px;
+	}
+	
+	.uniIntro {
+		text-align: center;
+	}
+}
+
+/*for itin rows*/
+.uniItinExcursions {
+	display: none;
+}
